@@ -12,7 +12,8 @@ aliases:
 ---
 Following a [tutorial video from NetworkChuck](https://www.youtube.com/watch?v=dnE7c0ELEH8)
 
-'We only know what we make'
+>"We only know what we make."
+
 **Hugo** = a tool to convert .md into website code
 	- prereqs: see list below
 ## Battle Plan!

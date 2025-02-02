@@ -2,20 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Obsidian on ILXNAH&#39;s den</title>
-    <link>https://ilxnah.github.io/tags/obsidian/</link>
+    <link>http://localhost:1313/tags/obsidian/</link>
     <description>Recent content in Obsidian on ILXNAH&#39;s den</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 28 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://ilxnah.github.io/tags/obsidian/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 28 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/obsidian/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
-      <link>https://ilxnah.github.io/posts/creating-an-obsidian-blog-with-bros-hugo-and-chuck/</link>
+      <link>http://localhost:1313/posts/creating-an-obsidian-blog-with-bros-hugo-and-chuck/</link>
       <pubDate>Tue, 28 Jan 2025 00:00:00 +0000</pubDate>
       
-      <guid>https://ilxnah.github.io/posts/creating-an-obsidian-blog-with-bros-hugo-and-chuck/</guid>
+      <guid>http://localhost:1313/posts/creating-an-obsidian-blog-with-bros-hugo-and-chuck/</guid>
       <description>&lt;p&gt;Following a &lt;a href=&#34;https://www.youtube.com/watch?v=dnE7c0ELEH8&#34;&gt;tutorial video from NetworkChuck&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&amp;lsquo;We only know what we make&amp;rsquo;
-&lt;strong&gt;Hugo&lt;/strong&gt; = a tool to convert .md into website code
+&lt;blockquote&gt;
+&lt;p&gt;&amp;ldquo;We only know what we make.&amp;rdquo;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Hugo&lt;/strong&gt; = a tool to convert .md into website code
 - prereqs: see list below&lt;/p&gt;
 &lt;h2 id=&#34;battle-plan&#34;&gt;Battle Plan!&lt;/h2&gt;
 &lt;ul&gt;
@@ -26,8 +28,10 @@
 &lt;/ul&gt;
 &lt;p&gt;I&amp;rsquo;ll be setting this up on my Wins PC, but if you need Linux/Mac guidance, Chuck got those differences covered in &lt;a href=&#34;https://blog.networkchuck.com/posts/my-insane-blog-pipeline/&#34;&gt;his&lt;/a&gt; documentation. For the sake of sanity, I&amp;rsquo;m keeping my email/username/paths within the commands, i.e. don&amp;rsquo;t forget to change them.&lt;/p&gt;</description>
       <content>&lt;p&gt;Following a &lt;a href=&#34;https://www.youtube.com/watch?v=dnE7c0ELEH8&#34;&gt;tutorial video from NetworkChuck&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&amp;lsquo;We only know what we make&amp;rsquo;
-&lt;strong&gt;Hugo&lt;/strong&gt; = a tool to convert .md into website code
+&lt;blockquote&gt;
+&lt;p&gt;&amp;ldquo;We only know what we make.&amp;rdquo;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Hugo&lt;/strong&gt; = a tool to convert .md into website code
 - prereqs: see list below&lt;/p&gt;
 &lt;h2 id=&#34;battle-plan&#34;&gt;Battle Plan!&lt;/h2&gt;
 &lt;ul&gt;
@@ -60,7 +64,7 @@
 &lt;/li&gt;
 &lt;li&gt;Next, run your Hugo server preview with &lt;code&gt;hugo serve&lt;/code&gt;
 &lt;ul&gt;
-&lt;li&gt;Take a look at &lt;a href=&#34;https://ilxnah.github.io/&#34;&gt;//localhost:1313/&lt;/a&gt; &amp;gt; Ctrl+C to cancel website preview&lt;/li&gt;
+&lt;li&gt;Take a look at &lt;a href=&#34;http://localhost:1313/&#34;&gt;//localhost:1313/&lt;/a&gt; &amp;gt; Ctrl+C to cancel website preview&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
@@ -133,7 +137,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;print(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Markdown files processed and images copied successfully.&amp;#34;&lt;/span&gt;)
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
 &lt;li&gt;added image for testing purposes of the part of the script we just did:
-&lt;img src=&#34;https://ilxnah.github.io/images/Pasted%20image%2020250131130510.png&#34; alt=&#34;Image Description&#34;&gt;&lt;/li&gt;
+&lt;img src=&#34;http://localhost:1313/images/Pasted%20image%2020250131130510.png&#34; alt=&#34;Image Description&#34;&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;pushing-code-into-github&#34;&gt;Pushing code into GitHub&lt;/h3&gt;
 &lt;ul&gt;

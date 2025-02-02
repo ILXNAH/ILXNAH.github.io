@@ -2,29 +2,29 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://ilxnah.github.io/posts/creating-an-obsidian-blog-with-bros-hugo-and-chuck/</loc>
+    <loc>http://localhost:1313/posts/creating-an-obsidian-blog-with-bros-hugo-and-chuck/</loc>
     <lastmod>2025-01-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ilxnah.github.io/tags/hugo/</loc>
+    <loc>http://localhost:1313/tags/hugo/</loc>
     <lastmod>2025-01-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ilxnah.github.io/</loc>
+    <loc>http://localhost:1313/</loc>
     <lastmod>2025-01-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ilxnah.github.io/tags/networkchuck/</loc>
+    <loc>http://localhost:1313/tags/networkchuck/</loc>
     <lastmod>2025-01-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ilxnah.github.io/tags/obsidian/</loc>
+    <loc>http://localhost:1313/tags/obsidian/</loc>
     <lastmod>2025-01-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ilxnah.github.io/posts/</loc>
+    <loc>http://localhost:1313/posts/</loc>
     <lastmod>2025-01-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ilxnah.github.io/tags/</loc>
+    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2025-01-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ilxnah.github.io/posts/posts/</loc>
+    <loc>http://localhost:1313/posts/posts/</loc>
   </url><url>
-    <loc>https://ilxnah.github.io/categories/</loc>
+    <loc>http://localhost:1313/categories/</loc>
   </url>
 </urlset>
