@@ -45,7 +45,7 @@ I'll be setting this up on my Wins PC, but if you need Linux/Mac guidance, Chuck
 ### Using Frontmatter in Obsidian
 - set up metadata via Obsidian properties
 	- you can use a variation of community plugins
-		- I'm using **make.md**, Chuck is using **Templater**
+		- I'm using [make.md](https://www.make.md/), Chuck is using **Templater**
 	- make sure the draft property is unchecked, so the post is displayed
 		- `hugo server -D` command will publish any posts in draft mode inclusively
 	- ideally create a template with desired properties for your blog posts

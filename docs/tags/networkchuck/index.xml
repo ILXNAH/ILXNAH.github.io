@@ -76,7 +76,7 @@
 &lt;ul&gt;
 &lt;li&gt;you can use a variation of community plugins
 &lt;ul&gt;
-&lt;li&gt;I&amp;rsquo;m using &lt;strong&gt;make.md&lt;/strong&gt;, Chuck is using &lt;strong&gt;Templater&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;I&amp;rsquo;m using &lt;a href=&#34;https://www.make.md/&#34;&gt;make.md&lt;/a&gt;, Chuck is using &lt;strong&gt;Templater&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;make sure the draft property is unchecked, so the post is displayed
