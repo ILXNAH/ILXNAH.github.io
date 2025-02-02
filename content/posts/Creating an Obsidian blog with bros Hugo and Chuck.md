@@ -122,3 +122,6 @@ print("Markdown files processed and images copied successfully.")
 	```hugo.toml
 	baseurl = "https://ilxnah.github.io/optimeow/"
 	```
+##### GitHub profile pages and project pages
+- the key difference is, when you're using a project repo, you generate site from `docs`, but with profile pages, the website is generated directly in the root of your repo
+- i.e. you don't need `docs`, but you can generate your content directly into blog dir with `hugo -d .` or by modifying the publishDir parameter inside of `hugo.toml`
