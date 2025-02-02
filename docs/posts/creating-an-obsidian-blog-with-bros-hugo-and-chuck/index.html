@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  
+    <title> :: ILXNAH.github.io</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Following a tutorial video from NetworkChuck
+&lsquo;We only know what we make&rsquo;
+Hugo: tool to convert .md into website code prereqs: Git (for GitHub code repo), Golang (from Google) check install with git version, go version Battle Plan! Using Obsidian for taking notes - simply &ldquo;type out the blog&rdquo; Turn it into HTML code, aka &ldquo;make it code&rdquo; using a tool called Hugo Ship the code off/push site to GitHub Web hook configured to send a notification to Hostinger, telling it to pull down the latest version of our website and host it there. I will be setting this up on my Windows machine, but if you need Linux/Mac guidance, Chuck got those differences covered in his documentation as well. For the sake of my own sanity, I am keeping my contact and usernames everywhere within the commands, so don&rsquo;t forget to change them.
+" />
+<meta name="keywords" content="" />
+
+  <meta name="robots" content="noodp" />
+
+<link rel="canonical" href="http://localhost:1313/posts/creating-an-obsidian-blog-with-bros-hugo-and-chuck/" />
+
+
+
+
+
+  
+  <link rel="stylesheet" href="http://localhost:1313/css/buttons.min.2bc533403a27dfe0e93105a92502b42ce4587e2e4a87d9f7d349e51e16e09478.css">
+
+  
+  <link rel="stylesheet" href="http://localhost:1313/css/code.min.00125962708925857e7b66dbc58391d55be1191a3d0ce2034de8c9cd2c481c36.css">
+
+  
+  <link rel="stylesheet" href="http://localhost:1313/css/fonts.min.4881f0c525f3ce2a1864fb6e96676396cebe1e6fcef1933e8e1dde7041004fb5.css">
+
+  
+  <link rel="stylesheet" href="http://localhost:1313/css/footer.min.2e3eb191baee58dd05a9f0104ac1fab0827bca7c64dafe0b2579f934c33a1d69.css">
+
+  
+  <link rel="stylesheet" href="http://localhost:1313/css/gist.min.a751e8b0abe1ba8bc53ced52a38b19d8950fe78ca29454ea8c2595cf26aad5c0.css">
+
+  
+  <link rel="stylesheet" href="http://localhost:1313/css/header.min.b6fb4423cf82a9f9d7abc9cd010223fa3d70a6526a3f28f8e17d814c06e18f9e.css">
+
+  
+  <link rel="stylesheet" href="http://localhost:1313/css/main.min.fe8dc560fccb53a458b0db19ccb7b265764ac46b68596b7e099c6793054dd457.css">
+
+  
+  <link rel="stylesheet" href="http://localhost:1313/css/menu.min.83637a90d903026bc280d3f82f96ceb06c5fc72b7c1a8d686afb5bbf818a29f7.css">
+
+  
+  <link rel="stylesheet" href="http://localhost:1313/css/pagination.min.82f6400eae7c7c6dc3c866733c2ec0579e4089608fea69400ff85b3880aa0d3c.css">
+
+  
+  <link rel="stylesheet" href="http://localhost:1313/css/post.min.fc74ca360273c1d828da3c02b8174eba435607b369d98418ccc6f2243cd4e75d.css">
+
+  
+  <link rel="stylesheet" href="http://localhost:1313/css/prism.min.9023bbc24533d09e97a51a0a42a5a7bfe4c591ae167c5551fb1d2191d11977c0.css">
+
+  
+  <link rel="stylesheet" href="http://localhost:1313/css/syntax.min.cc789ed9377260d7949ea4c18781fc58959a89287210fe4edbff44ebfc1511b6.css">
+
+  
+  <link rel="stylesheet" href="http://localhost:1313/css/terminal.min.4b367d85d0d0061435650561285afed36c46a7cf8dc6d7ed5642d98e589fa622.css">
+
+  
+  <link rel="stylesheet" href="http://localhost:1313/css/terms.min.b81791663c3790e738e571cdbf802312390d30e4b1d8dc9d814a5b5454d0ac11.css">
+
+
+
+
+
+
+
+<link rel="shortcut icon" href="http://localhost:1313/favicon.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+
+
+<meta name="twitter:card" content="summary" />
+
+  
+    <meta name="twitter:site" content="" />
+  
+    <meta name="twitter:creator" content="" />
+
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="">
+<meta property="og:description" content="Following a tutorial video from NetworkChuck
+&lsquo;We only know what we make&rsquo;
+Hugo: tool to convert .md into website code prereqs: Git (for GitHub code repo), Golang (from Google) check install with git version, go version Battle Plan! Using Obsidian for taking notes - simply &ldquo;type out the blog&rdquo; Turn it into HTML code, aka &ldquo;make it code&rdquo; using a tool called Hugo Ship the code off/push site to GitHub Web hook configured to send a notification to Hostinger, telling it to pull down the latest version of our website and host it there. I will be setting this up on my Windows machine, but if you need Linux/Mac guidance, Chuck got those differences covered in his documentation as well. For the sake of my own sanity, I am keeping my contact and usernames everywhere within the commands, so don&rsquo;t forget to change them.
+" />
+<meta property="og:url" content="http://localhost:1313/posts/creating-an-obsidian-blog-with-bros-hugo-and-chuck/" />
+<meta property="og:site_name" content="ILXNAH.github.io" />
+
+  <meta property="og:image" content="http://localhost:1313/og-image.png">
+
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="627">
+
+
+  <meta property="article:published_time" content="2025-01-28 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+
+
+<div class="container">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/">
+  <div class="logo">
+    Terminal
+  </div>
+</a>
+
+    </div>
+    
+      <ul class="menu menu--mobile">
+  <li class="menu__trigger">Menu&nbsp;▾</li>
+  <li>
+    <ul class="menu__dropdown">
+      
+        
+          <li><a href="/about">About</a></li>
+        
+      
+        
+          <li><a href="/showcase">Showcase</a></li>
+        
+      
+      
+    </ul>
+  </li>
+</ul>
+
+    
+    
+  </div>
+  
+    <nav class="navigation-menu">
+  <ul class="navigation-menu__inner menu--desktop">
+    
+      
+        
+          <li><a href="/about" >About</a></li>
+        
+      
+        
+          <li><a href="/showcase" >Showcase</a></li>
+        
+      
+      
+    
+  </ul>
+</nav>
+
+  
+</header>
+
+
+  <div class="content">
+    
+<article class="post">
+  <h1 class="post-title">
+    <a href="http://localhost:1313/posts/creating-an-obsidian-blog-with-bros-hugo-and-chuck/"></a>
+  </h1>
+  <div class="post-meta"><time class="post-date">2025-01-28</time></div>
+
+  
+    <span class="post-tags">
+      
+      #<a href="http://localhost:1313/tags/obsidian/">obsidian</a>&nbsp;
+      
+      #<a href="http://localhost:1313/tags/hugo/">hugo</a>&nbsp;
+      
+      #<a href="http://localhost:1313/tags/networkchuck/">networkchuck</a>&nbsp;
+      
+    </span>
+  
+  
+
+
+  
+
+  <div class="post-content"><div>
+        <p>Following a <a href="https://www.youtube.com/watch?v=dnE7c0ELEH8">tutorial video from NetworkChuck</a></p>
+<p>&lsquo;We only know what we make&rsquo;</p>
+<ul>
+<li><strong>Hugo:</strong>
+<ul>
+<li>tool to convert .md into website code</li>
+<li>prereqs: Git (for GitHub code repo), Golang (from Google)
+<ul>
+<li>check install with git version, go version</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="battle-plan">Battle Plan!<a href="#battle-plan" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<ol>
+<li>Using Obsidian for taking notes - simply &ldquo;type out the blog&rdquo;</li>
+<li>Turn it into HTML code, aka &ldquo;make it code&rdquo; using a tool called <strong>Hugo</strong></li>
+<li>Ship the code off/push site to GitHub</li>
+<li>Web hook configured to send a notification to Hostinger,
+telling it to pull down the latest version of our website and host it there.</li>
+</ol>
+<p>I will be setting this up on my Windows machine, but if you need Linux/Mac guidance, Chuck got those differences covered in <a href="https://blog.networkchuck.com/posts/my-insane-blog-pipeline/">his documentation</a> as well.
+For the sake of my own sanity, I am keeping my contact and usernames everywhere within the commands, so don&rsquo;t forget to change them.</p>
+<ul>
+<li>Install <strong>everything</strong>: Obsidian, Windows Terminal, Visual Studio Code, WSL 2, Golang, Python 3, Git and Hugo (add the .exe into your own program location - like Program Files - and also in Windows into PATH)
+a few days/weeks/months later&hellip;)</li>
+<li>Create a folder within your Obsidian Workspace for your blog <code>posts</code></li>
+<li>Within this folder, start a new note (that will be your first future blog post)</li>
+<li>Double-check correct installations via the <code>version</code> flagged commands:
+<code>go version</code>
+<code>git version</code>
+<code>hugo version</code>
+&hellip;</li>
+<li>Navigate to your desired directory for storing blog files on your machine, e.g.:
+<code>cd C:\Users\ilona\Documents\</code></li>
+<li>Create a new Hugo folder with command below, effectively naming it after your blog:
+<code>hugo new site optimeow</code></li>
+<li><code>cd .\optimeow</code></li>
+<li><code>git init</code></li>
+<li><code>git config --global user.name &quot;ILXNAH&quot;</code></li>
+<li><code>git config --global user.email &quot;ILXNAH@tutanota.com&quot;</code></li>
+<li>Navigate to <a href="https://themes.gohugo.io/">Hugo Themes</a> website and pick a theme you would like to install for your blog</li>
+<li>Select option &ldquo;Install theme as a submodule&rdquo;, e.g. for <a href="https://themes.gohugo.io/themes/hugo-theme-terminal/">Terminal theme</a> it looks like this:
+<code>git submodule add -f https://github.com/panr/hugo-theme-terminal.git themes/terminal</code></li>
+<li>Configuration file is called <code>hugo.toml</code> and it needs to match the theme</li>
+<li>Terminal theme has a text file at the bottom of the page which you can copy it from (leave out module and module.imports at the bottom) and paste into your <code>hugo.toml</code></li>
+<li>Via CLI, you can open it with programs <code>notepad hugo.toml</code> like Chuck, or <code>npp hugo.toml</code> like myself (that&rsquo;s also custom though), on Linux use nano etc.</li>
+<li>Next, run your Hugo server preview with <code>hugo server -t terminal</code></li>
+<li>Take a look at <code>//localhost:1313/</code></li>
+<li>Ctrl+C to cancel preview</li>
+</ul>
+<h3 id="syncing-obsidian-to-hugo">Syncing Obsidian to Hugo<a href="#syncing-obsidian-to-hugo" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<h6 id="i-renamed-hugo-site-folder-which-was-originally-created-with-capitals-in-case-theres-an-issue">i renamed hugo site folder which was originally created with capitals, in case there&rsquo;s an issue.<a href="#i-renamed-hugo-site-folder-which-was-originally-created-with-capitals-in-case-theres-an-issue" class="hanchor" ariaLabel="Anchor">#</a> </h6>
+<ul>
+<li>posts folder will be syncing from Obsidian Vault/posts into hugo/blogname/content/posts</li>
+<li><code>cd content</code></li>
+<li><code>mkdir posts</code></li>
+<li>this newly created <strong>posts folder will be syncing</strong> directly with obsidian source folder</li>
+<li><code>robocopy &quot;C:\Users\ilona\Documents\my_second_brain\posts&quot; &quot;C:\Users\ilona\Documents\optimeow\content\posts&quot; /mir</code></li>
+<li><code>hugo server -t terminal</code> to start up Hugo and preview your blog</li>
+</ul>
+<h3 id="using-frontmatter-in-obsidian">Using Frontmatter in Obsidian<a href="#using-frontmatter-in-obsidian" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<ul>
+<li>set up metadata via Obsidian properties
+<ul>
+<li>you can use a variation of community plugins
+<ul>
+<li>I&rsquo;m using <strong>make.md</strong>, Chuck is using <strong>Templater</strong></li>
+</ul>
+</li>
+<li>make sure the draft property is unchecked, so the post is displayed on your blog when you&rsquo;re testing (I&rsquo;m just putting this out here since I took long enough to realize, way longer than anyone ever should again)
+<ul>
+<li>if you run <code>hugo server -D</code>, it will also included any posts that are in draft mode</li>
+</ul>
+</li>
+<li>ideally, make and save a default template.md with the properties for your blog posts&rsquo; new files already set up (you can later on hide the file, if you&rsquo;re also OCD like me:)</li>
+</ul>
+</li>
+<li>Ctrl+C the website preview</li>
+<li>run robocopy again</li>
+<li>view and check, it worked!</li>
+</ul>
+<h3 id="fixing-image-attachments-using-a-provided-python-script">Fixing image attachments using a provided Python script<a href="#fixing-image-attachments-using-a-provided-python-script" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<ul>
+<li>in your hugo blog dir, <code>cd static</code></li>
+<li><code>mkdir images</code></li>
+<li><code>cd ..</code></li>
+<li><code>code images.py</code></li>
+<li>insert code, make sure to edit all three paths to your own, and save:</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> os
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> re
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> shutil
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Paths (using raw strings to handle Windows backslashes correctly)</span>
+</span></span><span style="display:flex;"><span>posts_dir <span style="color:#f92672">=</span> <span style="color:#e6db74">r</span><span style="color:#e6db74">&#34;C:\Users\ilona\Documents\optimeow\content\posts&#34;</span>
+</span></span><span style="display:flex;"><span>attachments_dir <span style="color:#f92672">=</span> <span style="color:#e6db74">r</span><span style="color:#e6db74">&#34;C:\Users\ilona\Documents\my_second_brain\Attachments&#34;</span>
+</span></span><span style="display:flex;"><span>static_images_dir <span style="color:#f92672">=</span> <span style="color:#e6db74">r</span><span style="color:#e6db74">&#34;C:\Users\ilona\Documents\optimeow\static\images&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Step 1: Process each markdown file in the posts directory</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> filename <span style="color:#f92672">in</span> os<span style="color:#f92672">.</span>listdir(posts_dir):
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> filename<span style="color:#f92672">.</span>endswith(<span style="color:#e6db74">&#34;.md&#34;</span>):
+</span></span><span style="display:flex;"><span>        filepath <span style="color:#f92672">=</span> os<span style="color:#f92672">.</span>path<span style="color:#f92672">.</span>join(posts_dir, filename)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">with</span> open(filepath, <span style="color:#e6db74">&#34;r&#34;</span>, encoding<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;utf-8&#34;</span>) <span style="color:#66d9ef">as</span> file:
+</span></span><span style="display:flex;"><span>            content <span style="color:#f92672">=</span> file<span style="color:#f92672">.</span>read()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Step 2: Find all image links in the format ![Image Description](/images/Pasted%20image%20...%20.png)</span>
+</span></span><span style="display:flex;"><span>        images <span style="color:#f92672">=</span> re<span style="color:#f92672">.</span>findall(<span style="color:#e6db74">r</span><span style="color:#e6db74">&#39;\[\[([^]]*\.png)\]\]&#39;</span>, content)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Step 3: Replace image links and ensure URLs are correctly formatted</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">for</span> image <span style="color:#f92672">in</span> images:
+</span></span><span style="display:flex;"><span>            <span style="color:#75715e"># Prepare the Markdown-compatible link with %20 replacing spaces</span>
+</span></span><span style="display:flex;"><span>            markdown_image <span style="color:#f92672">=</span> <span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;![Image Description](/images/</span><span style="color:#e6db74">{</span>image<span style="color:#f92672">.</span>replace(<span style="color:#e6db74">&#39; &#39;</span>, <span style="color:#e6db74">&#39;%20&#39;</span>)<span style="color:#e6db74">}</span><span style="color:#e6db74">)&#34;</span>
+</span></span><span style="display:flex;"><span>            content <span style="color:#f92672">=</span> content<span style="color:#f92672">.</span>replace(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;[[</span><span style="color:#e6db74">{</span>image<span style="color:#e6db74">}</span><span style="color:#e6db74">]]&#34;</span>, markdown_image)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            <span style="color:#75715e"># Step 4: Copy the image to the Hugo static/images directory if it exists</span>
+</span></span><span style="display:flex;"><span>            image_source <span style="color:#f92672">=</span> os<span style="color:#f92672">.</span>path<span style="color:#f92672">.</span>join(attachments_dir, image)
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">if</span> os<span style="color:#f92672">.</span>path<span style="color:#f92672">.</span>exists(image_source):
+</span></span><span style="display:flex;"><span>                shutil<span style="color:#f92672">.</span>copy(image_source, static_images_dir)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Step 5: Write the updated content back to the markdown file</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">with</span> open(filepath, <span style="color:#e6db74">&#34;w&#34;</span>, encoding<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;utf-8&#34;</span>) <span style="color:#66d9ef">as</span> file:
+</span></span><span style="display:flex;"><span>            file<span style="color:#f92672">.</span>write(content)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;Markdown files processed and images copied successfully.&#34;</span>)
+</span></span></code></pre></div><ul>
+<li>added image for testing purposes of the part of the script we just did:
+<img src="/images/Pasted%20image%2020250131130510.png" alt="Image Description"></li>
+</ul>
+<h3 id="pushing-code-into-github">Pushing code into GitHub<a href="#pushing-code-into-github" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<ul>
+<li>create an account, log in, create a repo for your blog</li>
+<li>you will need an SSH key, which you can generate with <code>ssh-keygen -t rsa -b 4096 -C &quot;ILXNAH@tutanota.com&quot;</code> if you don&rsquo;t have one yet</li>
+<li>this keypair (public and private key) will be created in dir <code>~/.ssh</code></li>
+<li>within that dir, to add pubkey to GitHub, copy its content displayed via <code>cat .\id_rsa.pub</code></li>
+<li>GitHub &gt; Settings &gt; SSH &gt; New key &gt; paste in there</li>
+<li>test that it&rsquo;s working on your PC with cmd <code>ssh -T git@github.com</code></li>
+<li>in your blog dir, <code>git remote add origin git@github.com:ILXNAH/optimeow.git</code> to define the remote repo (the one you created on GitHub) aka add it to your local setup</li>
+<li>type cmd <code>hugo</code> to make sure our website has been built</li>
+<li><code>git add .</code> to add all files in current dir to our repo</li>
+<li><code>git commit -m &quot;First commit&quot;</code> to commit those changes (locally)</li>
+<li><code>git push -u origin main</code> to push from local to remote repo
+(specified is: first, name of your remote repo <code>origin</code>, then branch name <code>main</code>)</li>
+</ul>
+<h6 id="git-push-side-note">Git push side note<a href="#git-push-side-note" class="hanchor" ariaLabel="Anchor">#</a> </h6>
+<ul>
+<li>easy way to undo the <strong>last</strong> push if you make a mistake:
+<code>git push -f origin HEAD^:main</code></li>
+<li>or view the history of the pushes with:
+<code>git reflog --grep-reflog=push origin/main</code></li>
+<li>and then, you can reference an older push as well:
+<code>git push -f origin last_known_good_commit:branch_name</code></li>
+</ul>
+<h6 id="tracking-empty-folders-in-git">Tracking empty folders in Git<a href="#tracking-empty-folders-in-git" class="hanchor" ariaLabel="Anchor">#</a> </h6>
+<ul>
+<li>for e.g. <code>assets</code> folder in blog dir: <code>New-Item -Path &quot;assets\.gitkeep&quot; -ItemType &quot;File&quot;</code>
+<ul>
+<li>commit &gt; push</li>
+</ul>
+</li>
+</ul>
+<h3 id="publishing-only-public-folder-to-its-own-github-branch">Publishing only <code>public</code> folder to its own GitHub branch<a href="#publishing-only-public-folder-to-its-own-github-branch" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<ul>
+<li>create a new branch and copy desired <code>public</code> folder inside</li>
+<li>git subtree split &ndash;prefix public -b website-deploy</li>
+<li>git push origin website-deploy:webhosting &ndash;force</li>
+<li>git branch -D website-deploy</li>
+</ul>
+<h5 id="publishing-for-free-to-github-pages">Publishing for free to GitHub Pages<a href="#publishing-for-free-to-github-pages" class="hanchor" ariaLabel="Anchor">#</a> </h5>
+<ul>
+<li>following this <a href="https://medium.com/@magstherdev/github-pages-hugo-86ae6bcbadd">Medium guide by @Magstherdev</a> and <a href="https://gohugo.io/hosting-and-deployment/hosting-on-github/">official guide on Hugo&rsquo;s site</a></li>
+<li><code>hugo -d docs</code> creates a directory <code>docs</code> inside blog dir, which we need for (GitHub) Pages (instead of the <code>public</code> folder which Chuck uses)</li>
+<li>open <code>code hugo.toml</code> and add this line under line 6:
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-hugo.toml" data-lang="hugo.toml"><span style="display:flex;"><span><span style="color:#a6e22e">publishDir</span> = <span style="color:#e6db74">&#34;docs&#34;</span>
+</span></span></code></pre></div></li>
+<li>with <code>python3 -m http.server 8080 --directory docs</code> you can preview in there
+<ul>
+<li>when changing posts and do <code>robocopy</code> + <code>images.py</code> as mentioned previously, to reflect changes in the <code>docs</code> dir, you need to run cmd <code>hugo -d docs</code> and then preview w/ python as above
+<ul>
+<li>if you use cmd <code>hugo</code> without specified flag, it will update the default <code>public</code> folder as well as the <code>docs</code> folder (as configured in hugo.toml)</li>
+</ul>
+</li>
+<li>verified reflected changes via <code>ls</code> timestamp and compare preview with the one which should have now been on older version:
+<code>python3 -m http.server 8080 --directory public</code></li>
+</ul>
+</li>
+<li><strong>with this workflow you can:</strong>
+<ul>
+<li>create <code>docs</code> directory which replaces <code>public</code> folder&rsquo;s purpose</li>
+<li>edit blog &gt; robocopy &gt; images.py &gt; hugo -d docs &gt; commit and push out</li>
+<li>keep the <code>public</code> folder &ldquo;outdated&rdquo; and use it for local development</li>
+<li>make sure when previewing to use different ports (to avoid cross-caching versions), e.g.:
+<ul>
+<li>Pages on <a href="http://localhost:8080/">http://localhost:8080/</a></li>
+<li>dev on <a href="http://localhost:8081/">http://localhost:8081/</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>let&rsquo;s push it to our GitHub repo: <code>git add .</code> &gt; <code>git commit</code> &gt; <code>git push</code></li>
+</ul>
+<h5 id="some-more-tweaks-and-were-almost-done">Some more tweaks and we&rsquo;re almost done<a href="#some-more-tweaks-and-were-almost-done" class="hanchor" ariaLabel="Anchor">#</a> </h5>
+<ul>
+<li>in <code>hugo.toml</code>, when using Pages from <code>/docs</code>, we also need to edit URL configuration in Hugo&rsquo;s config file (line 1): as below, replace with your own Pages link
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-hugo.toml" data-lang="hugo.toml"><span style="display:flex;"><span><span style="color:#a6e22e">baseurl</span> = <span style="color:#e6db74">&#34;https://ilxnah.github.io/optimeow/&#34;</span>
+</span></span></code></pre></div></li>
+<li>the config file for Pages version is just a copy called <code>hugo.github.toml</code>, which includes the additional URL defined as above</li>
+<li>I also kept the original <code>hugo.toml</code> without this definition for local testing purposes</li>
+</ul>
+<h4 id="final-workflow">Final Workflow:<a href="#final-workflow" class="hanchor" ariaLabel="Anchor">#</a> </h4>
+<ul>
+<li>edit blog posts</li>
+<li>sync Obsidian into Hugo with <code>robocopy</code></li>
+<li>run <code>images.py</code></li>
+<li>local dev &gt; regenerate static site:
+<ul>
+<li><code>hugo -d public</code></li>
+</ul>
+</li>
+<li>local dev &gt; preview:
+<ul>
+<li><code>python3 -m http.server 8081 --directory public</code></li>
+</ul>
+</li>
+<li>Pages &gt; regenerate static site:
+<ul>
+<li><code>hugo -d docs -c .\hugo.github.toml</code></li>
+</ul>
+</li>
+<li>Pages &gt; preview won&rsquo;t work with content generated for live publish</li>
+<li><code>git add .</code> &gt; <code>git commit -m &quot;Commit message&quot;</code> &gt; <code>git push</code></li>
+</ul>
+
+      </div></div>
+
+  
+    
+<div class="pagination">
+  <div class="pagination__title">
+    <span class="pagination__title-h">Read other posts</span>
+    <hr />
+  </div>
+  <div class="pagination__buttons">
+    
+    
+    
+      <a href="http://localhost:1313/posts/podcasts-i-like-to-listen-to-or-didnt-get-to-it-yet/" class="button inline next">
+        
+      </a>
+    
+  </div>
+</div>
+
+
+  
+
+  
+    
+
+  
+</article>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright">
+        <span>© 2025 Powered by <a href="https://gohugo.io">Hugo</a></span>
+    
+      <span>:: <a href="https://github.com/panr/hugo-theme-terminal" target="_blank">Theme</a> made by <a href="https://github.com/panr" target="_blank">panr</a></span>
+      </div>
+  </div>
+</footer>
+
+
+
+
+
+
+<script type="text/javascript" src="/bundle.min.js"></script>
+
+
+
+
+
+  
+</div>
+
+</body>
+</html>

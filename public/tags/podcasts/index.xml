@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Podcasts on Terminal</title>
+    <link>/tags/podcasts/</link>
+    <description>Recent content in Podcasts on Terminal</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 28 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="/tags/podcasts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Podcasts I like to listen to (or didn&#39;t get to it yet)</title>
+      <link>/posts/podcasts/</link>
+      <pubDate>Tue, 28 Jan 2025 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/podcasts/</guid>
+      <description>&lt;p&gt;Below you will find lists of podcasts I listen to or follow, with links to Apple Podcasts.&lt;/p&gt;
+&lt;h3 id=&#34;general--other-it&#34;&gt;General &amp;amp; other IT:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://podcasts.apple.com/us/podcast/hidden-figures-of-python-podcast/id1720808525&#34;&gt;Hidden Figures of Python Podcast&lt;/a&gt; - PyPodcats #en&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://podcasts.apple.com/us/podcast/programhrov%C3%A1n%C3%AD-v%C3%A1%C5%A1-hr-pr%C5%AFvodce-sv%C4%9Btem-it/id1593191280&#34;&gt;ProgramHRování - váš HR průvodce světem IT&lt;/a&gt; - Šárka Kousalová, Vojtěch Mádr #cz&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://podcasts.apple.com/us/podcast/fuckupy-v-it/id1513940715&#34;&gt;Fuckupy v IT&lt;/a&gt; - Matěj Kotrba #cz&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://podcasts.apple.com/us/podcast/junior-guru-programov%C3%A1n%C3%AD-a-kari%C3%A9ra-v-it/id1603653549&#34;&gt;Junior Guru: programování a kariéra v IT&lt;/a&gt; - Honza Javorek, Pája Froňková #cz&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://podcasts.apple.com/us/podcast/it-pro-lidi/id1698324361&#34;&gt;IT Pro Lidi: Podcast společnosti KPCS CZ&lt;/a&gt; #cz&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;cybersecurity&#34;&gt;Cybersecurity:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://podcasts.apple.com/us/podcast/cyber-rangers-podcast/id1513746938&#34;&gt;Cyber Rangers Podcast&lt;/a&gt; #cz&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://podcasts.apple.com/us/podcast/o2-cybercast/id1634178629&#34;&gt;O2 CyberCast&lt;/a&gt; #cz&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;devops&#34;&gt;DevOps:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://podcast.bretfisher.com/&#34;&gt;DevOps and Docker Talk: Cloud Native Interview and Tooling&lt;/a&gt; - Bret Fisher #en&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://podcasts.apple.com/us/podcast/the-scripting-den-podcast/id1729484590&#34;&gt;The Scripting Den Podcast&lt;/a&gt; #en&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://podcasts.apple.com/us/podcast/kubernetes-podcast-from-google/id1370049232&#34;&gt;Kubernetes Podcast from Google&lt;/a&gt; #en&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://ybyr.net/podcast/&#34;&gt;YBYR: You Build IT, You Run IT&lt;/a&gt; - Ladislav Prskavec, Vilibald Wanča #cz&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://podcasts.apple.com/us/podcast/the-humans-of-devops-podcast-series/id1478025522&#34;&gt;The Humans of DevOps&lt;/a&gt; - &lt;a href=&#34;https://www.devopsinstitute.com/humans-of-devops-podcast/&#34;&gt;DevOps Institute&lt;/a&gt; #en&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;networking&#34;&gt;Networking:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://podcasts.apple.com/us/podcast/the-cisco-learning-network/id1349472942&#34;&gt;The Cisco Learning Network Podcast&lt;/a&gt; #en&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;lifestyle--mental-health&#34;&gt;Lifestyle &amp;amp; Mental Health:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://podcasts.apple.com/us/podcast/the-tim-ferriss-show/id863897795&#34;&gt;The Tim Ferriss Show&lt;/a&gt; #en&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://podcasts.apple.com/us/podcast/strachov%C3%A1n%C3%AD/id1617571533&#34;&gt;Strachování: podcast o strachu&lt;/a&gt; - Roman Förster, Hana Mezerová #cz&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://podcasts.apple.com/ca/podcast/do-you-f-cking-mind/id1502954097&#34;&gt;Do You F*cking Mind? Mindset Hacks for a Badass Life&lt;/a&gt; - Alexis Fernandez #en&lt;/li&gt;
+&lt;/ul&gt;</description>
+      <content>&lt;p&gt;Below you will find lists of podcasts I listen to or follow, with links to Apple Podcasts.&lt;/p&gt;
+&lt;h3 id=&#34;general--other-it&#34;&gt;General &amp;amp; other IT:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://podcasts.apple.com/us/podcast/hidden-figures-of-python-podcast/id1720808525&#34;&gt;Hidden Figures of Python Podcast&lt;/a&gt; - PyPodcats #en&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://podcasts.apple.com/us/podcast/programhrov%C3%A1n%C3%AD-v%C3%A1%C5%A1-hr-pr%C5%AFvodce-sv%C4%9Btem-it/id1593191280&#34;&gt;ProgramHRování - váš HR průvodce světem IT&lt;/a&gt; - Šárka Kousalová, Vojtěch Mádr #cz&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://podcasts.apple.com/us/podcast/fuckupy-v-it/id1513940715&#34;&gt;Fuckupy v IT&lt;/a&gt; - Matěj Kotrba #cz&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://podcasts.apple.com/us/podcast/junior-guru-programov%C3%A1n%C3%AD-a-kari%C3%A9ra-v-it/id1603653549&#34;&gt;Junior Guru: programování a kariéra v IT&lt;/a&gt; - Honza Javorek, Pája Froňková #cz&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://podcasts.apple.com/us/podcast/it-pro-lidi/id1698324361&#34;&gt;IT Pro Lidi: Podcast společnosti KPCS CZ&lt;/a&gt; #cz&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;cybersecurity&#34;&gt;Cybersecurity:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://podcasts.apple.com/us/podcast/cyber-rangers-podcast/id1513746938&#34;&gt;Cyber Rangers Podcast&lt;/a&gt; #cz&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://podcasts.apple.com/us/podcast/o2-cybercast/id1634178629&#34;&gt;O2 CyberCast&lt;/a&gt; #cz&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;devops&#34;&gt;DevOps:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://podcast.bretfisher.com/&#34;&gt;DevOps and Docker Talk: Cloud Native Interview and Tooling&lt;/a&gt; - Bret Fisher #en&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://podcasts.apple.com/us/podcast/the-scripting-den-podcast/id1729484590&#34;&gt;The Scripting Den Podcast&lt;/a&gt; #en&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://podcasts.apple.com/us/podcast/kubernetes-podcast-from-google/id1370049232&#34;&gt;Kubernetes Podcast from Google&lt;/a&gt; #en&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://ybyr.net/podcast/&#34;&gt;YBYR: You Build IT, You Run IT&lt;/a&gt; - Ladislav Prskavec, Vilibald Wanča #cz&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://podcasts.apple.com/us/podcast/the-humans-of-devops-podcast-series/id1478025522&#34;&gt;The Humans of DevOps&lt;/a&gt; - &lt;a href=&#34;https://www.devopsinstitute.com/humans-of-devops-podcast/&#34;&gt;DevOps Institute&lt;/a&gt; #en&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;networking&#34;&gt;Networking:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://podcasts.apple.com/us/podcast/the-cisco-learning-network/id1349472942&#34;&gt;The Cisco Learning Network Podcast&lt;/a&gt; #en&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;lifestyle--mental-health&#34;&gt;Lifestyle &amp;amp; Mental Health:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://podcasts.apple.com/us/podcast/the-tim-ferriss-show/id863897795&#34;&gt;The Tim Ferriss Show&lt;/a&gt; #en&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://podcasts.apple.com/us/podcast/strachov%C3%A1n%C3%AD/id1617571533&#34;&gt;Strachování: podcast o strachu&lt;/a&gt; - Roman Förster, Hana Mezerová #cz&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://podcasts.apple.com/ca/podcast/do-you-f-cking-mind/id1502954097&#34;&gt;Do You F*cking Mind? Mindset Hacks for a Badass Life&lt;/a&gt; - Alexis Fernandez #en&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    </item>
+    
+  </channel>
+</rss>
