@@ -7,8 +7,8 @@
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Following a tutorial video from NetworkChuck
-&lsquo;We only know what we make&rsquo;
-Hugo: tool to convert .md into website code prereqs: Git (for GitHub code repo), Golang (from Google) check install with git version, go version Battle Plan! Using Obsidian for taking notes - simply &ldquo;type out the blog&rdquo; Turn it into HTML code, aka &ldquo;make it code&rdquo; using a tool called Hugo Ship the code off/push site to GitHub Web hook configured to send a notification to Hostinger, telling it to pull down the latest version of our website and host it there. I will be setting this up on my Windows machine, but if you need Linux/Mac guidance, Chuck got those differences covered in his documentation as well. For the sake of my own sanity, I am keeping my contact and usernames everywhere within the commands, so don&rsquo;t forget to change them.
+&lsquo;We only know what we make&rsquo; Hugo: - tool to convert .md into website code - prereqs: see list below
+Battle Plan! Using Obsidian for taking notes - simply &ldquo;type out the blog&rdquo; Turn it into HTML code, aka &ldquo;make it code&rdquo; using a tool called Hugo Ship the code off/push site to GitHub I decided not to use Hostinger but am playing around with other ways of deployment. I will be setting this up on my Windows machine, but if you need Linux/Mac guidance, Chuck got those differences covered in his documentation as well. For the sake of my own sanity, I am keeping my email/username/paths within the commands, i.e. don&rsquo;t forget to change them.
 " />
 <meta name="keywords" content="" />
 
@@ -85,8 +85,8 @@ Hugo: tool to convert .md into website code prereqs: Git (for GitHub code repo),
 <meta property="og:type" content="article" />
 <meta property="og:title" content="">
 <meta property="og:description" content="Following a tutorial video from NetworkChuck
-&lsquo;We only know what we make&rsquo;
-Hugo: tool to convert .md into website code prereqs: Git (for GitHub code repo), Golang (from Google) check install with git version, go version Battle Plan! Using Obsidian for taking notes - simply &ldquo;type out the blog&rdquo; Turn it into HTML code, aka &ldquo;make it code&rdquo; using a tool called Hugo Ship the code off/push site to GitHub Web hook configured to send a notification to Hostinger, telling it to pull down the latest version of our website and host it there. I will be setting this up on my Windows machine, but if you need Linux/Mac guidance, Chuck got those differences covered in his documentation as well. For the sake of my own sanity, I am keeping my contact and usernames everywhere within the commands, so don&rsquo;t forget to change them.
+&lsquo;We only know what we make&rsquo; Hugo: - tool to convert .md into website code - prereqs: see list below
+Battle Plan! Using Obsidian for taking notes - simply &ldquo;type out the blog&rdquo; Turn it into HTML code, aka &ldquo;make it code&rdquo; using a tool called Hugo Ship the code off/push site to GitHub I decided not to use Hostinger but am playing around with other ways of deployment. I will be setting this up on my Windows machine, but if you need Linux/Mac guidance, Chuck got those differences covered in his documentation as well. For the sake of my own sanity, I am keeping my email/username/paths within the commands, i.e. don&rsquo;t forget to change them.
 " />
 <meta property="og:url" content="http://localhost:1313/posts/creating-an-obsidian-blog-with-bros-hugo-and-chuck/" />
 <meta property="og:site_name" content="ILXNAH.github.io" />
@@ -196,66 +196,50 @@ Hugo: tool to convert .md into website code prereqs: Git (for GitHub code repo),
 
   <div class="post-content"><div>
         <p>Following a <a href="https://www.youtube.com/watch?v=dnE7c0ELEH8">tutorial video from NetworkChuck</a></p>
-<p>&lsquo;We only know what we make&rsquo;</p>
-<ul>
-<li><strong>Hugo:</strong>
-<ul>
-<li>tool to convert .md into website code</li>
-<li>prereqs: Git (for GitHub code repo), Golang (from Google)
-<ul>
-<li>check install with git version, go version</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
+<p>&lsquo;We only know what we make&rsquo;
+<strong>Hugo:</strong>
+- tool to convert .md into website code
+- prereqs: see list below</p>
 <h2 id="battle-plan">Battle Plan!<a href="#battle-plan" class="hanchor" ariaLabel="Anchor">#</a> </h2>
-<ol>
+<ul>
 <li>Using Obsidian for taking notes - simply &ldquo;type out the blog&rdquo;</li>
 <li>Turn it into HTML code, aka &ldquo;make it code&rdquo; using a tool called <strong>Hugo</strong></li>
 <li>Ship the code off/push site to GitHub</li>
-<li>Web hook configured to send a notification to Hostinger,
-telling it to pull down the latest version of our website and host it there.</li>
-</ol>
-<p>I will be setting this up on my Windows machine, but if you need Linux/Mac guidance, Chuck got those differences covered in <a href="https://blog.networkchuck.com/posts/my-insane-blog-pipeline/">his documentation</a> as well.
-For the sake of my own sanity, I am keeping my contact and usernames everywhere within the commands, so don&rsquo;t forget to change them.</p>
+<li>I decided not to use Hostinger but am playing around with other ways of deployment.</li>
+</ul>
+<p>I will be setting this up on my Windows machine, but if you need Linux/Mac guidance, Chuck got those differences covered in <a href="https://blog.networkchuck.com/posts/my-insane-blog-pipeline/">his documentation</a> as well. For the sake of my own sanity, I am keeping my email/username/paths within the commands, i.e. don&rsquo;t forget to change them.</p>
+<ol>
+<li><strong>Install everything</strong>:
 <ul>
-<li>Install <strong>everything</strong>: Obsidian, Windows Terminal, Visual Studio Code, WSL 2, Golang, Python 3, Git and Hugo (add the .exe into your own program location - like Program Files - and also in Windows into PATH)
-a few days/weeks/months later&hellip;)</li>
-<li>Create a folder within your Obsidian Workspace for your blog <code>posts</code></li>
-<li>Within this folder, start a new note (that will be your first future blog post)</li>
+<li>Obsidian, Windows Terminal, Visual Studio Code, WSL 2, Golang, Python 3, Git and Hugo (add the .exe into your own program location - like Program Files - and also in Windows into PATH)</li>
+</ul>
+</li>
+<li>Create a <code>posts</code> folder within your Obsidian Workspace for your blog articles</li>
+<li>Within this folder, start a new note (that will be your first blog post)</li>
 <li>Double-check correct installations via the <code>version</code> flagged commands:
-<code>go version</code>
-<code>git version</code>
-<code>hugo version</code>
-&hellip;</li>
-<li>Navigate to your desired directory for storing blog files on your machine, e.g.:
-<code>cd C:\Users\ilona\Documents\</code></li>
-<li>Create a new Hugo folder with command below, effectively naming it after your blog:
-<code>hugo new site optimeow</code></li>
-<li><code>cd .\optimeow</code></li>
-<li><code>git init</code></li>
-<li><code>git config --global user.name &quot;ILXNAH&quot;</code></li>
-<li><code>git config --global user.email &quot;ILXNAH@tutanota.com&quot;</code></li>
-<li>Navigate to <a href="https://themes.gohugo.io/">Hugo Themes</a> website and pick a theme you would like to install for your blog</li>
+<code>go version</code>, <code>git --version</code>, <code>hugo version</code>, <code>python --version</code> etc.</li>
+<li>Navigate to your desired directory for storing blog files on your machine, e.g.: <code>cd C:\Users\ilona\Documents\</code></li>
+<li>Create a new folder for Hugo blog and set up git: <code>hugo new site optimeow</code> &gt; <code>cd .\optimeow</code> &gt; <code>git init</code> &gt; <code>git config --global user.name &quot;ILXNAH&quot;</code> &gt; <code>git config --global user.email &quot;ILXNAH@tutanota.com&quot;</code></li>
+<li>Navigate to <a href="https://themes.gohugo.io/">Hugo Themes</a> and pick a theme to install for your blog.</li>
 <li>Select option &ldquo;Install theme as a submodule&rdquo;, e.g. for <a href="https://themes.gohugo.io/themes/hugo-theme-terminal/">Terminal theme</a> it looks like this:
 <code>git submodule add -f https://github.com/panr/hugo-theme-terminal.git themes/terminal</code></li>
-<li>Configuration file is called <code>hugo.toml</code> and it needs to match the theme</li>
-<li>Terminal theme has a text file at the bottom of the page which you can copy it from (leave out module and module.imports at the bottom) and paste into your <code>hugo.toml</code></li>
-<li>Via CLI, you can open it with programs <code>notepad hugo.toml</code> like Chuck, or <code>npp hugo.toml</code> like myself (that&rsquo;s also custom though), on Linux use nano etc.</li>
-<li>Next, run your Hugo server preview with <code>hugo server -t terminal</code></li>
-<li>Take a look at <code>//localhost:1313/</code></li>
-<li>Ctrl+C to cancel preview</li>
-</ul>
-<h3 id="syncing-obsidian-to-hugo">Syncing Obsidian to Hugo<a href="#syncing-obsidian-to-hugo" class="hanchor" ariaLabel="Anchor">#</a> </h3>
-<h6 id="i-renamed-hugo-site-folder-which-was-originally-created-with-capitals-in-case-theres-an-issue">i renamed hugo site folder which was originally created with capitals, in case there&rsquo;s an issue.<a href="#i-renamed-hugo-site-folder-which-was-originally-created-with-capitals-in-case-theres-an-issue" class="hanchor" ariaLabel="Anchor">#</a> </h6>
+<li>Edit config: the file is called <code>hugo.toml</code> and it needs to match the theme
 <ul>
-<li>posts folder will be syncing from Obsidian Vault/posts into hugo/blogname/content/posts</li>
-<li><code>cd content</code></li>
-<li><code>mkdir posts</code></li>
-<li>this newly created <strong>posts folder will be syncing</strong> directly with obsidian source folder</li>
-<li><code>robocopy &quot;C:\Users\ilona\Documents\my_second_brain\posts&quot; &quot;C:\Users\ilona\Documents\optimeow\content\posts&quot; /mir</code></li>
-<li><code>hugo server -t terminal</code> to start up Hugo and preview your blog</li>
+<li>Terminal theme has a text file at the bottom of the page which you can copy it from (leave out module and module.imports at the bottom) and paste into your <code>hugo.toml</code></li>
+<li>Via CLI, you can open it with programs <code>notepad hugo.toml</code> like Chuck, or <code>npp hugo.toml</code> like myself (that&rsquo;s also custom though)</li>
+</ul>
+</li>
+<li>Next, run your Hugo server preview with <code>hugo serve</code>
+<ul>
+<li>Take a look at <a href="/">//localhost:1313/</a> &gt; Ctrl+C to cancel website preview</li>
+</ul>
+</li>
+</ol>
+<h3 id="syncing-obsidian-to-hugo">Syncing Obsidian to Hugo<a href="#syncing-obsidian-to-hugo" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<ul>
+<li>posts folder will be syncing from <code>Obsidian Vault/posts</code> into <code>/blogname/content/posts</code></li>
+<li><code>cd content</code> &gt; <code>mkdir posts</code> (this new folder will be synced with Obsidian source folder) with this command: <code>robocopy &quot;C:\Users\ilona\Documents\my_second_brain\posts&quot; &quot;C:\Users\ilona\Documents\optimeow\content\posts&quot; /mir</code></li>
+<li><code>hugo serve</code> to preview blog with imported posts &gt; Ctrl+C the preview again</li>
 </ul>
 <h3 id="using-frontmatter-in-obsidian">Using Frontmatter in Obsidian<a href="#using-frontmatter-in-obsidian" class="hanchor" ariaLabel="Anchor">#</a> </h3>
 <ul>
@@ -266,21 +250,20 @@ a few days/weeks/months later&hellip;)</li>
 <li>I&rsquo;m using <strong>make.md</strong>, Chuck is using <strong>Templater</strong></li>
 </ul>
 </li>
-<li>make sure the draft property is unchecked, so the post is displayed on your blog when you&rsquo;re testing (I&rsquo;m just putting this out here since I took long enough to realize, way longer than anyone ever should again)
+<li>make sure the draft property is unchecked, so the post is displayed
 <ul>
-<li>if you run <code>hugo server -D</code>, it will also included any posts that are in draft mode</li>
+<li><code>hugo server -D</code> command will publish any posts in draft mode inclusively</li>
 </ul>
 </li>
-<li>ideally, make and save a default template.md with the properties for your blog posts&rsquo; new files already set up (you can later on hide the file, if you&rsquo;re also OCD like me:)</li>
+<li>ideally create a template with desired properties for your blog posts</li>
 </ul>
 </li>
-<li>Ctrl+C the website preview</li>
-<li>run robocopy again</li>
-<li>view and check, it worked!</li>
+<li>run robocopy again with added post properties in source .md</li>
+<li><code>hugo serve</code> to see if properties OK &gt; exit preview</li>
 </ul>
 <h3 id="fixing-image-attachments-using-a-provided-python-script">Fixing image attachments using a provided Python script<a href="#fixing-image-attachments-using-a-provided-python-script" class="hanchor" ariaLabel="Anchor">#</a> </h3>
 <ul>
-<li>in your hugo blog dir, <code>cd static</code></li>
+<li>in your Hugo blog dir, <code>cd static</code></li>
 <li><code>mkdir images</code></li>
 <li><code>cd ..</code></li>
 <li><code>code images.py</code></li>
@@ -357,13 +340,6 @@ a few days/weeks/months later&hellip;)</li>
 <li>commit &gt; push</li>
 </ul>
 </li>
-</ul>
-<h3 id="publishing-only-public-folder-to-its-own-github-branch">Publishing only <code>public</code> folder to its own GitHub branch<a href="#publishing-only-public-folder-to-its-own-github-branch" class="hanchor" ariaLabel="Anchor">#</a> </h3>
-<ul>
-<li>create a new branch and copy desired <code>public</code> folder inside</li>
-<li>git subtree split &ndash;prefix public -b website-deploy</li>
-<li>git push origin website-deploy:webhosting &ndash;force</li>
-<li>git branch -D website-deploy</li>
 </ul>
 <h5 id="publishing-for-free-to-github-pages">Publishing for free to GitHub Pages<a href="#publishing-for-free-to-github-pages" class="hanchor" ariaLabel="Anchor">#</a> </h5>
 <ul>

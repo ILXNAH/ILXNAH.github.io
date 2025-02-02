@@ -13,72 +13,48 @@ aliases:
 Following a [tutorial video from NetworkChuck](https://www.youtube.com/watch?v=dnE7c0ELEH8)
 
 'We only know what we make'
-
-- **Hugo:** 
+**Hugo:** 
 	- tool to convert .md into website code
-	- prereqs: Git (for GitHub code repo), Golang (from Google)
-		- check install with git version, go version
+	- prereqs: see list below
 
 ## Battle Plan!
-1. Using Obsidian for taking notes - simply "type out the blog"
-2. Turn it into HTML code, aka "make it code" using a tool called **Hugo**
-3. Ship the code off/push site to GitHub
-4. Web hook configured to send a notification to Hostinger, 
-   telling it to pull down the latest version of our website and host it there.
+- Using Obsidian for taking notes - simply "type out the blog"
+- Turn it into HTML code, aka "make it code" using a tool called **Hugo**
+- Ship the code off/push site to GitHub
+- I decided not to use Hostinger but am playing around with other ways of deployment.
 
-I will be setting this up on my Windows machine, but if you need Linux/Mac guidance, Chuck got those differences covered in [his documentation](https://blog.networkchuck.com/posts/my-insane-blog-pipeline/) as well. 
-For the sake of my own sanity, I am keeping my contact and usernames everywhere within the commands, so don't forget to change them. 
-
-- Install **everything**: Obsidian, Windows Terminal, Visual Studio Code, WSL 2, Golang, Python 3, Git and Hugo (add the .exe into your own program location - like Program Files - and also in Windows into PATH)
-  a few days/weeks/months later...)
-- Create a folder within your Obsidian Workspace for your blog `posts`
-- Within this folder, start a new note (that will be your first future blog post)
-- Double-check correct installations via the `version` flagged commands:
-  `go version`
-  `git version`
-  `hugo version`
-  ...
-- Navigate to your desired directory for storing blog files on your machine, e.g.: 
-  `cd C:\Users\ilona\Documents\`
-- Create a new Hugo folder with command below, effectively naming it after your blog:
-  `hugo new site optimeow`
-- `cd .\optimeow`
-- `git init`
-- `git config --global user.name "ILXNAH"`
-- `git config --global user.email "ILXNAH@tutanota.com"`
-- Navigate to [Hugo Themes](https://themes.gohugo.io/) website and pick a theme you would like to install for your blog
-- Select option "Install theme as a submodule", e.g. for [Terminal theme](https://themes.gohugo.io/themes/hugo-theme-terminal/) it looks like this:
+I will be setting this up on my Windows machine, but if you need Linux/Mac guidance, Chuck got those differences covered in [his documentation](https://blog.networkchuck.com/posts/my-insane-blog-pipeline/) as well. For the sake of my own sanity, I am keeping my email/username/paths within the commands, i.e. don't forget to change them. 
+1. **Install everything**: 
+	- Obsidian, Windows Terminal, Visual Studio Code, WSL 2, Golang, Python 3, Git and Hugo (add the .exe into your own program location - like Program Files - and also in Windows into PATH)
+2.  Create a `posts` folder within your Obsidian Workspace for your blog articles
+3. Within this folder, start a new note (that will be your first blog post)
+4. Double-check correct installations via the `version` flagged commands:
+  `go version`, `git --version`, `hugo version`, `python --version` etc.
+5. Navigate to your desired directory for storing blog files on your machine, e.g.: `cd C:\Users\ilona\Documents\`
+6. Create a new folder for Hugo blog and set up git: `hugo new site optimeow` > `cd .\optimeow` > `git init` > `git config --global user.name "ILXNAH"` > `git config --global user.email "ILXNAH@tutanota.com"`
+7. Navigate to [Hugo Themes](https://themes.gohugo.io/) and pick a theme to install for your blog.
+8. Select option "Install theme as a submodule", e.g. for [Terminal theme](https://themes.gohugo.io/themes/hugo-theme-terminal/) it looks like this:
   `git submodule add -f https://github.com/panr/hugo-theme-terminal.git themes/terminal`
-- Configuration file is called `hugo.toml` and it needs to match the theme
-- Terminal theme has a text file at the bottom of the page which you can copy it from (leave out module and module.imports at the bottom) and paste into your `hugo.toml`
-- Via CLI, you can open it with programs `notepad hugo.toml` like Chuck, or `npp hugo.toml` like myself (that's also custom though), on Linux use nano etc. 
-- Next, run your Hugo server preview with `hugo server -t terminal`
-- Take a look at `//localhost:1313/`
-- Ctrl+C to cancel preview
-
+9. Edit config: the file is called `hugo.toml` and it needs to match the theme
+	- Terminal theme has a text file at the bottom of the page which you can copy it from (leave out module and module.imports at the bottom) and paste into your `hugo.toml`
+	- Via CLI, you can open it with programs `notepad hugo.toml` like Chuck, or `npp hugo.toml` like myself (that's also custom though)
+10. Next, run your Hugo server preview with `hugo serve`
+	- Take a look at [//localhost:1313/](//localhost:1313/) > Ctrl+C to cancel website preview
 ### Syncing Obsidian to Hugo
-###### i renamed hugo site folder which was originally created with capitals, in case there's an issue.
-
-- posts folder will be syncing from Obsidian Vault/posts into hugo/blogname/content/posts
-- `cd content`
-- `mkdir posts`
-- this newly created **posts folder will be syncing** directly with obsidian source folder
-- `robocopy "C:\Users\ilona\Documents\my_second_brain\posts" "C:\Users\ilona\Documents\optimeow\content\posts" /mir`
-- `hugo server -t terminal` to start up Hugo and preview your blog
-
+- posts folder will be syncing from `Obsidian Vault/posts` into `/blogname/content/posts`
+- `cd content` > `mkdir posts` (this new folder will be synced with Obsidian source folder) with this command: `robocopy "C:\Users\ilona\Documents\my_second_brain\posts" "C:\Users\ilona\Documents\optimeow\content\posts" /mir`
+- `hugo serve` to preview blog with imported posts > Ctrl+C the preview again
 ### Using Frontmatter in Obsidian
 - set up metadata via Obsidian properties
 	- you can use a variation of community plugins
 		- I'm using **make.md**, Chuck is using **Templater**
-	- make sure the draft property is unchecked, so the post is displayed on your blog when you're testing (I'm just putting this out here since I took long enough to realize, way longer than anyone ever should again)
-		- if you run `hugo server -D`, it will also included any posts that are in draft mode
-	- ideally, make and save a default template.md with the properties for your blog posts' new files already set up (you can later on hide the file, if you're also OCD like me:)
-- Ctrl+C the website preview
-- run robocopy again
-- view and check, it worked!
-
+	- make sure the draft property is unchecked, so the post is displayed
+		- `hugo server -D` command will publish any posts in draft mode inclusively
+	- ideally create a template with desired properties for your blog posts
+- run robocopy again with added post properties in source .md
+- `hugo serve` to see if properties OK > exit preview
 ### Fixing image attachments using a provided Python script
-- in your hugo blog dir, `cd static`
+- in your Hugo blog dir, `cd static`
 - `mkdir images`
 - `cd ..`
 - `code images.py`
@@ -148,11 +124,7 @@ print("Markdown files processed and images copied successfully.")
 ###### Tracking empty folders in Git
 - for e.g. `assets` folder in blog dir: `New-Item -Path "assets\.gitkeep" -ItemType "File"`
 	- commit > push
-### Publishing only `public` folder to its own GitHub branch
-- create a new branch and copy desired `public` folder inside
-- git subtree split --prefix public -b website-deploy 
-- git push origin website-deploy:webhosting --force 
-- git branch -D website-deploy
+
 ##### Publishing for free to GitHub Pages 
 - following this [Medium guide by @Magstherdev](https://medium.com/@magstherdev/github-pages-hugo-86ae6bcbadd) and [official guide on Hugo's site](https://gohugo.io/hosting-and-deployment/hosting-on-github/)
 - `hugo -d docs` creates a directory `docs` inside blog dir, which we need for (GitHub) Pages (instead of the `public` folder which Chuck uses)

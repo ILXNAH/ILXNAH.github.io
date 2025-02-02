@@ -14,90 +14,63 @@
       
       <guid>http://localhost:1313/posts/creating-an-obsidian-blog-with-bros-hugo-and-chuck/</guid>
       <description>&lt;p&gt;Following a &lt;a href=&#34;https://www.youtube.com/watch?v=dnE7c0ELEH8&#34;&gt;tutorial video from NetworkChuck&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&amp;lsquo;We only know what we make&amp;rsquo;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Hugo:&lt;/strong&gt;
-&lt;ul&gt;
-&lt;li&gt;tool to convert .md into website code&lt;/li&gt;
-&lt;li&gt;prereqs: Git (for GitHub code repo), Golang (from Google)
-&lt;ul&gt;
-&lt;li&gt;check install with git version, go version&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;&amp;lsquo;We only know what we make&amp;rsquo;
+&lt;strong&gt;Hugo:&lt;/strong&gt;
+- tool to convert .md into website code
+- prereqs: see list below&lt;/p&gt;
 &lt;h2 id=&#34;battle-plan&#34;&gt;Battle Plan!&lt;/h2&gt;
-&lt;ol&gt;
+&lt;ul&gt;
 &lt;li&gt;Using Obsidian for taking notes - simply &amp;ldquo;type out the blog&amp;rdquo;&lt;/li&gt;
 &lt;li&gt;Turn it into HTML code, aka &amp;ldquo;make it code&amp;rdquo; using a tool called &lt;strong&gt;Hugo&lt;/strong&gt;&lt;/li&gt;
 &lt;li&gt;Ship the code off/push site to GitHub&lt;/li&gt;
-&lt;li&gt;Web hook configured to send a notification to Hostinger,
-telling it to pull down the latest version of our website and host it there.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;I will be setting this up on my Windows machine, but if you need Linux/Mac guidance, Chuck got those differences covered in &lt;a href=&#34;https://blog.networkchuck.com/posts/my-insane-blog-pipeline/&#34;&gt;his documentation&lt;/a&gt; as well.
-For the sake of my own sanity, I am keeping my contact and usernames everywhere within the commands, so don&amp;rsquo;t forget to change them.&lt;/p&gt;</description>
+&lt;li&gt;I decided not to use Hostinger but am playing around with other ways of deployment.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I will be setting this up on my Windows machine, but if you need Linux/Mac guidance, Chuck got those differences covered in &lt;a href=&#34;https://blog.networkchuck.com/posts/my-insane-blog-pipeline/&#34;&gt;his documentation&lt;/a&gt; as well. For the sake of my own sanity, I am keeping my email/username/paths within the commands, i.e. don&amp;rsquo;t forget to change them.&lt;/p&gt;</description>
       <content>&lt;p&gt;Following a &lt;a href=&#34;https://www.youtube.com/watch?v=dnE7c0ELEH8&#34;&gt;tutorial video from NetworkChuck&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&amp;lsquo;We only know what we make&amp;rsquo;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Hugo:&lt;/strong&gt;
-&lt;ul&gt;
-&lt;li&gt;tool to convert .md into website code&lt;/li&gt;
-&lt;li&gt;prereqs: Git (for GitHub code repo), Golang (from Google)
-&lt;ul&gt;
-&lt;li&gt;check install with git version, go version&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;&amp;lsquo;We only know what we make&amp;rsquo;
+&lt;strong&gt;Hugo:&lt;/strong&gt;
+- tool to convert .md into website code
+- prereqs: see list below&lt;/p&gt;
 &lt;h2 id=&#34;battle-plan&#34;&gt;Battle Plan!&lt;/h2&gt;
-&lt;ol&gt;
+&lt;ul&gt;
 &lt;li&gt;Using Obsidian for taking notes - simply &amp;ldquo;type out the blog&amp;rdquo;&lt;/li&gt;
 &lt;li&gt;Turn it into HTML code, aka &amp;ldquo;make it code&amp;rdquo; using a tool called &lt;strong&gt;Hugo&lt;/strong&gt;&lt;/li&gt;
 &lt;li&gt;Ship the code off/push site to GitHub&lt;/li&gt;
-&lt;li&gt;Web hook configured to send a notification to Hostinger,
-telling it to pull down the latest version of our website and host it there.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;I will be setting this up on my Windows machine, but if you need Linux/Mac guidance, Chuck got those differences covered in &lt;a href=&#34;https://blog.networkchuck.com/posts/my-insane-blog-pipeline/&#34;&gt;his documentation&lt;/a&gt; as well.
-For the sake of my own sanity, I am keeping my contact and usernames everywhere within the commands, so don&amp;rsquo;t forget to change them.&lt;/p&gt;
+&lt;li&gt;I decided not to use Hostinger but am playing around with other ways of deployment.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I will be setting this up on my Windows machine, but if you need Linux/Mac guidance, Chuck got those differences covered in &lt;a href=&#34;https://blog.networkchuck.com/posts/my-insane-blog-pipeline/&#34;&gt;his documentation&lt;/a&gt; as well. For the sake of my own sanity, I am keeping my email/username/paths within the commands, i.e. don&amp;rsquo;t forget to change them.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Install everything&lt;/strong&gt;:
 &lt;ul&gt;
-&lt;li&gt;Install &lt;strong&gt;everything&lt;/strong&gt;: Obsidian, Windows Terminal, Visual Studio Code, WSL 2, Golang, Python 3, Git and Hugo (add the .exe into your own program location - like Program Files - and also in Windows into PATH)
-a few days/weeks/months later&amp;hellip;)&lt;/li&gt;
-&lt;li&gt;Create a folder within your Obsidian Workspace for your blog &lt;code&gt;posts&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Within this folder, start a new note (that will be your first future blog post)&lt;/li&gt;
+&lt;li&gt;Obsidian, Windows Terminal, Visual Studio Code, WSL 2, Golang, Python 3, Git and Hugo (add the .exe into your own program location - like Program Files - and also in Windows into PATH)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Create a &lt;code&gt;posts&lt;/code&gt; folder within your Obsidian Workspace for your blog articles&lt;/li&gt;
+&lt;li&gt;Within this folder, start a new note (that will be your first blog post)&lt;/li&gt;
 &lt;li&gt;Double-check correct installations via the &lt;code&gt;version&lt;/code&gt; flagged commands:
-&lt;code&gt;go version&lt;/code&gt;
-&lt;code&gt;git version&lt;/code&gt;
-&lt;code&gt;hugo version&lt;/code&gt;
-&amp;hellip;&lt;/li&gt;
-&lt;li&gt;Navigate to your desired directory for storing blog files on your machine, e.g.:
-&lt;code&gt;cd C:\Users\ilona\Documents\&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Create a new Hugo folder with command below, effectively naming it after your blog:
-&lt;code&gt;hugo new site optimeow&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;cd .\optimeow&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;git init&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;git config --global user.name &amp;quot;ILXNAH&amp;quot;&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;git config --global user.email &amp;quot;ILXNAH@tutanota.com&amp;quot;&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Navigate to &lt;a href=&#34;https://themes.gohugo.io/&#34;&gt;Hugo Themes&lt;/a&gt; website and pick a theme you would like to install for your blog&lt;/li&gt;
+&lt;code&gt;go version&lt;/code&gt;, &lt;code&gt;git --version&lt;/code&gt;, &lt;code&gt;hugo version&lt;/code&gt;, &lt;code&gt;python --version&lt;/code&gt; etc.&lt;/li&gt;
+&lt;li&gt;Navigate to your desired directory for storing blog files on your machine, e.g.: &lt;code&gt;cd C:\Users\ilona\Documents\&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Create a new folder for Hugo blog and set up git: &lt;code&gt;hugo new site optimeow&lt;/code&gt; &amp;gt; &lt;code&gt;cd .\optimeow&lt;/code&gt; &amp;gt; &lt;code&gt;git init&lt;/code&gt; &amp;gt; &lt;code&gt;git config --global user.name &amp;quot;ILXNAH&amp;quot;&lt;/code&gt; &amp;gt; &lt;code&gt;git config --global user.email &amp;quot;ILXNAH@tutanota.com&amp;quot;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Navigate to &lt;a href=&#34;https://themes.gohugo.io/&#34;&gt;Hugo Themes&lt;/a&gt; and pick a theme to install for your blog.&lt;/li&gt;
 &lt;li&gt;Select option &amp;ldquo;Install theme as a submodule&amp;rdquo;, e.g. for &lt;a href=&#34;https://themes.gohugo.io/themes/hugo-theme-terminal/&#34;&gt;Terminal theme&lt;/a&gt; it looks like this:
 &lt;code&gt;git submodule add -f https://github.com/panr/hugo-theme-terminal.git themes/terminal&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Configuration file is called &lt;code&gt;hugo.toml&lt;/code&gt; and it needs to match the theme&lt;/li&gt;
-&lt;li&gt;Terminal theme has a text file at the bottom of the page which you can copy it from (leave out module and module.imports at the bottom) and paste into your &lt;code&gt;hugo.toml&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Via CLI, you can open it with programs &lt;code&gt;notepad hugo.toml&lt;/code&gt; like Chuck, or &lt;code&gt;npp hugo.toml&lt;/code&gt; like myself (that&amp;rsquo;s also custom though), on Linux use nano etc.&lt;/li&gt;
-&lt;li&gt;Next, run your Hugo server preview with &lt;code&gt;hugo server -t terminal&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Take a look at &lt;code&gt;//localhost:1313/&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Ctrl+C to cancel preview&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;syncing-obsidian-to-hugo&#34;&gt;Syncing Obsidian to Hugo&lt;/h3&gt;
-&lt;h6 id=&#34;i-renamed-hugo-site-folder-which-was-originally-created-with-capitals-in-case-theres-an-issue&#34;&gt;i renamed hugo site folder which was originally created with capitals, in case there&amp;rsquo;s an issue.&lt;/h6&gt;
+&lt;li&gt;Edit config: the file is called &lt;code&gt;hugo.toml&lt;/code&gt; and it needs to match the theme
 &lt;ul&gt;
-&lt;li&gt;posts folder will be syncing from Obsidian Vault/posts into hugo/blogname/content/posts&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;cd content&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;mkdir posts&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;this newly created &lt;strong&gt;posts folder will be syncing&lt;/strong&gt; directly with obsidian source folder&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;robocopy &amp;quot;C:\Users\ilona\Documents\my_second_brain\posts&amp;quot; &amp;quot;C:\Users\ilona\Documents\optimeow\content\posts&amp;quot; /mir&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;hugo server -t terminal&lt;/code&gt; to start up Hugo and preview your blog&lt;/li&gt;
+&lt;li&gt;Terminal theme has a text file at the bottom of the page which you can copy it from (leave out module and module.imports at the bottom) and paste into your &lt;code&gt;hugo.toml&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Via CLI, you can open it with programs &lt;code&gt;notepad hugo.toml&lt;/code&gt; like Chuck, or &lt;code&gt;npp hugo.toml&lt;/code&gt; like myself (that&amp;rsquo;s also custom though)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Next, run your Hugo server preview with &lt;code&gt;hugo serve&lt;/code&gt;
+&lt;ul&gt;
+&lt;li&gt;Take a look at &lt;a href=&#34;http://localhost:1313/&#34;&gt;//localhost:1313/&lt;/a&gt; &amp;gt; Ctrl+C to cancel website preview&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;syncing-obsidian-to-hugo&#34;&gt;Syncing Obsidian to Hugo&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;posts folder will be syncing from &lt;code&gt;Obsidian Vault/posts&lt;/code&gt; into &lt;code&gt;/blogname/content/posts&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;cd content&lt;/code&gt; &amp;gt; &lt;code&gt;mkdir posts&lt;/code&gt; (this new folder will be synced with Obsidian source folder) with this command: &lt;code&gt;robocopy &amp;quot;C:\Users\ilona\Documents\my_second_brain\posts&amp;quot; &amp;quot;C:\Users\ilona\Documents\optimeow\content\posts&amp;quot; /mir&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;hugo serve&lt;/code&gt; to preview blog with imported posts &amp;gt; Ctrl+C the preview again&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;using-frontmatter-in-obsidian&#34;&gt;Using Frontmatter in Obsidian&lt;/h3&gt;
 &lt;ul&gt;
@@ -108,21 +81,20 @@ a few days/weeks/months later&amp;hellip;)&lt;/li&gt;
 &lt;li&gt;I&amp;rsquo;m using &lt;strong&gt;make.md&lt;/strong&gt;, Chuck is using &lt;strong&gt;Templater&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;make sure the draft property is unchecked, so the post is displayed on your blog when you&amp;rsquo;re testing (I&amp;rsquo;m just putting this out here since I took long enough to realize, way longer than anyone ever should again)
+&lt;li&gt;make sure the draft property is unchecked, so the post is displayed
 &lt;ul&gt;
-&lt;li&gt;if you run &lt;code&gt;hugo server -D&lt;/code&gt;, it will also included any posts that are in draft mode&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;hugo server -D&lt;/code&gt; command will publish any posts in draft mode inclusively&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;ideally, make and save a default template.md with the properties for your blog posts&amp;rsquo; new files already set up (you can later on hide the file, if you&amp;rsquo;re also OCD like me:)&lt;/li&gt;
+&lt;li&gt;ideally create a template with desired properties for your blog posts&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Ctrl+C the website preview&lt;/li&gt;
-&lt;li&gt;run robocopy again&lt;/li&gt;
-&lt;li&gt;view and check, it worked!&lt;/li&gt;
+&lt;li&gt;run robocopy again with added post properties in source .md&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;hugo serve&lt;/code&gt; to see if properties OK &amp;gt; exit preview&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;fixing-image-attachments-using-a-provided-python-script&#34;&gt;Fixing image attachments using a provided Python script&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;in your hugo blog dir, &lt;code&gt;cd static&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;in your Hugo blog dir, &lt;code&gt;cd static&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;mkdir images&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;cd ..&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;code images.py&lt;/code&gt;&lt;/li&gt;
@@ -199,13 +171,6 @@ a few days/weeks/months later&amp;hellip;)&lt;/li&gt;
 &lt;li&gt;commit &amp;gt; push&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;publishing-only-public-folder-to-its-own-github-branch&#34;&gt;Publishing only &lt;code&gt;public&lt;/code&gt; folder to its own GitHub branch&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;create a new branch and copy desired &lt;code&gt;public&lt;/code&gt; folder inside&lt;/li&gt;
-&lt;li&gt;git subtree split &amp;ndash;prefix public -b website-deploy&lt;/li&gt;
-&lt;li&gt;git push origin website-deploy:webhosting &amp;ndash;force&lt;/li&gt;
-&lt;li&gt;git branch -D website-deploy&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h5 id=&#34;publishing-for-free-to-github-pages&#34;&gt;Publishing for free to GitHub Pages&lt;/h5&gt;
 &lt;ul&gt;
