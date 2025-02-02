@@ -9,10 +9,10 @@
     <lastBuildDate>Tue, 28 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/networkchuck/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Creating Obsidian blog with Hugo</title>
-      <link>http://localhost:1313/posts/create/</link>
+      <link>http://localhost:1313/posts/creating-obsidian-blog-with-hugo/</link>
       <pubDate>Tue, 28 Jan 2025 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/create/</guid>
+      <guid>http://localhost:1313/posts/creating-obsidian-blog-with-hugo/</guid>
       <description>&lt;p&gt;Following a &lt;a href=&#34;https://www.youtube.com/watch?v=dnE7c0ELEH8&#34;&gt;tutorial video from NetworkChuck&lt;/a&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&amp;ldquo;We only know what we make.&amp;rdquo;&lt;/p&gt;
@@ -167,7 +167,7 @@
 &lt;h5 id=&#34;some-more-tweaks-and-were-almost-done&#34;&gt;Some more tweaks and we&amp;rsquo;re almost done&lt;/h5&gt;
 &lt;ul&gt;
 &lt;li&gt;in &lt;code&gt;hugo.toml&lt;/code&gt;, when using Pages from &lt;code&gt;/docs&lt;/code&gt;, we also need to edit URL configuration in Hugo&amp;rsquo;s config file (line 1): as below, replace with your own Pages link
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-hugo.toml&#34; data-lang=&#34;hugo.toml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;baseurl&lt;/span&gt; = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;https://ilxnah.github.io/optimeow/&amp;#34;&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-hugo.toml&#34; data-lang=&#34;hugo.toml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;baseURL&lt;/span&gt; = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;https://ilxnah.github.io/optimeow/&amp;#34;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h5 id=&#34;github-profile-pages-and-project-pages&#34;&gt;GitHub profile pages and project pages&lt;/h5&gt;

@@ -122,7 +122,7 @@ print("Markdown files processed and images copied successfully.")
 ##### Some more tweaks and we're almost done
 - in `hugo.toml`, when using Pages from `/docs`, we also need to edit URL configuration in Hugo's config file (line 1): as below, replace with your own Pages link
 	```hugo.toml
-	baseurl = "https://ilxnah.github.io/optimeow/"
+	baseURL = "https://ilxnah.github.io/optimeow/"
 	```
 ##### GitHub profile pages and project pages
 - the key difference is, when you're using a project repo, you generate site from `docs`, but with profile pages, the website is generated directly in the root of your repo
