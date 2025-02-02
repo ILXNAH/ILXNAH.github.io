@@ -35,7 +35,7 @@ I'll be setting this up on my Wins PC, but if you need Linux/Mac guidance, Chuck
   `git submodule add -f https://github.com/panr/hugo-theme-terminal.git themes/terminal`
 9. Edit config: the file is called `hugo.toml` and it needs to match the theme
 	- Terminal theme has a text file at the bottom of the page which you can copy it from (leave out module and module.imports at the bottom) and paste into your `hugo.toml`
-	- Via CLI, you can open it with programs `notepad hugo.toml` like Chuck, or `npp hugo.toml` like myself (that's also custom though)
+	- Via CLI, you can open it with program cmd `notepad hugo.toml` like Chuck, or `npp hugo.toml` like myself (that's custom though)
 10. Next, run your Hugo server preview with `hugo serve`
 	- Take a look at [//localhost:1313/](//localhost:1313/) > Ctrl+C to cancel website preview
 ### Syncing Obsidian to Hugo

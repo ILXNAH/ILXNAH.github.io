@@ -55,7 +55,7 @@
 &lt;li&gt;Edit config: the file is called &lt;code&gt;hugo.toml&lt;/code&gt; and it needs to match the theme
 &lt;ul&gt;
 &lt;li&gt;Terminal theme has a text file at the bottom of the page which you can copy it from (leave out module and module.imports at the bottom) and paste into your &lt;code&gt;hugo.toml&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Via CLI, you can open it with programs &lt;code&gt;notepad hugo.toml&lt;/code&gt; like Chuck, or &lt;code&gt;npp hugo.toml&lt;/code&gt; like myself (that&amp;rsquo;s also custom though)&lt;/li&gt;
+&lt;li&gt;Via CLI, you can open it with program cmd &lt;code&gt;notepad hugo.toml&lt;/code&gt; like Chuck, or &lt;code&gt;npp hugo.toml&lt;/code&gt; like myself (that&amp;rsquo;s custom though)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;Next, run your Hugo server preview with &lt;code&gt;hugo serve&lt;/code&gt;
