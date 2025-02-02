@@ -8,7 +8,8 @@ tags:
 sticker: emoji//1f6e0-fe0f
 MoC: "[[posts]]"
 aliases:
-  - Creating a blog
+  - Creating Obsidian blog with Hugo
+title: Creating Obsidian blog with Hugo
 ---
 Following a [tutorial video from NetworkChuck](https://www.youtube.com/watch?v=dnE7c0ELEH8)
 

@@ -8,6 +8,7 @@ sticker: lucide//podcast
 MoC: "[[posts]]"
 aliases:
   - Podcasts
+title: Podcasts I like to listen to (or didn't get to it yet)
 ---
 Below you will find lists of podcasts I listen to or follow, with links to Apple Podcasts.
 ### General & other IT:
