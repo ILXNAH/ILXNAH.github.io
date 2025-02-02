@@ -13,17 +13,15 @@ aliases:
 Following a [tutorial video from NetworkChuck](https://www.youtube.com/watch?v=dnE7c0ELEH8)
 
 'We only know what we make'
-**Hugo:** 
-	- tool to convert .md into website code
+**Hugo** = a tool to convert .md into website code
 	- prereqs: see list below
-
 ## Battle Plan!
 - Using Obsidian for taking notes - simply "type out the blog"
 - Turn it into HTML code, aka "make it code" using a tool called **Hugo**
 - Ship the code off/push site to GitHub
 - I decided not to use Hostinger but am playing around with other ways of deployment.
 
-I will be setting this up on my Windows machine, but if you need Linux/Mac guidance, Chuck got those differences covered in [his documentation](https://blog.networkchuck.com/posts/my-insane-blog-pipeline/) as well. For the sake of my own sanity, I am keeping my email/username/paths within the commands, i.e. don't forget to change them. 
+I'll be setting this up on my Wins PC, but if you need Linux/Mac guidance, Chuck got those differences covered in [his](https://blog.networkchuck.com/posts/my-insane-blog-pipeline/) documentation. For the sake of sanity, I'm keeping my email/username/paths within the commands, i.e. don't forget to change them. 
 1. **Install everything**: 
 	- Obsidian, Windows Terminal, Visual Studio Code, WSL 2, Golang, Python 3, Git and Hugo (add the .exe into your own program location - like Program Files - and also in Windows into PATH)
 2.  Create a `posts` folder within your Obsidian Workspace for your blog articles
@@ -53,12 +51,9 @@ I will be setting this up on my Windows machine, but if you need Linux/Mac guida
 	- ideally create a template with desired properties for your blog posts
 - run robocopy again with added post properties in source .md
 - `hugo serve` to see if properties OK > exit preview
-### Fixing image attachments using a provided Python script
-- in your Hugo blog dir, `cd static`
-- `mkdir images`
-- `cd ..`
-- `code images.py`
-- insert code, make sure to edit all three paths to your own, and save:
+### Fixing image attachments using a Python script
+- in your Hugo blog dir, `cd static` > `mkdir images` > `cd ..` > `code images.py`
+- insert code, make sure to edit all three paths, and save:
 ```python
 import os
 import re
@@ -100,7 +95,6 @@ print("Markdown files processed and images copied successfully.")
 
 - added image for testing purposes of the part of the script we just did:
 	![Image Description](/images/Pasted%20image%2020250131130510.png)
-
 ### Pushing code into GitHub
 - create an account, log in, create a repo for your blog 
 - you will need an SSH key, which you can generate with `ssh-keygen -t rsa -b 4096 -C "ILXNAH@tutanota.com"` if you don't have one yet
@@ -114,53 +108,17 @@ print("Markdown files processed and images copied successfully.")
 - `git commit -m "First commit"` to commit those changes (locally)
 - `git push -u origin main` to push from local to remote repo
 	(specified is: first, name of your remote repo `origin`, then branch name `main`)
-###### Git push side note
-- easy way to undo the **last** push if you make a mistake:
-  `git push -f origin HEAD^:main`
-- or view the history of the pushes with:
-  `git reflog --grep-reflog=push origin/main`
-- and then, you can reference an older push as well:
-  `git push -f origin last_known_good_commit:branch_name`
-###### Tracking empty folders in Git
-- for e.g. `assets` folder in blog dir: `New-Item -Path "assets\.gitkeep" -ItemType "File"`
-	- commit > push
-
 ##### Publishing for free to GitHub Pages 
-- following this [Medium guide by @Magstherdev](https://medium.com/@magstherdev/github-pages-hugo-86ae6bcbadd) and [official guide on Hugo's site](https://gohugo.io/hosting-and-deployment/hosting-on-github/)
-- `hugo -d docs` creates a directory `docs` inside blog dir, which we need for (GitHub) Pages (instead of the `public` folder which Chuck uses)
+- following this [guide by @Magstherdev](https://medium.com/@magstherdev/github-pages-hugo-86ae6bcbadd) and [official guide on Hugo's site](https://gohugo.io/hosting-and-deployment/hosting-on-github/)
+- `hugo -d docs` generates site into a dir `docs` (inside blog dir), which we need for (GitHub) Pages, i.e. we don't need the `public` folder
 - open `code hugo.toml` and add this line under line 6:
   ```hugo.toml
   publishDir = "docs"
   ```
-- with `python3 -m http.server 8080 --directory docs` you can preview in there
-	- when changing posts and do `robocopy` + `images.py` as mentioned previously, to reflect changes in the `docs` dir, you need to run cmd `hugo -d docs` and then preview w/ python as above
-		- if you use cmd `hugo` without specified flag, it will update the default `public` folder as well as the `docs` folder (as configured in hugo.toml)
-	- verified reflected changes via `ls` timestamp and compare preview with the one which should have now been on older version: 
-	  `python3 -m http.server 8080 --directory public`
-- **with this workflow you can:**
-	- create `docs` directory which replaces `public` folder's purpose
-	- edit blog > robocopy > images.py > hugo -d docs > commit and push out
-	- keep the `public` folder "outdated" and use it for local development 
-	- make sure when previewing to use different ports (to avoid cross-caching versions), e.g.:
-		- Pages on [http://localhost:8080/](http://localhost:8080/)
-		- dev on [http://localhost:8081/](http://localhost:8081/)
-- let's push it to our GitHub repo: `git add .` > `git commit` > `git push`
+- with this, you created a `docs` dir which replaces `public` folder's purpose (even in config)
+- edit blog > robocopy > images.py > hugo > hugo serve > add, commit, push
 ##### Some more tweaks and we're almost done
 - in `hugo.toml`, when using Pages from `/docs`, we also need to edit URL configuration in Hugo's config file (line 1): as below, replace with your own Pages link
 	```hugo.toml
 	baseurl = "https://ilxnah.github.io/optimeow/"
 	```
-- the config file for Pages version is just a copy called `hugo.github.toml`, which includes the additional URL defined as above
-- I also kept the original `hugo.toml` without this definition for local testing purposes
-#### Final Workflow:
-- edit blog posts
-- sync Obsidian into Hugo with `robocopy`
-- run `images.py`
-- local dev > regenerate static site:
-	- `hugo -d public`
-- local dev > preview: 
-	- `python3 -m http.server 8081 --directory public`
-- Pages > regenerate static site:
-	- `hugo -d docs -c .\hugo.github.toml`
-- Pages > preview won't work with content generated for live publish
-- `git add .` > `git commit -m "Commit message"` > `git push`

@@ -2,13 +2,13 @@
 <html lang="en">
 <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   
-    <title> :: ILXNAH.github.io</title>
+    <title> :: ILXNAH&#39;s den</title>
   
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Following a tutorial video from NetworkChuck
-&lsquo;We only know what we make&rsquo; Hugo: - tool to convert .md into website code - prereqs: see list below
-Battle Plan! Using Obsidian for taking notes - simply &ldquo;type out the blog&rdquo; Turn it into HTML code, aka &ldquo;make it code&rdquo; using a tool called Hugo Ship the code off/push site to GitHub I decided not to use Hostinger but am playing around with other ways of deployment. I will be setting this up on my Windows machine, but if you need Linux/Mac guidance, Chuck got those differences covered in his documentation as well. For the sake of my own sanity, I am keeping my email/username/paths within the commands, i.e. don&rsquo;t forget to change them.
+&lsquo;We only know what we make&rsquo; Hugo = a tool to convert .md into website code - prereqs: see list below
+Battle Plan! Using Obsidian for taking notes - simply &ldquo;type out the blog&rdquo; Turn it into HTML code, aka &ldquo;make it code&rdquo; using a tool called Hugo Ship the code off/push site to GitHub I decided not to use Hostinger but am playing around with other ways of deployment. I&rsquo;ll be setting this up on my Wins PC, but if you need Linux/Mac guidance, Chuck got those differences covered in his documentation. For the sake of sanity, I&rsquo;m keeping my email/username/paths within the commands, i.e. don&rsquo;t forget to change them.
 " />
 <meta name="keywords" content="" />
 
@@ -85,11 +85,11 @@ Battle Plan! Using Obsidian for taking notes - simply &ldquo;type out the blog&r
 <meta property="og:type" content="article" />
 <meta property="og:title" content="">
 <meta property="og:description" content="Following a tutorial video from NetworkChuck
-&lsquo;We only know what we make&rsquo; Hugo: - tool to convert .md into website code - prereqs: see list below
-Battle Plan! Using Obsidian for taking notes - simply &ldquo;type out the blog&rdquo; Turn it into HTML code, aka &ldquo;make it code&rdquo; using a tool called Hugo Ship the code off/push site to GitHub I decided not to use Hostinger but am playing around with other ways of deployment. I will be setting this up on my Windows machine, but if you need Linux/Mac guidance, Chuck got those differences covered in his documentation as well. For the sake of my own sanity, I am keeping my email/username/paths within the commands, i.e. don&rsquo;t forget to change them.
+&lsquo;We only know what we make&rsquo; Hugo = a tool to convert .md into website code - prereqs: see list below
+Battle Plan! Using Obsidian for taking notes - simply &ldquo;type out the blog&rdquo; Turn it into HTML code, aka &ldquo;make it code&rdquo; using a tool called Hugo Ship the code off/push site to GitHub I decided not to use Hostinger but am playing around with other ways of deployment. I&rsquo;ll be setting this up on my Wins PC, but if you need Linux/Mac guidance, Chuck got those differences covered in his documentation. For the sake of sanity, I&rsquo;m keeping my email/username/paths within the commands, i.e. don&rsquo;t forget to change them.
 " />
 <meta property="og:url" content="http://localhost:1313/posts/creating-an-obsidian-blog-with-bros-hugo-and-chuck/" />
-<meta property="og:site_name" content="ILXNAH.github.io" />
+<meta property="og:site_name" content="ILXNAH&#39;s den" />
 
   <meta property="og:image" content="http://localhost:1313/og-image.png">
 
@@ -197,8 +197,7 @@ Battle Plan! Using Obsidian for taking notes - simply &ldquo;type out the blog&r
   <div class="post-content"><div>
         <p>Following a <a href="https://www.youtube.com/watch?v=dnE7c0ELEH8">tutorial video from NetworkChuck</a></p>
 <p>&lsquo;We only know what we make&rsquo;
-<strong>Hugo:</strong>
-- tool to convert .md into website code
+<strong>Hugo</strong> = a tool to convert .md into website code
 - prereqs: see list below</p>
 <h2 id="battle-plan">Battle Plan!<a href="#battle-plan" class="hanchor" ariaLabel="Anchor">#</a> </h2>
 <ul>
@@ -207,7 +206,7 @@ Battle Plan! Using Obsidian for taking notes - simply &ldquo;type out the blog&r
 <li>Ship the code off/push site to GitHub</li>
 <li>I decided not to use Hostinger but am playing around with other ways of deployment.</li>
 </ul>
-<p>I will be setting this up on my Windows machine, but if you need Linux/Mac guidance, Chuck got those differences covered in <a href="https://blog.networkchuck.com/posts/my-insane-blog-pipeline/">his documentation</a> as well. For the sake of my own sanity, I am keeping my email/username/paths within the commands, i.e. don&rsquo;t forget to change them.</p>
+<p>I&rsquo;ll be setting this up on my Wins PC, but if you need Linux/Mac guidance, Chuck got those differences covered in <a href="https://blog.networkchuck.com/posts/my-insane-blog-pipeline/">his</a> documentation. For the sake of sanity, I&rsquo;m keeping my email/username/paths within the commands, i.e. don&rsquo;t forget to change them.</p>
 <ol>
 <li><strong>Install everything</strong>:
 <ul>
@@ -261,13 +260,10 @@ Battle Plan! Using Obsidian for taking notes - simply &ldquo;type out the blog&r
 <li>run robocopy again with added post properties in source .md</li>
 <li><code>hugo serve</code> to see if properties OK &gt; exit preview</li>
 </ul>
-<h3 id="fixing-image-attachments-using-a-provided-python-script">Fixing image attachments using a provided Python script<a href="#fixing-image-attachments-using-a-provided-python-script" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<h3 id="fixing-image-attachments-using-a-python-script">Fixing image attachments using a Python script<a href="#fixing-image-attachments-using-a-python-script" class="hanchor" ariaLabel="Anchor">#</a> </h3>
 <ul>
-<li>in your Hugo blog dir, <code>cd static</code></li>
-<li><code>mkdir images</code></li>
-<li><code>cd ..</code></li>
-<li><code>code images.py</code></li>
-<li>insert code, make sure to edit all three paths to your own, and save:</li>
+<li>in your Hugo blog dir, <code>cd static</code> &gt; <code>mkdir images</code> &gt; <code>cd ..</code> &gt; <code>code images.py</code></li>
+<li>insert code, make sure to edit all three paths, and save:</li>
 </ul>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> os
 </span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> re
@@ -324,86 +320,21 @@ Battle Plan! Using Obsidian for taking notes - simply &ldquo;type out the blog&r
 <li><code>git push -u origin main</code> to push from local to remote repo
 (specified is: first, name of your remote repo <code>origin</code>, then branch name <code>main</code>)</li>
 </ul>
-<h6 id="git-push-side-note">Git push side note<a href="#git-push-side-note" class="hanchor" ariaLabel="Anchor">#</a> </h6>
-<ul>
-<li>easy way to undo the <strong>last</strong> push if you make a mistake:
-<code>git push -f origin HEAD^:main</code></li>
-<li>or view the history of the pushes with:
-<code>git reflog --grep-reflog=push origin/main</code></li>
-<li>and then, you can reference an older push as well:
-<code>git push -f origin last_known_good_commit:branch_name</code></li>
-</ul>
-<h6 id="tracking-empty-folders-in-git">Tracking empty folders in Git<a href="#tracking-empty-folders-in-git" class="hanchor" ariaLabel="Anchor">#</a> </h6>
-<ul>
-<li>for e.g. <code>assets</code> folder in blog dir: <code>New-Item -Path &quot;assets\.gitkeep&quot; -ItemType &quot;File&quot;</code>
-<ul>
-<li>commit &gt; push</li>
-</ul>
-</li>
-</ul>
 <h5 id="publishing-for-free-to-github-pages">Publishing for free to GitHub Pages<a href="#publishing-for-free-to-github-pages" class="hanchor" ariaLabel="Anchor">#</a> </h5>
 <ul>
-<li>following this <a href="https://medium.com/@magstherdev/github-pages-hugo-86ae6bcbadd">Medium guide by @Magstherdev</a> and <a href="https://gohugo.io/hosting-and-deployment/hosting-on-github/">official guide on Hugo&rsquo;s site</a></li>
-<li><code>hugo -d docs</code> creates a directory <code>docs</code> inside blog dir, which we need for (GitHub) Pages (instead of the <code>public</code> folder which Chuck uses)</li>
+<li>following this <a href="https://medium.com/@magstherdev/github-pages-hugo-86ae6bcbadd">guide by @Magstherdev</a> and <a href="https://gohugo.io/hosting-and-deployment/hosting-on-github/">official guide on Hugo&rsquo;s site</a></li>
+<li><code>hugo -d docs</code> generates site into a dir <code>docs</code> (inside blog dir), which we need for (GitHub) Pages, i.e. we don&rsquo;t need the <code>public</code> folder</li>
 <li>open <code>code hugo.toml</code> and add this line under line 6:
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-hugo.toml" data-lang="hugo.toml"><span style="display:flex;"><span><span style="color:#a6e22e">publishDir</span> = <span style="color:#e6db74">&#34;docs&#34;</span>
 </span></span></code></pre></div></li>
-<li>with <code>python3 -m http.server 8080 --directory docs</code> you can preview in there
-<ul>
-<li>when changing posts and do <code>robocopy</code> + <code>images.py</code> as mentioned previously, to reflect changes in the <code>docs</code> dir, you need to run cmd <code>hugo -d docs</code> and then preview w/ python as above
-<ul>
-<li>if you use cmd <code>hugo</code> without specified flag, it will update the default <code>public</code> folder as well as the <code>docs</code> folder (as configured in hugo.toml)</li>
-</ul>
-</li>
-<li>verified reflected changes via <code>ls</code> timestamp and compare preview with the one which should have now been on older version:
-<code>python3 -m http.server 8080 --directory public</code></li>
-</ul>
-</li>
-<li><strong>with this workflow you can:</strong>
-<ul>
-<li>create <code>docs</code> directory which replaces <code>public</code> folder&rsquo;s purpose</li>
-<li>edit blog &gt; robocopy &gt; images.py &gt; hugo -d docs &gt; commit and push out</li>
-<li>keep the <code>public</code> folder &ldquo;outdated&rdquo; and use it for local development</li>
-<li>make sure when previewing to use different ports (to avoid cross-caching versions), e.g.:
-<ul>
-<li>Pages on <a href="http://localhost:8080/">http://localhost:8080/</a></li>
-<li>dev on <a href="http://localhost:8081/">http://localhost:8081/</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li>let&rsquo;s push it to our GitHub repo: <code>git add .</code> &gt; <code>git commit</code> &gt; <code>git push</code></li>
+<li>with this, you created a <code>docs</code> dir which replaces <code>public</code> folder&rsquo;s purpose (even in config)</li>
+<li>edit blog &gt; robocopy &gt; images.py &gt; hugo &gt; hugo serve &gt; add, commit, push</li>
 </ul>
 <h5 id="some-more-tweaks-and-were-almost-done">Some more tweaks and we&rsquo;re almost done<a href="#some-more-tweaks-and-were-almost-done" class="hanchor" ariaLabel="Anchor">#</a> </h5>
 <ul>
 <li>in <code>hugo.toml</code>, when using Pages from <code>/docs</code>, we also need to edit URL configuration in Hugo&rsquo;s config file (line 1): as below, replace with your own Pages link
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-hugo.toml" data-lang="hugo.toml"><span style="display:flex;"><span><span style="color:#a6e22e">baseurl</span> = <span style="color:#e6db74">&#34;https://ilxnah.github.io/optimeow/&#34;</span>
 </span></span></code></pre></div></li>
-<li>the config file for Pages version is just a copy called <code>hugo.github.toml</code>, which includes the additional URL defined as above</li>
-<li>I also kept the original <code>hugo.toml</code> without this definition for local testing purposes</li>
-</ul>
-<h4 id="final-workflow">Final Workflow:<a href="#final-workflow" class="hanchor" ariaLabel="Anchor">#</a> </h4>
-<ul>
-<li>edit blog posts</li>
-<li>sync Obsidian into Hugo with <code>robocopy</code></li>
-<li>run <code>images.py</code></li>
-<li>local dev &gt; regenerate static site:
-<ul>
-<li><code>hugo -d public</code></li>
-</ul>
-</li>
-<li>local dev &gt; preview:
-<ul>
-<li><code>python3 -m http.server 8081 --directory public</code></li>
-</ul>
-</li>
-<li>Pages &gt; regenerate static site:
-<ul>
-<li><code>hugo -d docs -c .\hugo.github.toml</code></li>
-</ul>
-</li>
-<li>Pages &gt; preview won&rsquo;t work with content generated for live publish</li>
-<li><code>git add .</code> &gt; <code>git commit -m &quot;Commit message&quot;</code> &gt; <code>git push</code></li>
 </ul>
 
       </div></div>
@@ -419,7 +350,7 @@ Battle Plan! Using Obsidian for taking notes - simply &ldquo;type out the blog&r
     
     
     
-      <a href="http://localhost:1313/posts/podcasts-i-like-to-listen-to-or-didnt-get-to-it-yet/" class="button inline next">
+      <a href="http://localhost:1313/posts/posts/" class="button inline next">
         
       </a>
     

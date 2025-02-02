@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Obsidian on ILXNAH.github.io</title>
+    <title>Obsidian on ILXNAH&#39;s den</title>
     <link>http://localhost:1313/tags/obsidian/</link>
-    <description>Recent content in Obsidian on ILXNAH.github.io</description>
+    <description>Recent content in Obsidian on ILXNAH&#39;s den</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Tue, 28 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/obsidian/index.xml" rel="self" type="application/rss+xml" />
@@ -15,8 +15,7 @@
       <guid>http://localhost:1313/posts/creating-an-obsidian-blog-with-bros-hugo-and-chuck/</guid>
       <description>&lt;p&gt;Following a &lt;a href=&#34;https://www.youtube.com/watch?v=dnE7c0ELEH8&#34;&gt;tutorial video from NetworkChuck&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&amp;lsquo;We only know what we make&amp;rsquo;
-&lt;strong&gt;Hugo:&lt;/strong&gt;
-- tool to convert .md into website code
+&lt;strong&gt;Hugo&lt;/strong&gt; = a tool to convert .md into website code
 - prereqs: see list below&lt;/p&gt;
 &lt;h2 id=&#34;battle-plan&#34;&gt;Battle Plan!&lt;/h2&gt;
 &lt;ul&gt;
@@ -25,11 +24,10 @@
 &lt;li&gt;Ship the code off/push site to GitHub&lt;/li&gt;
 &lt;li&gt;I decided not to use Hostinger but am playing around with other ways of deployment.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;I will be setting this up on my Windows machine, but if you need Linux/Mac guidance, Chuck got those differences covered in &lt;a href=&#34;https://blog.networkchuck.com/posts/my-insane-blog-pipeline/&#34;&gt;his documentation&lt;/a&gt; as well. For the sake of my own sanity, I am keeping my email/username/paths within the commands, i.e. don&amp;rsquo;t forget to change them.&lt;/p&gt;</description>
+&lt;p&gt;I&amp;rsquo;ll be setting this up on my Wins PC, but if you need Linux/Mac guidance, Chuck got those differences covered in &lt;a href=&#34;https://blog.networkchuck.com/posts/my-insane-blog-pipeline/&#34;&gt;his&lt;/a&gt; documentation. For the sake of sanity, I&amp;rsquo;m keeping my email/username/paths within the commands, i.e. don&amp;rsquo;t forget to change them.&lt;/p&gt;</description>
       <content>&lt;p&gt;Following a &lt;a href=&#34;https://www.youtube.com/watch?v=dnE7c0ELEH8&#34;&gt;tutorial video from NetworkChuck&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&amp;lsquo;We only know what we make&amp;rsquo;
-&lt;strong&gt;Hugo:&lt;/strong&gt;
-- tool to convert .md into website code
+&lt;strong&gt;Hugo&lt;/strong&gt; = a tool to convert .md into website code
 - prereqs: see list below&lt;/p&gt;
 &lt;h2 id=&#34;battle-plan&#34;&gt;Battle Plan!&lt;/h2&gt;
 &lt;ul&gt;
@@ -38,7 +36,7 @@
 &lt;li&gt;Ship the code off/push site to GitHub&lt;/li&gt;
 &lt;li&gt;I decided not to use Hostinger but am playing around with other ways of deployment.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;I will be setting this up on my Windows machine, but if you need Linux/Mac guidance, Chuck got those differences covered in &lt;a href=&#34;https://blog.networkchuck.com/posts/my-insane-blog-pipeline/&#34;&gt;his documentation&lt;/a&gt; as well. For the sake of my own sanity, I am keeping my email/username/paths within the commands, i.e. don&amp;rsquo;t forget to change them.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ll be setting this up on my Wins PC, but if you need Linux/Mac guidance, Chuck got those differences covered in &lt;a href=&#34;https://blog.networkchuck.com/posts/my-insane-blog-pipeline/&#34;&gt;his&lt;/a&gt; documentation. For the sake of sanity, I&amp;rsquo;m keeping my email/username/paths within the commands, i.e. don&amp;rsquo;t forget to change them.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;strong&gt;Install everything&lt;/strong&gt;:
 &lt;ul&gt;
@@ -92,13 +90,10 @@
 &lt;li&gt;run robocopy again with added post properties in source .md&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;hugo serve&lt;/code&gt; to see if properties OK &amp;gt; exit preview&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;fixing-image-attachments-using-a-provided-python-script&#34;&gt;Fixing image attachments using a provided Python script&lt;/h3&gt;
+&lt;h3 id=&#34;fixing-image-attachments-using-a-python-script&#34;&gt;Fixing image attachments using a Python script&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;in your Hugo blog dir, &lt;code&gt;cd static&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;mkdir images&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;cd ..&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;code images.py&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;insert code, make sure to edit all three paths to your own, and save:&lt;/li&gt;
+&lt;li&gt;in your Hugo blog dir, &lt;code&gt;cd static&lt;/code&gt; &amp;gt; &lt;code&gt;mkdir images&lt;/code&gt; &amp;gt; &lt;code&gt;cd ..&lt;/code&gt; &amp;gt; &lt;code&gt;code images.py&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;insert code, make sure to edit all three paths, and save:&lt;/li&gt;
 &lt;/ul&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; os
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; re
@@ -155,86 +150,21 @@
 &lt;li&gt;&lt;code&gt;git push -u origin main&lt;/code&gt; to push from local to remote repo
 (specified is: first, name of your remote repo &lt;code&gt;origin&lt;/code&gt;, then branch name &lt;code&gt;main&lt;/code&gt;)&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h6 id=&#34;git-push-side-note&#34;&gt;Git push side note&lt;/h6&gt;
-&lt;ul&gt;
-&lt;li&gt;easy way to undo the &lt;strong&gt;last&lt;/strong&gt; push if you make a mistake:
-&lt;code&gt;git push -f origin HEAD^:main&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;or view the history of the pushes with:
-&lt;code&gt;git reflog --grep-reflog=push origin/main&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;and then, you can reference an older push as well:
-&lt;code&gt;git push -f origin last_known_good_commit:branch_name&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h6 id=&#34;tracking-empty-folders-in-git&#34;&gt;Tracking empty folders in Git&lt;/h6&gt;
-&lt;ul&gt;
-&lt;li&gt;for e.g. &lt;code&gt;assets&lt;/code&gt; folder in blog dir: &lt;code&gt;New-Item -Path &amp;quot;assets\.gitkeep&amp;quot; -ItemType &amp;quot;File&amp;quot;&lt;/code&gt;
-&lt;ul&gt;
-&lt;li&gt;commit &amp;gt; push&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
 &lt;h5 id=&#34;publishing-for-free-to-github-pages&#34;&gt;Publishing for free to GitHub Pages&lt;/h5&gt;
 &lt;ul&gt;
-&lt;li&gt;following this &lt;a href=&#34;https://medium.com/@magstherdev/github-pages-hugo-86ae6bcbadd&#34;&gt;Medium guide by @Magstherdev&lt;/a&gt; and &lt;a href=&#34;https://gohugo.io/hosting-and-deployment/hosting-on-github/&#34;&gt;official guide on Hugo&amp;rsquo;s site&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;hugo -d docs&lt;/code&gt; creates a directory &lt;code&gt;docs&lt;/code&gt; inside blog dir, which we need for (GitHub) Pages (instead of the &lt;code&gt;public&lt;/code&gt; folder which Chuck uses)&lt;/li&gt;
+&lt;li&gt;following this &lt;a href=&#34;https://medium.com/@magstherdev/github-pages-hugo-86ae6bcbadd&#34;&gt;guide by @Magstherdev&lt;/a&gt; and &lt;a href=&#34;https://gohugo.io/hosting-and-deployment/hosting-on-github/&#34;&gt;official guide on Hugo&amp;rsquo;s site&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;hugo -d docs&lt;/code&gt; generates site into a dir &lt;code&gt;docs&lt;/code&gt; (inside blog dir), which we need for (GitHub) Pages, i.e. we don&amp;rsquo;t need the &lt;code&gt;public&lt;/code&gt; folder&lt;/li&gt;
 &lt;li&gt;open &lt;code&gt;code hugo.toml&lt;/code&gt; and add this line under line 6:
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-hugo.toml&#34; data-lang=&#34;hugo.toml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;publishDir&lt;/span&gt; = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;docs&amp;#34;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
-&lt;li&gt;with &lt;code&gt;python3 -m http.server 8080 --directory docs&lt;/code&gt; you can preview in there
-&lt;ul&gt;
-&lt;li&gt;when changing posts and do &lt;code&gt;robocopy&lt;/code&gt; + &lt;code&gt;images.py&lt;/code&gt; as mentioned previously, to reflect changes in the &lt;code&gt;docs&lt;/code&gt; dir, you need to run cmd &lt;code&gt;hugo -d docs&lt;/code&gt; and then preview w/ python as above
-&lt;ul&gt;
-&lt;li&gt;if you use cmd &lt;code&gt;hugo&lt;/code&gt; without specified flag, it will update the default &lt;code&gt;public&lt;/code&gt; folder as well as the &lt;code&gt;docs&lt;/code&gt; folder (as configured in hugo.toml)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;verified reflected changes via &lt;code&gt;ls&lt;/code&gt; timestamp and compare preview with the one which should have now been on older version:
-&lt;code&gt;python3 -m http.server 8080 --directory public&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;with this workflow you can:&lt;/strong&gt;
-&lt;ul&gt;
-&lt;li&gt;create &lt;code&gt;docs&lt;/code&gt; directory which replaces &lt;code&gt;public&lt;/code&gt; folder&amp;rsquo;s purpose&lt;/li&gt;
-&lt;li&gt;edit blog &amp;gt; robocopy &amp;gt; images.py &amp;gt; hugo -d docs &amp;gt; commit and push out&lt;/li&gt;
-&lt;li&gt;keep the &lt;code&gt;public&lt;/code&gt; folder &amp;ldquo;outdated&amp;rdquo; and use it for local development&lt;/li&gt;
-&lt;li&gt;make sure when previewing to use different ports (to avoid cross-caching versions), e.g.:
-&lt;ul&gt;
-&lt;li&gt;Pages on &lt;a href=&#34;http://localhost:8080/&#34;&gt;http://localhost:8080/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;dev on &lt;a href=&#34;http://localhost:8081/&#34;&gt;http://localhost:8081/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;let&amp;rsquo;s push it to our GitHub repo: &lt;code&gt;git add .&lt;/code&gt; &amp;gt; &lt;code&gt;git commit&lt;/code&gt; &amp;gt; &lt;code&gt;git push&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;with this, you created a &lt;code&gt;docs&lt;/code&gt; dir which replaces &lt;code&gt;public&lt;/code&gt; folder&amp;rsquo;s purpose (even in config)&lt;/li&gt;
+&lt;li&gt;edit blog &amp;gt; robocopy &amp;gt; images.py &amp;gt; hugo &amp;gt; hugo serve &amp;gt; add, commit, push&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h5 id=&#34;some-more-tweaks-and-were-almost-done&#34;&gt;Some more tweaks and we&amp;rsquo;re almost done&lt;/h5&gt;
 &lt;ul&gt;
 &lt;li&gt;in &lt;code&gt;hugo.toml&lt;/code&gt;, when using Pages from &lt;code&gt;/docs&lt;/code&gt;, we also need to edit URL configuration in Hugo&amp;rsquo;s config file (line 1): as below, replace with your own Pages link
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-hugo.toml&#34; data-lang=&#34;hugo.toml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;baseurl&lt;/span&gt; = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;https://ilxnah.github.io/optimeow/&amp;#34;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
-&lt;li&gt;the config file for Pages version is just a copy called &lt;code&gt;hugo.github.toml&lt;/code&gt;, which includes the additional URL defined as above&lt;/li&gt;
-&lt;li&gt;I also kept the original &lt;code&gt;hugo.toml&lt;/code&gt; without this definition for local testing purposes&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id=&#34;final-workflow&#34;&gt;Final Workflow:&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;edit blog posts&lt;/li&gt;
-&lt;li&gt;sync Obsidian into Hugo with &lt;code&gt;robocopy&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;run &lt;code&gt;images.py&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;local dev &amp;gt; regenerate static site:
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;hugo -d public&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;local dev &amp;gt; preview:
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;python3 -m http.server 8081 --directory public&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Pages &amp;gt; regenerate static site:
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;hugo -d docs -c .\hugo.github.toml&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Pages &amp;gt; preview won&amp;rsquo;t work with content generated for live publish&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;git add .&lt;/code&gt; &amp;gt; &lt;code&gt;git commit -m &amp;quot;Commit message&amp;quot;&lt;/code&gt; &amp;gt; &lt;code&gt;git push&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </content>
     </item>

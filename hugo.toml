@@ -71,10 +71,10 @@ publishDir = "docs"
 [languages]
   [languages.en]
     languageName = "English"
-    title = "ILXNAH.github.io"
+    title = "ILXNAH's den"
 
     [languages.en.params]
-      subtitle = "Retro blog about all things tech"
+      subtitle = "Mostly about tech"
       owner = "Ilona Louckova"
       keywords = ""
       copyright = ""
