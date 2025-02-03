@@ -11,7 +11,7 @@ aliases:
   - Creating Obsidian blog with Hugo
 title: Creating Obsidian blog with Hugo
 ---
-Following a [tutorial video from NetworkChuck](https://www.youtube.com/watch?v=dnE7c0ELEH8), and then freestyling it to GitHub Pages.
+Following a [video from NetworkChuck](https://www.youtube.com/watch?v=dnE7c0ELEH8), then freestyling it to GitHub Pages.
 
 >"We only know what we make."
 ## Battle Plan
