@@ -40,7 +40,7 @@
 &lt;ol&gt;
 &lt;li&gt;&lt;strong&gt;Install everything&lt;/strong&gt;:
 &lt;ul&gt;
-&lt;li&gt;Obsidian, Terminal/PowerShell, VS Code, Golang, Python 3, Git and Hugo (add the .exe into your own program location - like Program Files - and also in Windows into PATH)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://obsidian.md/download&#34;&gt;Obsidian&lt;/a&gt;, &lt;a href=&#34;https://apps.microsoft.com/detail/9n0dx20hk701?hl=en-US&amp;amp;gl=US&#34;&gt;Terminal&lt;/a&gt;/PowerShell, &lt;a href=&#34;https://code.visualstudio.com/download&#34;&gt;VS Code&lt;/a&gt;, &lt;a href=&#34;https://go.dev/dl/&#34;&gt;Golang&lt;/a&gt;, &lt;a href=&#34;https://www.python.org/downloads/&#34;&gt;Python 3&lt;/a&gt;, &lt;a href=&#34;https://git-scm.com/downloads&#34;&gt;Git&lt;/a&gt; and &lt;a href=&#34;https://gohugo.io/installation/&#34;&gt;Hugo&lt;/a&gt; (add the .exe into your program location, e.g. Program Files, and also into PATH)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;Create a &lt;code&gt;posts&lt;/code&gt; folder within your Obsidian Workspace for your blog articles&lt;/li&gt;
@@ -72,7 +72,7 @@
 &lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;hugo serve&lt;/code&gt; to preview blog with imported posts &amp;gt; Ctrl+C to exit the preview&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;using-frontmatter-in-obsidian&#34;&gt;Using Frontmatter in Obsidian&lt;/h3&gt;
+&lt;h3 id=&#34;using-front-matter-in-obsidian&#34;&gt;Using Front Matter in Obsidian&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;set up metadata via Obsidian properties:
 &lt;ul&gt;
@@ -139,7 +139,7 @@
 &lt;/ul&gt;
 &lt;h3 id=&#34;pushing-code-into-github&#34;&gt;Pushing code into GitHub&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;create a repo for your blog with name &lt;code&gt;ILXNAH.github.io&lt;/code&gt; and set visibility to public&lt;/li&gt;
+&lt;li&gt;create GitHub repo with name &lt;code&gt;ILXNAH.github.io&lt;/code&gt; and set visibility to public&lt;/li&gt;
 &lt;li&gt;you will need an SSH key, which you can generate with &lt;code&gt;ssh-keygen -t rsa -b 4096 -C &amp;quot;ILXNAH@tutanota.com&amp;quot;&lt;/code&gt; if you don&amp;rsquo;t have one yet&lt;/li&gt;
 &lt;li&gt;this keypair (public and private key) will be created in dir &lt;code&gt;~/.ssh&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;within that dir, to add pubkey to GitHub, copy its content displayed via &lt;code&gt;cat .\id_rsa.pub&lt;/code&gt;&lt;/li&gt;
@@ -154,11 +154,11 @@
 &lt;/ul&gt;
 &lt;h6 id=&#34;deploy-on-github-profile-pages&#34;&gt;Deploy on GitHub profile Pages&lt;/h6&gt;
 &lt;ol&gt;
-&lt;li&gt;in repo website, go to Settings &amp;gt; Pages &amp;gt; Source: GitHub Actions&lt;/li&gt;
+&lt;li&gt;on repo website, go to Settings &amp;gt; Pages &amp;gt; Source: GitHub Actions&lt;/li&gt;
 &lt;li&gt;in your local repo, add folder &amp;ldquo;&lt;code&gt;.github&lt;/code&gt;&amp;rdquo;&lt;/li&gt;
 &lt;li&gt;within there, create a folder called &amp;ldquo;&lt;code&gt;workflows&lt;/code&gt;&amp;rdquo;&lt;/li&gt;
 &lt;li&gt;within there, create a &amp;ldquo;&lt;code&gt;hugo.yaml&lt;/code&gt;&amp;rdquo; file&lt;/li&gt;
-&lt;li&gt;copy workflow code into &lt;code&gt;hugo.yaml&lt;/code&gt; from &lt;a href=&#34;https://gohugo.io/hosting-and-deployment/hosting-on-github/&#34;&gt;hugo official documentation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;copy workflow code into &lt;code&gt;hugo.yaml&lt;/code&gt; from &lt;a href=&#34;https://gohugo.io/hosting-and-deployment/hosting-on-github/&#34;&gt;Hugo&amp;rsquo;s official documentation&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;git add .&lt;/code&gt; &amp;gt; &lt;code&gt;git commit -m &amp;quot;github actions&amp;quot;&lt;/code&gt; &amp;gt; &lt;code&gt;git push&lt;/code&gt;&lt;/li&gt;
 &lt;/ol&gt;
 </content>

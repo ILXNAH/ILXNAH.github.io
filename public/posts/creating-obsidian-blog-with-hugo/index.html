@@ -210,7 +210,7 @@ Battle Plan Using Obsidian.md for taking notes - simply &ldquo;type out the blog
 <ol>
 <li><strong>Install everything</strong>:
 <ul>
-<li>Obsidian, Terminal/PowerShell, VS Code, Golang, Python 3, Git and Hugo (add the .exe into your own program location - like Program Files - and also in Windows into PATH)</li>
+<li><a href="https://obsidian.md/download">Obsidian</a>, <a href="https://apps.microsoft.com/detail/9n0dx20hk701?hl=en-US&amp;gl=US">Terminal</a>/PowerShell, <a href="https://code.visualstudio.com/download">VS Code</a>, <a href="https://go.dev/dl/">Golang</a>, <a href="https://www.python.org/downloads/">Python 3</a>, <a href="https://git-scm.com/downloads">Git</a> and <a href="https://gohugo.io/installation/">Hugo</a> (add the .exe into your program location, e.g. Program Files, and also into PATH)</li>
 </ul>
 </li>
 <li>Create a <code>posts</code> folder within your Obsidian Workspace for your blog articles</li>
@@ -242,7 +242,7 @@ Battle Plan Using Obsidian.md for taking notes - simply &ldquo;type out the blog
 </code></pre></li>
 <li><code>hugo serve</code> to preview blog with imported posts &gt; Ctrl+C to exit the preview</li>
 </ul>
-<h3 id="using-frontmatter-in-obsidian">Using Frontmatter in Obsidian<a href="#using-frontmatter-in-obsidian" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<h3 id="using-front-matter-in-obsidian">Using Front Matter in Obsidian<a href="#using-front-matter-in-obsidian" class="hanchor" ariaLabel="Anchor">#</a> </h3>
 <ul>
 <li>set up metadata via Obsidian properties:
 <ul>
@@ -309,7 +309,7 @@ Battle Plan Using Obsidian.md for taking notes - simply &ldquo;type out the blog
 </ul>
 <h3 id="pushing-code-into-github">Pushing code into GitHub<a href="#pushing-code-into-github" class="hanchor" ariaLabel="Anchor">#</a> </h3>
 <ul>
-<li>create a repo for your blog with name <code>ILXNAH.github.io</code> and set visibility to public</li>
+<li>create GitHub repo with name <code>ILXNAH.github.io</code> and set visibility to public</li>
 <li>you will need an SSH key, which you can generate with <code>ssh-keygen -t rsa -b 4096 -C &quot;ILXNAH@tutanota.com&quot;</code> if you don&rsquo;t have one yet</li>
 <li>this keypair (public and private key) will be created in dir <code>~/.ssh</code></li>
 <li>within that dir, to add pubkey to GitHub, copy its content displayed via <code>cat .\id_rsa.pub</code></li>
@@ -324,11 +324,11 @@ Battle Plan Using Obsidian.md for taking notes - simply &ldquo;type out the blog
 </ul>
 <h6 id="deploy-on-github-profile-pages">Deploy on GitHub profile Pages<a href="#deploy-on-github-profile-pages" class="hanchor" ariaLabel="Anchor">#</a> </h6>
 <ol>
-<li>in repo website, go to Settings &gt; Pages &gt; Source: GitHub Actions</li>
+<li>on repo website, go to Settings &gt; Pages &gt; Source: GitHub Actions</li>
 <li>in your local repo, add folder &ldquo;<code>.github</code>&rdquo;</li>
 <li>within there, create a folder called &ldquo;<code>workflows</code>&rdquo;</li>
 <li>within there, create a &ldquo;<code>hugo.yaml</code>&rdquo; file</li>
-<li>copy workflow code into <code>hugo.yaml</code> from <a href="https://gohugo.io/hosting-and-deployment/hosting-on-github/">hugo official documentation</a></li>
+<li>copy workflow code into <code>hugo.yaml</code> from <a href="https://gohugo.io/hosting-and-deployment/hosting-on-github/">Hugo&rsquo;s official documentation</a></li>
 <li><code>git add .</code> &gt; <code>git commit -m &quot;github actions&quot;</code> &gt; <code>git push</code></li>
 </ol>
 

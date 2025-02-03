@@ -22,7 +22,7 @@ Following a [tutorial video from NetworkChuck](https://www.youtube.com/watch?v=d
 
 I'll be setting this up on my Wins PC, but if you need Linux/Mac guidance, Chuck got those differences covered in [his](https://blog.networkchuck.com/posts/my-insane-blog-pipeline/) documentation. For the sake of sanity, I'm keeping my email/username/paths within the commands, i.e. don't forget to change them. 
 1. **Install everything**: 
-	- Obsidian, Terminal/PowerShell, VS Code, Golang, Python 3, Git and Hugo (add the .exe into your own program location - like Program Files - and also in Windows into PATH)
+	- [Obsidian](https://obsidian.md/download), [Terminal](https://apps.microsoft.com/detail/9n0dx20hk701?hl=en-US&gl=US)/PowerShell, [VS Code](https://code.visualstudio.com/download), [Golang](https://go.dev/dl/), [Python 3](https://www.python.org/downloads/), [Git](https://git-scm.com/downloads) and [Hugo](https://gohugo.io/installation/) (add the .exe into your program location, e.g. Program Files, and also into PATH)
 2.  Create a `posts` folder within your Obsidian Workspace for your blog articles
 3. Within this folder, start a new note (that will be your first blog post)
 4. Double-check correct installations via the `version` flagged commands:
@@ -44,7 +44,7 @@ I'll be setting this up on my Wins PC, but if you need Linux/Mac guidance, Chuck
 	robocopy "C:\Users\ilona\Documents\obsidian\posts" "C:\Users\ilona\Documents\ILXNAH.github.io\content\posts" /mir
 	```
 - `hugo serve` to preview blog with imported posts > Ctrl+C to exit the preview
-### Using Frontmatter in Obsidian
+### Using Front Matter in Obsidian
 - set up metadata via Obsidian properties:
 	- you can use a variation of community plugins,
 		- I'm using [make.md](https://www.make.md/), Chuck is using [Templater](https://github.com/SilentVoid13/Templater)...
@@ -97,7 +97,7 @@ print("Markdown files processed and images copied successfully.")
 - added image for testing purposes of the part of the script we just did:
 	![Image Description](/images/Pasted%20image%2020250131130510.png)
 ### Pushing code into GitHub
-- create a repo for your blog with name `ILXNAH.github.io` and set visibility to public
+- create GitHub repo with name `ILXNAH.github.io` and set visibility to public
 - you will need an SSH key, which you can generate with `ssh-keygen -t rsa -b 4096 -C "ILXNAH@tutanota.com"` if you don't have one yet
 - this keypair (public and private key) will be created in dir `~/.ssh`
 - within that dir, to add pubkey to GitHub, copy its content displayed via `cat .\id_rsa.pub`
@@ -110,9 +110,9 @@ print("Markdown files processed and images copied successfully.")
 - `git push -u origin main` to push from local to remote repo
 	(specified is: first, name of your remote repo `origin`, then branch name `main`)
 ###### Deploy on GitHub profile Pages
-1. in repo website, go to Settings > Pages > Source: GitHub Actions
+1. on repo website, go to Settings > Pages > Source: GitHub Actions
 2. in your local repo, add folder "`.github`"
 3. within there, create a folder called "`workflows`"
 4. within there, create a "`hugo.yaml`" file
-5. copy workflow code into `hugo.yaml` from [hugo official documentation](https://gohugo.io/hosting-and-deployment/hosting-on-github/)
+5. copy workflow code into `hugo.yaml` from [Hugo's official documentation](https://gohugo.io/hosting-and-deployment/hosting-on-github/)
 6. `git add .` > `git commit -m "github actions"` > `git push`
