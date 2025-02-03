@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Networkchuck on Terminal</title>
+    <title>Networkchuck on ILXNAH&#39;s den</title>
     <link>//localhost:1313/tags/networkchuck/</link>
-    <description>Recent content in Networkchuck on Terminal</description>
+    <description>Recent content in Networkchuck on ILXNAH&#39;s den</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Tue, 28 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="//localhost:1313/tags/networkchuck/index.xml" rel="self" type="application/rss+xml" />
@@ -13,38 +13,34 @@
       <pubDate>Tue, 28 Jan 2025 00:00:00 +0000</pubDate>
       
       <guid>//localhost:1313/posts/creating-obsidian-blog-with-hugo/</guid>
-      <description>&lt;p&gt;Following a &lt;a href=&#34;https://www.youtube.com/watch?v=dnE7c0ELEH8&#34;&gt;tutorial video from NetworkChuck&lt;/a&gt;&lt;/p&gt;
+      <description>&lt;p&gt;Following a &lt;a href=&#34;https://www.youtube.com/watch?v=dnE7c0ELEH8&#34;&gt;tutorial video from NetworkChuck&lt;/a&gt;, and then freestyling it to GitHub Pages.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&amp;ldquo;We only know what we make.&amp;rdquo;&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;&lt;strong&gt;Hugo&lt;/strong&gt; = a tool to convert .md into website code
-- prereqs: see list below&lt;/p&gt;
-&lt;h2 id=&#34;battle-plan&#34;&gt;Battle Plan!&lt;/h2&gt;
+&lt;h2 id=&#34;battle-plan&#34;&gt;Battle Plan&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;Using Obsidian for taking notes - simply &amp;ldquo;type out the blog&amp;rdquo;&lt;/li&gt;
-&lt;li&gt;Turn it into HTML code, aka &amp;ldquo;make it code&amp;rdquo; using a tool called &lt;strong&gt;Hugo&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;Ship the code off/push site to GitHub&lt;/li&gt;
-&lt;li&gt;I decided not to use Hostinger but am playing around with other ways of deployment on GitHub Pages (there are several different options)&lt;/li&gt;
+&lt;li&gt;Using &lt;a href=&#34;https://obsidian.md/&#34;&gt;Obsidian.md&lt;/a&gt; for taking notes - simply &amp;ldquo;type out the blog&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;Turn it into HTML code, aka &amp;ldquo;make it code&amp;rdquo; using &lt;a href=&#34;https://themes.gohugo.io/&#34;&gt;Hugo&lt;/a&gt;: a tool to convert .md files into a website code&lt;/li&gt;
+&lt;li&gt;Ship the code off/push site to &lt;a href=&#34;https://github.com/&#34;&gt;GitHub&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;I decided not to use Hostinger (like Chuck did) but was playing around with other ways of deployment on GitHub Pages (there are several different options and I&amp;rsquo;ll share the simplest one)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;I&amp;rsquo;ll be setting this up on my Wins PC, but if you need Linux/Mac guidance, Chuck got those differences covered in &lt;a href=&#34;https://blog.networkchuck.com/posts/my-insane-blog-pipeline/&#34;&gt;his&lt;/a&gt; documentation. For the sake of sanity, I&amp;rsquo;m keeping my email/username/paths within the commands, i.e. don&amp;rsquo;t forget to change them.&lt;/p&gt;</description>
-      <content>&lt;p&gt;Following a &lt;a href=&#34;https://www.youtube.com/watch?v=dnE7c0ELEH8&#34;&gt;tutorial video from NetworkChuck&lt;/a&gt;&lt;/p&gt;
+      <content>&lt;p&gt;Following a &lt;a href=&#34;https://www.youtube.com/watch?v=dnE7c0ELEH8&#34;&gt;tutorial video from NetworkChuck&lt;/a&gt;, and then freestyling it to GitHub Pages.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&amp;ldquo;We only know what we make.&amp;rdquo;&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;&lt;strong&gt;Hugo&lt;/strong&gt; = a tool to convert .md into website code
-- prereqs: see list below&lt;/p&gt;
-&lt;h2 id=&#34;battle-plan&#34;&gt;Battle Plan!&lt;/h2&gt;
+&lt;h2 id=&#34;battle-plan&#34;&gt;Battle Plan&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;Using Obsidian for taking notes - simply &amp;ldquo;type out the blog&amp;rdquo;&lt;/li&gt;
-&lt;li&gt;Turn it into HTML code, aka &amp;ldquo;make it code&amp;rdquo; using a tool called &lt;strong&gt;Hugo&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;Ship the code off/push site to GitHub&lt;/li&gt;
-&lt;li&gt;I decided not to use Hostinger but am playing around with other ways of deployment on GitHub Pages (there are several different options)&lt;/li&gt;
+&lt;li&gt;Using &lt;a href=&#34;https://obsidian.md/&#34;&gt;Obsidian.md&lt;/a&gt; for taking notes - simply &amp;ldquo;type out the blog&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;Turn it into HTML code, aka &amp;ldquo;make it code&amp;rdquo; using &lt;a href=&#34;https://themes.gohugo.io/&#34;&gt;Hugo&lt;/a&gt;: a tool to convert .md files into a website code&lt;/li&gt;
+&lt;li&gt;Ship the code off/push site to &lt;a href=&#34;https://github.com/&#34;&gt;GitHub&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;I decided not to use Hostinger (like Chuck did) but was playing around with other ways of deployment on GitHub Pages (there are several different options and I&amp;rsquo;ll share the simplest one)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;I&amp;rsquo;ll be setting this up on my Wins PC, but if you need Linux/Mac guidance, Chuck got those differences covered in &lt;a href=&#34;https://blog.networkchuck.com/posts/my-insane-blog-pipeline/&#34;&gt;his&lt;/a&gt; documentation. For the sake of sanity, I&amp;rsquo;m keeping my email/username/paths within the commands, i.e. don&amp;rsquo;t forget to change them.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;strong&gt;Install everything&lt;/strong&gt;:
 &lt;ul&gt;
-&lt;li&gt;Obsidian, Windows Terminal, Visual Studio Code, WSL 2, Golang, Python 3, Git and Hugo (add the .exe into your own program location - like Program Files - and also in Windows into PATH)&lt;/li&gt;
+&lt;li&gt;Obsidian, Terminal/PowerShell, VS Code, Golang, Python 3, Git and Hugo (add the .exe into your own program location - like Program Files - and also in Windows into PATH)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;Create a &lt;code&gt;posts&lt;/code&gt; folder within your Obsidian Workspace for your blog articles&lt;/li&gt;
@@ -52,14 +48,14 @@
 &lt;li&gt;Double-check correct installations via the &lt;code&gt;version&lt;/code&gt; flagged commands:
 &lt;code&gt;go version&lt;/code&gt;, &lt;code&gt;git --version&lt;/code&gt;, &lt;code&gt;hugo version&lt;/code&gt;, &lt;code&gt;python --version&lt;/code&gt; etc.&lt;/li&gt;
 &lt;li&gt;Navigate to your desired directory for storing blog files on your machine, e.g.: &lt;code&gt;cd C:\Users\ilona\Documents\&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Create a new folder for Hugo blog and set up git: &lt;code&gt;hugo new site optimeow&lt;/code&gt; &amp;gt; &lt;code&gt;cd .\optimeow&lt;/code&gt; &amp;gt; &lt;code&gt;git init&lt;/code&gt; &amp;gt; &lt;code&gt;git config --global user.name &amp;quot;ILXNAH&amp;quot;&lt;/code&gt; &amp;gt; &lt;code&gt;git config --global user.email &amp;quot;ILXNAH@tutanota.com&amp;quot;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Create a new folder for Hugo blog and set up git: &lt;code&gt;hugo new site ILXNAH.github.io&lt;/code&gt; &amp;gt; &lt;code&gt;cd .\ILXNAH.github.io&lt;/code&gt; &amp;gt; &lt;code&gt;git init&lt;/code&gt; &amp;gt; &lt;code&gt;git config --global user.name &amp;quot;ILXNAH&amp;quot;&lt;/code&gt; &amp;gt; &lt;code&gt;git config --global user.email &amp;quot;ILXNAH@tutanota.com&amp;quot;&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;Navigate to &lt;a href=&#34;https://themes.gohugo.io/&#34;&gt;Hugo Themes&lt;/a&gt; and pick a theme to install for your blog.&lt;/li&gt;
-&lt;li&gt;Select option &amp;ldquo;Install theme as a submodule&amp;rdquo;, e.g. for &lt;a href=&#34;https://themes.gohugo.io/themes/hugo-theme-terminal/&#34;&gt;Terminal theme&lt;/a&gt; it looks like this:
-&lt;code&gt;git submodule add -f https://github.com/panr/hugo-theme-terminal.git themes/terminal&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Edit config: the file is called &lt;code&gt;hugo.toml&lt;/code&gt; and it needs to match the theme
+&lt;li&gt;Select installation option for a specific theme, e.g. look here for &lt;a href=&#34;https://themes.gohugo.io/themes/hugo-theme-terminal/&#34;&gt;Terminal theme&lt;/a&gt;. I used local installation to avoid any fuss when transferring between repos.
+&lt;code&gt;git clone https://github.com/panr/hugo-theme-terminal.git themes/terminal&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Edit the config file called &lt;code&gt;hugo.toml&lt;/code&gt; - it needs to match the theme.
 &lt;ul&gt;
-&lt;li&gt;Terminal theme has a text file at the bottom of the page which you can copy it from (leave out module and module.imports at the bottom) and paste into your &lt;code&gt;hugo.toml&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Via CLI, you can open it with program cmd &lt;code&gt;notepad hugo.toml&lt;/code&gt; like Chuck, or &lt;code&gt;npp hugo.toml&lt;/code&gt; like myself (that&amp;rsquo;s custom though)&lt;/li&gt;
+&lt;li&gt;Terminal theme has a text file at the bottom of the page &lt;a href=&#34;https://themes.gohugo.io/themes/hugo-theme-terminal/#how-to-configure&#34;&gt;which you can copy it from&lt;/a&gt; (&lt;strong&gt;leave out modules part at the bottom&lt;/strong&gt;) and paste into your &lt;code&gt;hugo.toml&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Via CLI, you can open it with command &lt;code&gt;notepad hugo.toml&lt;/code&gt; like Chuck, or &lt;code&gt;npp hugo.toml&lt;/code&gt; like myself (that&amp;rsquo;s another custom path), or use VS Code with &lt;code&gt;code hugo.toml&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;Next, run your Hugo server preview with &lt;code&gt;hugo serve&lt;/code&gt;
@@ -70,33 +66,35 @@
 &lt;/ol&gt;
 &lt;h3 id=&#34;syncing-obsidian-to-hugo&#34;&gt;Syncing Obsidian to Hugo&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;posts folder will be syncing from &lt;code&gt;Obsidian Vault/posts&lt;/code&gt; into &lt;code&gt;/blogname/content/posts&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;cd content&lt;/code&gt; &amp;gt; &lt;code&gt;mkdir posts&lt;/code&gt; (this new folder will be synced with Obsidian source folder) with this command: &lt;code&gt;robocopy &amp;quot;C:\Users\ilona\Documents\my_second_brain\posts&amp;quot; &amp;quot;C:\Users\ilona\Documents\optimeow\content\posts&amp;quot; /mir&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;hugo serve&lt;/code&gt; to preview blog with imported posts &amp;gt; Ctrl+C the preview again&lt;/li&gt;
+&lt;li&gt;posts folder will be syncing from &lt;code&gt;Obsidian Vault/posts&lt;/code&gt; into &lt;code&gt;/ILXNAH.github.io/content/posts&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;cd content&lt;/code&gt; &amp;gt; &lt;code&gt;mkdir posts&lt;/code&gt; (this folder will be synced with Obsidian source folder) with this command:
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;robocopy &amp;#34;C:\Users\ilona\Documents\obsidian\posts&amp;#34; &amp;#34;C:\Users\ilona\Documents\ILXNAH.github.io\content\posts&amp;#34; /mir
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;hugo serve&lt;/code&gt; to preview blog with imported posts &amp;gt; Ctrl+C to exit the preview&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;using-frontmatter-in-obsidian&#34;&gt;Using Frontmatter in Obsidian&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;set up metadata via Obsidian properties
+&lt;li&gt;set up metadata via Obsidian properties:
 &lt;ul&gt;
-&lt;li&gt;you can use a variation of community plugins
+&lt;li&gt;you can use a variation of community plugins,
 &lt;ul&gt;
-&lt;li&gt;I&amp;rsquo;m using &lt;a href=&#34;https://www.make.md/&#34;&gt;make.md&lt;/a&gt;, Chuck is using &lt;a href=&#34;https://github.com/SilentVoid13/Templater&#34;&gt;Templater&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;I&amp;rsquo;m using &lt;a href=&#34;https://www.make.md/&#34;&gt;make.md&lt;/a&gt;, Chuck is using &lt;a href=&#34;https://github.com/SilentVoid13/Templater&#34;&gt;Templater&lt;/a&gt;&amp;hellip;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;make sure the draft property is unchecked, so the post is displayed
 &lt;ul&gt;
-&lt;li&gt;&lt;code&gt;hugo server -D&lt;/code&gt; command will publish any posts in draft mode inclusively&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;hugo serve -D&lt;/code&gt; flagged command will include posts in draft mode&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;ideally create a template with desired properties for your blog posts&lt;/li&gt;
+&lt;li&gt;ideally, create a template with desired properties for your blog posts&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;run robocopy again with added post properties in source .md&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;hugo serve&lt;/code&gt; to see if properties OK &amp;gt; exit preview&lt;/li&gt;
+&lt;li&gt;run robocopy again with added post properties in your source files&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;hugo serve&lt;/code&gt; to verify the metadata is showing &amp;gt; exit preview&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;fixing-image-attachments-using-a-python-script&#34;&gt;Fixing image attachments using a Python script&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;in your Hugo blog dir, &lt;code&gt;cd static&lt;/code&gt; &amp;gt; &lt;code&gt;mkdir images&lt;/code&gt; &amp;gt; &lt;code&gt;cd ..&lt;/code&gt; &amp;gt; &lt;code&gt;code images.py&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;in your blog dir, &lt;code&gt;cd static&lt;/code&gt; &amp;gt; &lt;code&gt;mkdir images&lt;/code&gt; &amp;gt; &lt;code&gt;cd ..&lt;/code&gt; &amp;gt; &lt;code&gt;code images.py&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;insert code, make sure to edit all three paths, and save:&lt;/li&gt;
 &lt;/ul&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; os
@@ -104,9 +102,9 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; shutil
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Paths (using raw strings to handle Windows backslashes correctly)&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;posts_dir &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;r&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;C:\Users\ilona\Documents\optimeow\content\posts&amp;#34;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;attachments_dir &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;r&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;C:\Users\ilona\Documents\my_second_brain\Attachments&amp;#34;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;static_images_dir &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;r&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;C:\Users\ilona\Documents\optimeow\static\images&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;posts_dir &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;r&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;C:\Users\ilona\Documents\ILXNAH.github.io\content\posts&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;attachments_dir &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;r&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;C:\Users\ilona\Documents\obsidian\Attachments&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;static_images_dir &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;r&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;C:\Users\ilona\Documents\ILXNAH.github.io\static\images&amp;#34;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Step 1: Process each markdown file in the posts directory&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; filename &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; os&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;listdir(posts_dir):
@@ -141,43 +139,28 @@
 &lt;/ul&gt;
 &lt;h3 id=&#34;pushing-code-into-github&#34;&gt;Pushing code into GitHub&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;create an account, log in, create a repo for your blog&lt;/li&gt;
+&lt;li&gt;create a repo for your blog with name &lt;code&gt;ILXNAH.github.io&lt;/code&gt; and set visibility to public&lt;/li&gt;
 &lt;li&gt;you will need an SSH key, which you can generate with &lt;code&gt;ssh-keygen -t rsa -b 4096 -C &amp;quot;ILXNAH@tutanota.com&amp;quot;&lt;/code&gt; if you don&amp;rsquo;t have one yet&lt;/li&gt;
 &lt;li&gt;this keypair (public and private key) will be created in dir &lt;code&gt;~/.ssh&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;within that dir, to add pubkey to GitHub, copy its content displayed via &lt;code&gt;cat .\id_rsa.pub&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;GitHub &amp;gt; Settings &amp;gt; SSH &amp;gt; New key &amp;gt; paste in there&lt;/li&gt;
 &lt;li&gt;test that it&amp;rsquo;s working on your PC with cmd &lt;code&gt;ssh -T git@github.com&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;in your blog dir, &lt;code&gt;git remote add origin git@github.com:ILXNAH/optimeow.git&lt;/code&gt; to define the remote repo (the one you created on GitHub) aka add it to your local setup&lt;/li&gt;
-&lt;li&gt;type cmd &lt;code&gt;hugo&lt;/code&gt; to make sure our website has been built&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;git add .&lt;/code&gt; to add all files in current dir to our repo&lt;/li&gt;
+&lt;li&gt;in your blog dir, &lt;code&gt;git remote add origin git@github.com:ILXNAH/ILXNAH.github.io.git&lt;/code&gt; to define the remote repo (the one you created on GitHub) aka add it to your local setup &amp;gt; &lt;code&gt;git branch -M main&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;type &lt;code&gt;hugo&lt;/code&gt; to make sure website has been built&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git add .&lt;/code&gt; to add all changes&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;git commit -m &amp;quot;First commit&amp;quot;&lt;/code&gt; to commit those changes (locally)&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;git push -u origin main&lt;/code&gt; to push from local to remote repo
 (specified is: first, name of your remote repo &lt;code&gt;origin&lt;/code&gt;, then branch name &lt;code&gt;main&lt;/code&gt;)&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h5 id=&#34;publishing-to-github-pages---in-project-repository&#34;&gt;Publishing to GitHub Pages - in project repository&lt;/h5&gt;
-&lt;ul&gt;
-&lt;li&gt;following this &lt;a href=&#34;https://medium.com/@magstherdev/github-pages-hugo-86ae6bcbadd&#34;&gt;guide by @Magstherdev&lt;/a&gt; and &lt;a href=&#34;https://gohugo.io/hosting-and-deployment/hosting-on-github/&#34;&gt;official guide on Hugo&amp;rsquo;s site&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;hugo -d docs&lt;/code&gt; generates site into a dir &lt;code&gt;docs&lt;/code&gt; (inside blog dir), which we need for (GitHub) Pages, i.e. we don&amp;rsquo;t need the &lt;code&gt;public&lt;/code&gt; folder&lt;/li&gt;
-&lt;li&gt;open &lt;code&gt;code hugo.toml&lt;/code&gt; and add this line under line 6:
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-hugo.toml&#34; data-lang=&#34;hugo.toml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;publishDir&lt;/span&gt; = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;docs&amp;#34;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
-&lt;li&gt;with this, you created a &lt;code&gt;docs&lt;/code&gt; dir which replaces &lt;code&gt;public&lt;/code&gt; folder&amp;rsquo;s purpose (even in config)&lt;/li&gt;
-&lt;li&gt;edit blog &amp;gt; robocopy &amp;gt; images.py &amp;gt; hugo &amp;gt; hugo serve &amp;gt; add, commit, push&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h5 id=&#34;some-more-tweaks-and-were-almost-done&#34;&gt;Some more tweaks and we&amp;rsquo;re almost done&lt;/h5&gt;
-&lt;ul&gt;
-&lt;li&gt;in &lt;code&gt;hugo.toml&lt;/code&gt;, when using Pages from &lt;code&gt;/docs&lt;/code&gt;, we also need to edit URL configuration in Hugo&amp;rsquo;s config file (line 1): as below, replace with your own project Pages link:
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-hugo.toml&#34; data-lang=&#34;hugo.toml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;baseURL&lt;/span&gt; = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;https://ilxnah.github.io/optimeow/&amp;#34;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h5 id=&#34;publishing-to-github-pages---in-main-profile-repository&#34;&gt;Publishing to GitHub Pages - in (main) profile repository&lt;/h5&gt;
-&lt;ul&gt;
-&lt;li&gt;the key difference is, when you&amp;rsquo;re using a project Pages, you generate site from branch\folder &lt;code&gt;docs&lt;/code&gt;, but with profile Pages, the website is published directly from the (root)/or from the Hugo&amp;rsquo;s default &lt;code&gt;public&lt;/code&gt; folder&lt;/li&gt;
-&lt;li&gt;i.e. you don&amp;rsquo;t need &lt;code&gt;docs&lt;/code&gt;, but you can generate your content directly into blog dir with &lt;code&gt;hugo -d .&lt;/code&gt; or with no flags by modifying the publishDir parameter inside of &lt;code&gt;hugo.toml&lt;/code&gt; to this:
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-hugo.toml&#34; data-lang=&#34;hugo.toml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;publishDir&lt;/span&gt; = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;./&amp;#34;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
-&lt;li&gt;or simply with the default options and no config edits for publishDir, leaving it in &lt;code&gt;public&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;h6 id=&#34;deploy-on-github-profile-pages&#34;&gt;Deploy on GitHub profile Pages&lt;/h6&gt;
+&lt;ol&gt;
+&lt;li&gt;in repo website, go to Settings &amp;gt; Pages &amp;gt; Source: GitHub Actions&lt;/li&gt;
+&lt;li&gt;in your local repo, add folder &amp;ldquo;&lt;code&gt;.github&lt;/code&gt;&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;within there, create a folder called &amp;ldquo;&lt;code&gt;workflows&lt;/code&gt;&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;within there, create a &amp;ldquo;&lt;code&gt;hugo.yaml&lt;/code&gt;&amp;rdquo; file&lt;/li&gt;
+&lt;li&gt;copy workflow code into &lt;code&gt;hugo.yaml&lt;/code&gt; from &lt;a href=&#34;https://gohugo.io/hosting-and-deployment/hosting-on-github/&#34;&gt;hugo official documentation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git add .&lt;/code&gt; &amp;gt; &lt;code&gt;git commit -m &amp;quot;github actions&amp;quot;&lt;/code&gt; &amp;gt; &lt;code&gt;git push&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
 </content>
     </item>
     

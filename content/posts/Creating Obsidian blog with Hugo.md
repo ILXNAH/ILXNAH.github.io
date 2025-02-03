@@ -11,50 +11,50 @@ aliases:
   - Creating Obsidian blog with Hugo
 title: Creating Obsidian blog with Hugo
 ---
-Following a [tutorial video from NetworkChuck](https://www.youtube.com/watch?v=dnE7c0ELEH8)
+Following a [tutorial video from NetworkChuck](https://www.youtube.com/watch?v=dnE7c0ELEH8), and then freestyling it to GitHub Pages.
 
 >"We only know what we make."
-
-**Hugo** = a tool to convert .md into website code
-	- prereqs: see list below
-## Battle Plan!
-- Using Obsidian for taking notes - simply "type out the blog"
-- Turn it into HTML code, aka "make it code" using a tool called **Hugo**
-- Ship the code off/push site to GitHub
-- I decided not to use Hostinger but am playing around with other ways of deployment on GitHub Pages (there are several different options)
+## Battle Plan
+- Using [Obsidian.md](https://obsidian.md/) for taking notes - simply "type out the blog"
+- Turn it into HTML code, aka "make it code" using [Hugo](https://themes.gohugo.io/): a tool to convert .md files into a website code
+- Ship the code off/push site to [GitHub](https://github.com/)
+- I decided not to use Hostinger (like Chuck did) but was playing around with other ways of deployment on GitHub Pages (there are several different options and I'll share the simplest one)
 
 I'll be setting this up on my Wins PC, but if you need Linux/Mac guidance, Chuck got those differences covered in [his](https://blog.networkchuck.com/posts/my-insane-blog-pipeline/) documentation. For the sake of sanity, I'm keeping my email/username/paths within the commands, i.e. don't forget to change them. 
 1. **Install everything**: 
-	- Obsidian, Windows Terminal, Visual Studio Code, WSL 2, Golang, Python 3, Git and Hugo (add the .exe into your own program location - like Program Files - and also in Windows into PATH)
+	- Obsidian, Terminal/PowerShell, VS Code, Golang, Python 3, Git and Hugo (add the .exe into your own program location - like Program Files - and also in Windows into PATH)
 2.  Create a `posts` folder within your Obsidian Workspace for your blog articles
 3. Within this folder, start a new note (that will be your first blog post)
 4. Double-check correct installations via the `version` flagged commands:
   `go version`, `git --version`, `hugo version`, `python --version` etc.
 5. Navigate to your desired directory for storing blog files on your machine, e.g.: `cd C:\Users\ilona\Documents\`
-6. Create a new folder for Hugo blog and set up git: `hugo new site optimeow` > `cd .\optimeow` > `git init` > `git config --global user.name "ILXNAH"` > `git config --global user.email "ILXNAH@tutanota.com"`
+6. Create a new folder for Hugo blog and set up git: `hugo new site ILXNAH.github.io` > `cd .\ILXNAH.github.io` > `git init` > `git config --global user.name "ILXNAH"` > `git config --global user.email "ILXNAH@tutanota.com"`
 7. Navigate to [Hugo Themes](https://themes.gohugo.io/) and pick a theme to install for your blog.
-8. Select option "Install theme as a submodule", e.g. for [Terminal theme](https://themes.gohugo.io/themes/hugo-theme-terminal/) it looks like this:
-  `git submodule add -f https://github.com/panr/hugo-theme-terminal.git themes/terminal`
-9. Edit config: the file is called `hugo.toml` and it needs to match the theme
-	- Terminal theme has a text file at the bottom of the page which you can copy it from (leave out module and module.imports at the bottom) and paste into your `hugo.toml`
-	- Via CLI, you can open it with program cmd `notepad hugo.toml` like Chuck, or `npp hugo.toml` like myself (that's custom though)
+8. Select installation option for a specific theme, e.g. look here for [Terminal theme](https://themes.gohugo.io/themes/hugo-theme-terminal/). I used local installation to avoid any fuss when transferring between repos. 
+	`git clone https://github.com/panr/hugo-theme-terminal.git themes/terminal`
+9. Edit the config file called `hugo.toml` - it needs to match the theme.
+	- Terminal theme has a text file at the bottom of the page [which you can copy it from](https://themes.gohugo.io/themes/hugo-theme-terminal/#how-to-configure) (**leave out modules part at the bottom**) and paste into your `hugo.toml`
+	- Via CLI, you can open it with command `notepad hugo.toml` like Chuck, or `npp hugo.toml` like myself (that's another custom path), or use VS Code with `code hugo.toml`
 10. Next, run your Hugo server preview with `hugo serve`
 	- Take a look at [//localhost:1313/](//localhost:1313/) > Ctrl+C to cancel website preview
 ### Syncing Obsidian to Hugo
-- posts folder will be syncing from `Obsidian Vault/posts` into `/blogname/content/posts`
-- `cd content` > `mkdir posts` (this new folder will be synced with Obsidian source folder) with this command: `robocopy "C:\Users\ilona\Documents\my_second_brain\posts" "C:\Users\ilona\Documents\optimeow\content\posts" /mir`
-- `hugo serve` to preview blog with imported posts > Ctrl+C the preview again
+- posts folder will be syncing from `Obsidian Vault/posts` into `/ILXNAH.github.io/content/posts`
+- `cd content` > `mkdir posts` (this folder will be synced with Obsidian source folder) with this command: 
+	```
+	robocopy "C:\Users\ilona\Documents\obsidian\posts" "C:\Users\ilona\Documents\ILXNAH.github.io\content\posts" /mir
+	```
+- `hugo serve` to preview blog with imported posts > Ctrl+C to exit the preview
 ### Using Frontmatter in Obsidian
-- set up metadata via Obsidian properties
-	- you can use a variation of community plugins
-		- I'm using [make.md](https://www.make.md/), Chuck is using [Templater](https://github.com/SilentVoid13/Templater)
+- set up metadata via Obsidian properties:
+	- you can use a variation of community plugins,
+		- I'm using [make.md](https://www.make.md/), Chuck is using [Templater](https://github.com/SilentVoid13/Templater)...
 	- make sure the draft property is unchecked, so the post is displayed
-		- `hugo server -D` command will publish any posts in draft mode inclusively
-	- ideally create a template with desired properties for your blog posts
-- run robocopy again with added post properties in source .md
-- `hugo serve` to see if properties OK > exit preview
+		- `hugo serve -D` flagged command will include posts in draft mode
+	- ideally, create a template with desired properties for your blog posts
+- run robocopy again with added post properties in your source files
+- `hugo serve` to verify the metadata is showing > exit preview
 ### Fixing image attachments using a Python script
-- in your Hugo blog dir, `cd static` > `mkdir images` > `cd ..` > `code images.py`
+- in your blog dir, `cd static` > `mkdir images` > `cd ..` > `code images.py`
 - insert code, make sure to edit all three paths, and save:
 ```python
 import os
@@ -62,9 +62,9 @@ import re
 import shutil
 
 # Paths (using raw strings to handle Windows backslashes correctly)
-posts_dir = r"C:\Users\ilona\Documents\optimeow\content\posts"
-attachments_dir = r"C:\Users\ilona\Documents\my_second_brain\Attachments"
-static_images_dir = r"C:\Users\ilona\Documents\optimeow\static\images"
+posts_dir = r"C:\Users\ilona\Documents\ILXNAH.github.io\content\posts"
+attachments_dir = r"C:\Users\ilona\Documents\obsidian\Attachments"
+static_images_dir = r"C:\Users\ilona\Documents\ILXNAH.github.io\static\images"
 
 # Step 1: Process each markdown file in the posts directory
 for filename in os.listdir(posts_dir):
@@ -94,40 +94,25 @@ for filename in os.listdir(posts_dir):
 
 print("Markdown files processed and images copied successfully.")
 ```
-
 - added image for testing purposes of the part of the script we just did:
 	![Image Description](/images/Pasted%20image%2020250131130510.png)
 ### Pushing code into GitHub
-- create an account, log in, create a repo for your blog 
+- create a repo for your blog with name `ILXNAH.github.io` and set visibility to public
 - you will need an SSH key, which you can generate with `ssh-keygen -t rsa -b 4096 -C "ILXNAH@tutanota.com"` if you don't have one yet
 - this keypair (public and private key) will be created in dir `~/.ssh`
 - within that dir, to add pubkey to GitHub, copy its content displayed via `cat .\id_rsa.pub`
 - GitHub > Settings > SSH > New key > paste in there
 - test that it's working on your PC with cmd `ssh -T git@github.com`
-- in your blog dir, `git remote add origin git@github.com:ILXNAH/optimeow.git` to define the remote repo (the one you created on GitHub) aka add it to your local setup
-- type cmd `hugo` to make sure our website has been built
-- `git add .` to add all files in current dir to our repo
+- in your blog dir, `git remote add origin git@github.com:ILXNAH/ILXNAH.github.io.git` to define the remote repo (the one you created on GitHub) aka add it to your local setup > `git branch -M main`
+- type `hugo` to make sure website has been built
+- `git add .` to add all changes
 - `git commit -m "First commit"` to commit those changes (locally)
 - `git push -u origin main` to push from local to remote repo
 	(specified is: first, name of your remote repo `origin`, then branch name `main`)
-##### Publishing to GitHub Pages - in project repository
-- following this [guide by @Magstherdev](https://medium.com/@magstherdev/github-pages-hugo-86ae6bcbadd) and [official guide on Hugo's site](https://gohugo.io/hosting-and-deployment/hosting-on-github/)
-- `hugo -d docs` generates site into a dir `docs` (inside blog dir), which we need for (GitHub) Pages, i.e. we don't need the `public` folder
-- open `code hugo.toml` and add this line under line 6:
-  ```hugo.toml
-  publishDir = "docs"
-  ```
-- with this, you created a `docs` dir which replaces `public` folder's purpose (even in config)
-- edit blog > robocopy > images.py > hugo > hugo serve > add, commit, push
-##### Some more tweaks and we're almost done
-- in `hugo.toml`, when using Pages from `/docs`, we also need to edit URL configuration in Hugo's config file (line 1): as below, replace with your own project Pages link:
-	```hugo.toml
-	baseURL = "https://ilxnah.github.io/optimeow/"
-	```
-##### Publishing to GitHub Pages - in (main) profile repository
-- the key difference is, when you're using a project Pages, you generate site from branch\folder `docs`, but with profile Pages, the website is published directly from the (root)/or from the Hugo's default `public` folder
-- i.e. you don't need `docs`, but you can generate your content directly into blog dir with `hugo -d .` or with no flags by modifying the publishDir parameter inside of `hugo.toml` to this:
-	```hugo.toml
-	publishDir = "./"
-	```
-- or simply with the default options and no config edits for publishDir, leaving it in `public`
+###### Deploy on GitHub profile Pages
+1. in repo website, go to Settings > Pages > Source: GitHub Actions
+2. in your local repo, add folder "`.github`"
+3. within there, create a folder called "`workflows`"
+4. within there, create a "`hugo.yaml`" file
+5. copy workflow code into `hugo.yaml` from [hugo official documentation](https://gohugo.io/hosting-and-deployment/hosting-on-github/)
+6. `git add .` > `git commit -m "github actions"` > `git push`
