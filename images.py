@@ -3,9 +3,9 @@ import re
 import shutil
 
 # Paths (using raw strings to handle Windows backslashes correctly)
-posts_dir = r"C:\Users\ilona\Documents\ILXNAH\content\posts"
+posts_dir = r"C:\Users\ilona\Documents\ILXNAH.github.io\content\posts"
 attachments_dir = r"C:\Users\ilona\Documents\obsidian\Attachments"
-static_images_dir = r"C:\Users\ilona\Documents\ILXNAH\static\images"
+static_images_dir = r"C:\Users\ilona\Documents\ILXNAH.github.io\static\images"
 
 # Step 1: Process each markdown file in the posts directory
 for filename in os.listdir(posts_dir):
