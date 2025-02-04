@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>ILXNAH&#39;s den</title>
-    <link>//localhost:1313/</link>
+    <link>/</link>
     <description>Recent content on ILXNAH&#39;s den</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 28 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 28 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Creating Obsidian blog with Hugo</title>
-      <link>//localhost:1313/posts/creating-obsidian-blog-with-hugo/</link>
+      <link>/posts/creating-obsidian-blog-with-hugo/</link>
       <pubDate>Tue, 28 Jan 2025 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/posts/creating-obsidian-blog-with-hugo/</guid>
+      <guid>/posts/creating-obsidian-blog-with-hugo/</guid>
       <description>&lt;p&gt;Following a &lt;a href=&#34;https://www.youtube.com/watch?v=dnE7c0ELEH8&#34;&gt;video from NetworkChuck&lt;/a&gt;, then freestyling it to GitHub Pages.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&amp;ldquo;We only know what we make.&amp;rdquo;&lt;/p&gt;
@@ -60,7 +60,7 @@
 &lt;/li&gt;
 &lt;li&gt;Next, run your Hugo server preview with &lt;code&gt;hugo serve&lt;/code&gt;
 &lt;ul&gt;
-&lt;li&gt;Take a look at &lt;a href=&#34;//localhost:1313/&#34;&gt;//localhost:1313/&lt;/a&gt; &amp;gt; Ctrl+C to cancel website preview&lt;/li&gt;
+&lt;li&gt;Take a look at &lt;a href=&#34;/&#34;&gt;//localhost:1313/&lt;/a&gt; &amp;gt; Ctrl+C to cancel website preview&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
@@ -135,7 +135,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;print(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Markdown files processed and images copied successfully.&amp;#34;&lt;/span&gt;)
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
 &lt;li&gt;added image for testing purposes of the part of the script we just did:
-&lt;img src=&#34;//localhost:1313/images/Pasted%20image%2020250131130510.png&#34; alt=&#34;Image Description&#34;&gt;&lt;/li&gt;
+&lt;img src=&#34;/images/Pasted%20image%2020250131130510.png&#34; alt=&#34;Image Description&#34;&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;pushing-code-into-github&#34;&gt;Pushing code into GitHub&lt;/h3&gt;
 &lt;ul&gt;
@@ -166,12 +166,27 @@
     
     <item>
       <title></title>
-      <link>//localhost:1313/posts/posts/</link>
+      <link>/posts/posts/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/posts/posts/</guid>
+      <guid>/posts/posts/</guid>
       <description></description>
       <content></content>
+    </item>
+    
+    <item>
+      <title>Testing the script</title>
+      <link>/posts/testing-the-script/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/testing-the-script/</guid>
+      <description>&lt;p&gt;Testing out the final automation script.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/Cannonical%20wallpaper.jpg&#34; alt=&#34;Image Description&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Ps. Also added .jpg and .jpeg into images.py, since the regex only searched for .png.&lt;/p&gt;</description>
+      <content>&lt;p&gt;Testing out the final automation script.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/Cannonical%20wallpaper.jpg&#34; alt=&#34;Image Description&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Ps. Also added .jpg and .jpeg into images.py, since the regex only searched for .png.&lt;/p&gt;
+</content>
     </item>
     
   </channel>
