@@ -174,20 +174,5 @@
       <content></content>
     </item>
     
-    <item>
-      <title>Testing the script</title>
-      <link>/posts/testing-the-script/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/posts/testing-the-script/</guid>
-      <description>&lt;p&gt;Testing out the final automation script.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/images/Cannonical%20wallpaper.jpg&#34; alt=&#34;Image Description&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Ps. Also added .jpg and .jpeg into images.py, since the regex only searched for .png.&lt;/p&gt;</description>
-      <content>&lt;p&gt;Testing out the final automation script.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/images/Cannonical%20wallpaper.jpg&#34; alt=&#34;Image Description&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Ps. Also added .jpg and .jpeg into images.py, since the regex only searched for .png.&lt;/p&gt;
-</content>
-    </item>
-    
   </channel>
 </rss>
