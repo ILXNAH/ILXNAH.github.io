@@ -331,6 +331,19 @@ Battle Plan Using Obsidian.md for taking notes - simply &ldquo;type out the blog
 <li>copy workflow code into <code>hugo.yaml</code> from <a href="https://gohugo.io/hosting-and-deployment/hosting-on-github/">Hugo&rsquo;s official documentation</a></li>
 <li><code>git add .</code> &gt; <code>git commit -m &quot;github actions&quot;</code> &gt; <code>git push</code></li>
 </ol>
+<h5 id="publishing-workflow">Publishing Workflow<a href="#publishing-workflow" class="hanchor" ariaLabel="Anchor">#</a> </h5>
+<ol>
+<li><code>robocopy &quot;C:\Users\ilona\Documents\obsidian\posts&quot; &quot;C:\Users\ilona\Documents\ILXNAH.github.io\content\posts&quot; /mir</code></li>
+<li><code>python images.py</code></li>
+<li><code>hugo</code></li>
+<li>(to view - can be skipped) <code>hugo serve --noHTTPCache</code>
+<ul>
+<li>use this flag to avoid site refresh being stuck due to cache (if you&rsquo;re editing in real-time)</li>
+<li>you can create alias: <code>hss='hugo serve --noHTTPCache'</code></li>
+</ul>
+</li>
+<li><code>git add .</code> &gt; <code>git commit -m &quot;change&quot;</code> &gt; <code>git push</code></li>
+</ol>
 
       </div></div>
 

@@ -116,3 +116,11 @@ print("Markdown files processed and images copied successfully.")
 4. within there, create a "`hugo.yaml`" file
 5. copy workflow code into `hugo.yaml` from [Hugo's official documentation](https://gohugo.io/hosting-and-deployment/hosting-on-github/)
 6. `git add .` > `git commit -m "github actions"` > `git push`
+##### Publishing Workflow
+1. `robocopy "C:\Users\ilona\Documents\obsidian\posts" "C:\Users\ilona\Documents\ILXNAH.github.io\content\posts" /mir`
+2. `python images.py`
+3. `hugo`
+4. (to view - can be skipped) `hugo serve --noHTTPCache`
+	- use this flag to avoid site refresh being stuck due to cache (if you're editing in real-time)
+	- you can create alias: `hss='hugo serve --noHTTPCache'`
+5. `git add .` > `git commit -m "change"` > `git push`
