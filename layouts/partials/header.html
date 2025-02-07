@@ -5,7 +5,7 @@
     </div>
     {{ if len $.Site.Menus }}
 	<button id="theme-toggle" aria-label="Toggle Theme">
-	  <img src="{{ "/icons/dark-mode.png" | relURL }}" alt="Dark Mode Icon">
+	  <img src="{{ "icons/moon.png" | relURL }}" alt="Moon Icon">
 	</button>      {{ partial "mobile-menu.html" . }}
     {{ end }}
     {{ if and $.Site.Params.showLanguageSelector (len $.Site.Home.AllTranslations) }}

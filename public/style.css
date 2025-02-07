@@ -35,8 +35,8 @@ body {
 /* Optional: Style the theme toggle button */
 #theme-toggle {
   position: fixed;
-  bottom: 20px; /* Adjust as needed */
-  left: 40px;   /* Adjust as needed */
+  bottom: 10px; /* Adjust as needed */
+  left: 30px; /* Adjust as needed */
   padding: 1px;
   font-size: 10px; /* Adjust size as needed */
   cursor: pointer;
@@ -48,8 +48,10 @@ body {
 }
 
 #theme-toggle img {
-  width: 10px; /* Adjust size as needed */
-  height: 10px;
+  width: 50px; /* Adjust size as needed */
+  height: 50px;
+  border: none;
+  outline: none;
 }
 
 #theme-toggle:hover {
