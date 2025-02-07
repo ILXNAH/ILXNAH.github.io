@@ -1,6 +1,52 @@
+/* Default Green */
 :root {
-/*  --accent: #eec35e; /* default green */
-/*  --accent: #E24A4A; /* Soft red */
-/*  --accent: #4A90E2; /* Light blue */
-  --accent: #ff79c6;  /* Soft pink */
+  --background: #ffffff;
+  --foreground: #1a1a1a;
+  --accent: #eec35e; /* Default green */
+}
+
+/* Soft Pink */
+[data-theme="pink"] {
+  --background: #1a170f;
+  --foreground: #eceae5;
+  --accent: #ff79c6; /* Soft pink */
+}
+
+/* Soft Red */
+[data-theme="red"] {
+  --background: #2b1a1a;
+  --foreground: #ffffff;
+  --accent: #E24A4A; /* Soft red */
+}
+
+/* Light Blue */
+[data-theme="blue"] {
+  --background: #1a2b3c;
+  --foreground: #ffffff;
+  --accent: #4A90E2; /* Light blue */
+}
+
+/* Apply variables */
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+}
+
+/* Optional: Style the theme toggle button */
+#theme-toggle {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: var(--accent);
+  border: none;
+  color: white;
+  border-radius: 5px;
+  z-index: 1000;
+}
+
+#theme-toggle:hover {
+  background-color: darken(var(--accent), 10%);
 }
