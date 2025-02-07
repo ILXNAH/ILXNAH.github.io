@@ -90,7 +90,7 @@ paginate = 5
       words = "words"
 
       [languages.en.params.logo]
-        logoText = "Terminal"
+        logoText = "Hello World!"
         logoHomeLink = "/"
 
       [languages.en.menu]
