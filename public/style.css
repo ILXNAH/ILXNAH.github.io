@@ -34,12 +34,11 @@ body {
 
 /* Optional: Style the theme toggle button */
 #theme-toggle {
-  display: none !important; /* Hides the button */
   position: fixed;
-  top: 10px;
-  right: 10px;
+  bottom: 10px; /* Adjust as needed */
+  left: 10px;   /* Adjust as needed */
   padding: 10px 15px;
-  font-size: 16px;
+  font-size: 16px; /* Adjust size as needed */
   cursor: pointer;
   background-color: var(--accent);
   border: none;

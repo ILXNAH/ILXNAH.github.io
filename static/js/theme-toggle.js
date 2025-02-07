@@ -1,5 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
+  console.log("Theme toggle script loaded");
   const themeToggleButton = document.getElementById('theme-toggle');
+  console.log('Button found:', themeToggleButton); // Check if the button is found
   let currentTheme = localStorage.getItem('theme') || 'default'; // Retrieve theme from local storage if it exists
 
   // Set initial theme on page load
@@ -7,6 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // Toggle theme when button is clicked
   themeToggleButton.addEventListener('click', function() {
+    console.log('Button clicked!'); // Check if button click is firing
     let newTheme;
     if (currentTheme === 'default') {
       newTheme = 'pink';
