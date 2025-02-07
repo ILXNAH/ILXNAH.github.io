@@ -125,7 +125,7 @@ print("Markdown files processed and images copied successfully.")
 	- you can create alias: `hss='hugo serve --noHTTPCache'`
 5. `git add .` > `git commit -m "change"` > `git push`
 #### Final workflow automation script in PowerShell
-The below pasted `updateblog.ps1` script automates the publishing workflow in the above mentioned article (apart from preview):
+The below pasted `updateblog.ps1` script automates the publishing workflow in the above mentioned paragraph (apart from preview):
 ```
 # Set variables for Obsidian to Hugo copy
 $sourcePath = "C:\Users\ilona\Documents\obsidian\posts"

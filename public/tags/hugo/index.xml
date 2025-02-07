@@ -175,7 +175,7 @@
 &lt;li&gt;&lt;code&gt;git add .&lt;/code&gt; &amp;gt; &lt;code&gt;git commit -m &amp;quot;change&amp;quot;&lt;/code&gt; &amp;gt; &lt;code&gt;git push&lt;/code&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h4 id=&#34;final-workflow-automation-script-in-powershell&#34;&gt;Final workflow automation script in PowerShell&lt;/h4&gt;
-&lt;p&gt;The below pasted &lt;code&gt;updateblog.ps1&lt;/code&gt; script automates the publishing workflow in the above mentioned article (apart from preview):&lt;/p&gt;
+&lt;p&gt;The below pasted &lt;code&gt;updateblog.ps1&lt;/code&gt; script automates the publishing workflow in the above mentioned paragraph (apart from preview):&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;# Set variables for Obsidian to Hugo copy
 $sourcePath = &amp;#34;C:\Users\ilona\Documents\obsidian\posts&amp;#34;
 $destinationPath = &amp;#34;C:\Users\ilona\Documents\ILXNAH.github.io\content\posts&amp;#34;
