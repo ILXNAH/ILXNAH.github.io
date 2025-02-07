@@ -126,7 +126,7 @@ print("Markdown files processed and images copied successfully.")
 5. `git add .` > `git commit -m "change"` > `git push`
 #### Final workflow automation script in PowerShell
 The below pasted `updateblog.ps1` script automates the publishing workflow in the above mentioned paragraph (apart from preview):
-```
+```powershell
 # Set variables for Obsidian to Hugo copy
 $sourcePath = "C:\Users\ilona\Documents\obsidian\posts"
 $destinationPath = "C:\Users\ilona\Documents\ILXNAH.github.io\content\posts"
