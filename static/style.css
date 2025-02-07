@@ -35,16 +35,21 @@ body {
 /* Optional: Style the theme toggle button */
 #theme-toggle {
   position: fixed;
-  bottom: 10px; /* Adjust as needed */
-  left: 10px;   /* Adjust as needed */
-  padding: 10px 15px;
-  font-size: 16px; /* Adjust size as needed */
+  bottom: 20px; /* Adjust as needed */
+  left: 40px;   /* Adjust as needed */
+  padding: 1px;
+  font-size: 10px; /* Adjust size as needed */
   cursor: pointer;
-  background-color: var(--accent);
+  background-color: none;
   border: none;
   color: white;
   border-radius: 5px;
   z-index: 1000;
+}
+
+#theme-toggle img {
+  width: 10px; /* Adjust size as needed */
+  height: 10px;
 }
 
 #theme-toggle:hover {
