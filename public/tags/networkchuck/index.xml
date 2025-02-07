@@ -174,7 +174,129 @@
 &lt;/li&gt;
 &lt;li&gt;&lt;code&gt;git add .&lt;/code&gt; &amp;gt; &lt;code&gt;git commit -m &amp;quot;change&amp;quot;&lt;/code&gt; &amp;gt; &lt;code&gt;git push&lt;/code&gt;&lt;/li&gt;
 &lt;/ol&gt;
-</content>
+&lt;h4 id=&#34;final-workflow-automation-script-in-powershell&#34;&gt;Final workflow automation script in PowerShell&lt;/h4&gt;
+&lt;p&gt;The below pasted &lt;code&gt;updateblog.ps1&lt;/code&gt; script automates the publishing workflow in the above mentioned article (apart from preview):&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;# Set variables for Obsidian to Hugo copy
+$sourcePath = &amp;#34;C:\Users\ilona\Documents\obsidian\posts&amp;#34;
+$destinationPath = &amp;#34;C:\Users\ilona\Documents\ILXNAH.github.io\content\posts&amp;#34;
+
+# Set Github repo 
+$myrepo = &amp;#34;git@github.com:ILXNAH/ILXNAH.github.io.git&amp;#34;
+
+# Set error handling
+$ErrorActionPreference = &amp;#34;Stop&amp;#34;
+Set-StrictMode -Version Latest
+
+# Change to the script&amp;#39;s directory
+$ScriptDir = Split-Path -Parent $MyInvocation.MyCommand.Definition
+Set-Location $ScriptDir
+
+# Check for required commands
+$requiredCommands = @(&amp;#39;git&amp;#39;, &amp;#39;hugo&amp;#39;)
+
+# Check for Python command (python or python3)
+if (Get-Command &amp;#39;python&amp;#39; -ErrorAction SilentlyContinue) {
+    $pythonCommand = &amp;#39;python&amp;#39;
+} elseif (Get-Command &amp;#39;python3&amp;#39; -ErrorAction SilentlyContinue) {
+    $pythonCommand = &amp;#39;python3&amp;#39;
+} else {
+    Write-Error &amp;#34;Python is not installed or not in PATH.&amp;#34;
+    exit 1
+}
+foreach ($cmd in $requiredCommands) {
+    if (-not (Get-Command $cmd -ErrorAction SilentlyContinue)) {
+        Write-Error &amp;#34;$cmd is not installed or not in PATH.&amp;#34;
+        exit 1
+    }
+}
+
+# Step 1: Check if Git is initialized, and initialize if necessary
+if (-not (Test-Path &amp;#34;.git&amp;#34;)) {
+    Write-Host &amp;#34;Initializing Git repository...&amp;#34;
+    git init
+    git remote add origin $myrepo
+} else {
+    Write-Host &amp;#34;Git repository already initialized.&amp;#34;
+    $remotes = git remote
+    if (-not ($remotes -contains &amp;#39;origin&amp;#39;)) {
+        Write-Host &amp;#34;Adding remote origin...&amp;#34;
+        git remote add origin $myrepo
+    }
+}
+
+# Step 2: Sync posts from Obsidian to Hugo content folder using Robocopy
+Write-Host &amp;#34;Syncing posts from Obsidian...&amp;#34;
+if (-not (Test-Path $sourcePath)) {
+    Write-Error &amp;#34;Source path does not exist: $sourcePath&amp;#34;
+    exit 1
+}
+if (-not (Test-Path $destinationPath)) {
+    Write-Error &amp;#34;Destination path does not exist: $destinationPath&amp;#34;
+    exit 1
+}
+
+# Use Robocopy to mirror the directories
+$robocopyOptions = @(&amp;#39;/MIR&amp;#39;, &amp;#39;/Z&amp;#39;, &amp;#39;/W:5&amp;#39;, &amp;#39;/R:3&amp;#39;)
+$robocopyResult = robocopy $sourcePath $destinationPath @robocopyOptions
+if ($LASTEXITCODE -ge 8) {
+    Write-Error &amp;#34;Robocopy failed with exit code $LASTEXITCODE&amp;#34;
+    exit 1
+}
+
+# Step 3: Process Markdown files with Python script to handle image links
+Write-Host &amp;#34;Processing image links in Markdown files...&amp;#34;
+if (-not (Test-Path &amp;#34;images.py&amp;#34;)) {
+    Write-Error &amp;#34;Python script images.py not found.&amp;#34;
+    exit 1
+}
+
+# Execute the Python script
+try {
+    &amp;amp; $pythonCommand images.py
+} catch {
+    Write-Error &amp;#34;Failed to process image links.&amp;#34;
+    exit 1
+}
+
+# Step 4: Build the Hugo site
+Write-Host &amp;#34;Building the Hugo site...&amp;#34;
+try {
+    hugo
+} catch {
+    Write-Error &amp;#34;Hugo build failed.&amp;#34;
+    exit 1
+}
+
+# Step 5: Add changes to Git
+Write-Host &amp;#34;Staging changes for Git...&amp;#34;
+$hasChanges = (git status --porcelain) -ne &amp;#34;&amp;#34;
+if (-not $hasChanges) {
+    Write-Host &amp;#34;No changes to stage.&amp;#34;
+} else {
+    git add .
+}
+
+# Step 6: Commit changes with a dynamic message
+$commitMessage = &amp;#34;Blog Update on $(Get-Date -Format &amp;#39;yyyy-MM-dd HH:mm:ss&amp;#39;)&amp;#34;
+$hasStagedChanges = (git diff --cached --name-only) -ne &amp;#34;&amp;#34;
+if (-not $hasStagedChanges) {
+    Write-Host &amp;#34;No changes to commit.&amp;#34;
+} else {
+    Write-Host &amp;#34;Committing changes...&amp;#34;
+    git commit -m &amp;#34;$commitMessage&amp;#34;
+}
+
+# Step 7: Push all changes to the main branch
+Write-Host &amp;#34;Pushing to GitHub Main...&amp;#34;
+try {
+    git push origin main
+} catch {
+    Write-Error &amp;#34;Failed to push to Main branch.&amp;#34;
+    exit 1
+}
+
+Write-Host &amp;#34;All done! Site synced, processed, committed, built, and deployed.&amp;#34;
+&lt;/code&gt;&lt;/pre&gt;</content>
     </item>
     
   </channel>
