@@ -1,0 +1,52 @@
+<footer class="footer">
+  <div class="footer__inner">
+    {{ if $.Site.Copyright }}
+      <div class="copyright copyright--user">
+        <span>{{ $.Site.Copyright | safeHTML }}</span>
+    {{ else }}
+      <div class="copyright">
+        <span>© {{ now.Year }} Powered by <a href="https://gohugo.io">Hugo</a></span>
+    {{ end }}
+      <span>:: <a href="https://github.com/panr/hugo-theme-terminal" target="_blank">Theme</a> made by <a href="https://github.com/panr" target="_blank">panr</a></span>
+    </div>
+
+    <!-- Attribution for Icon on the same line with proper spacing -->
+    <div class="footer-credit">
+      <span>:: <a href="https://www.freepik.com/sticker/taco_9282565#fromView=popular&page=1&position=68&uuid=da7f4e5b-952f-4da8-82d7-9a9f0482748d">Icon by Stickers</a></span>
+    </div>
+  </div>
+</footer>
+
+{{ $menu := resources.Get "js/menu.js" | js.Build }}
+{{ $prism := resources.Get "js/prism.js" | js.Build }}
+
+{{ $bundle := slice $menu $prism | resources.Concat "bundle.js" | resources.Minify }}
+
+<script type="text/javascript" src="{{ $bundle.RelPermalink }}"></script>
+
+<!-- Extended footer section-->
+{{ partial "extended_footer.html" . }}
+
+<style>
+  /* Reset margin and padding for footer elements */
+  .footer, .footer__inner, .footer .copyright, .footer-credit {
+    margin: 0;
+    padding: 0;
+    display: inline;  /* Make everything inline */
+    white-space: nowrap;  /* Prevent any wrapping */
+  }
+
+  /* Ensure all text is kept on one line without large spaces between them */
+  .footer .copyright span,
+  .footer-credit span {
+    display: inline; /* Ensures inline display */
+    margin-right: 5px; /* Tighten space between text */
+    padding: 0;
+  }
+
+  /* Make sure attribution to icon has no line breaks or extra space */
+  .footer-credit {
+    display: inline;  /* Keep attribution on the same line */
+    margin-left: 5px;  /* Minimal space between sections */
+  }
+</style>
