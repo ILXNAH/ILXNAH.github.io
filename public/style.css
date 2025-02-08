@@ -72,6 +72,9 @@ body {
   align-items: center;
   gap: 10px; /* Adjust space between elements */
 }
+.footer__item {
+  text-align: center;
+}
 .footer .copyright,
 .footer-credit {
   display: block; /* Ensures items stack vertically on smaller screens */
@@ -83,7 +86,7 @@ body {
 @media screen and (max-width: 600px) {
   .footer__inner {
     flex-direction: column; /* Stack items vertically on smaller screens */
-    gap: 20px; /* Add more space between elements */
+    gap: 10px; /* Add more space between elements */
   }
   .footer .copyright,
   .footer-credit {
