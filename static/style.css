@@ -62,7 +62,7 @@ body {
 .footer {
   width: 100%;
   padding: 20px;
-  background-color: #f9f9f9; /* Change as per your theme */
+  background-color: none; /* Change as per your theme */
   text-align: center; /* Ensure text is centered */
 }
 
@@ -71,6 +71,7 @@ body {
   flex-wrap: wrap; /* Allow content to wrap on small screens */
   justify-content: center; /* Center align items */
   align-items: center;
+  gap: 10px; /* Adjust space between elements */
 }
 
 .footer .copyright,
