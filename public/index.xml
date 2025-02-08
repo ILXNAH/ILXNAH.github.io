@@ -5,21 +5,12 @@
     <link>/</link>
     <description>Recent content on ILXNAH&#39;s den</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title></title>
-      <link>/posts/hugo-posts/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/posts/hugo-posts/</guid>
-      <description></description>
-      <content></content>
-    </item>
-    
+    <language>en</language>
+    <lastBuildDate>Tue, 28 Jan 2025 08:20:38 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Creating Obsidian blog with Hugo</title>
       <link>/posts/creating-obsidian-blog-with-hugo/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 28 Jan 2025 08:20:38 +0000</pubDate>
       
       <guid>/posts/creating-obsidian-blog-with-hugo/</guid>
       <description>&lt;p&gt;Following a &lt;a href=&#34;https://www.youtube.com/watch?v=dnE7c0ELEH8&#34;&gt;video from NetworkChuck&lt;/a&gt;, then freestyling it to GitHub Pages.&lt;/p&gt;
@@ -306,6 +297,16 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Write-Host &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;All done! Site synced, processed, committed, built, and deployed.&amp;#34;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/posts/hugo-posts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/hugo-posts/</guid>
+      <description></description>
+      <content></content>
     </item>
     
   </channel>

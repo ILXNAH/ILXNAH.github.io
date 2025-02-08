@@ -105,3 +105,7 @@ paginate = 5
 	#   name = "Switch Theme"
 	#   url = "#"
 	#   params = { class = "theme-toggle-item" }
+
+[frontmatter]
+date = ["date", "Date Created"]
+lastmod = ["lastmod", "Date Modified"]
