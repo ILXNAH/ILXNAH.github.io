@@ -37,5 +37,25 @@
       <content></content>
     </item>
     
+    <item>
+      <title>PowerShell</title>
+      <link>/tags/powershell/</link>
+      <pubDate>Tue, 28 Jan 2025 08:20:38 +0000</pubDate>
+      
+      <guid>/tags/powershell/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+    <item>
+      <title>Python</title>
+      <link>/tags/python/</link>
+      <pubDate>Tue, 28 Jan 2025 08:20:38 +0000</pubDate>
+      
+      <guid>/tags/python/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
   </channel>
 </rss>

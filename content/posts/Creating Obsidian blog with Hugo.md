@@ -8,6 +8,8 @@ tags:
   - obsidian
   - hugo
   - networkchuck
+  - PowerShell
+  - Python
 ---
 Following a [video from NetworkChuck](https://www.youtube.com/watch?v=dnE7c0ELEH8), then freestyling it to GitHub Pages.
 >"We only know what we make."
