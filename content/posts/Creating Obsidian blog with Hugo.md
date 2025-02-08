@@ -12,8 +12,8 @@ tags:
 Following a [video from NetworkChuck](https://www.youtube.com/watch?v=dnE7c0ELEH8), then freestyling it to GitHub Pages.
 >"We only know what we make."
 ##### Battle Plan
-- Using [Obsidian.md](https://obsidian.md/) for taking notes
-- Turning it into HTML code using [Hugo](https://themes.gohugo.io/) (a tool to convert .md files into a website)
+- Use [Obsidian.md](https://obsidian.md/) for note-taking
+- Turn it into HTML code using [Hugo](https://themes.gohugo.io/) (a tool to convert .md files into a website)
 - Ship the code off to [GitHub](https://github.com/)
 - Deploy for free via [Pages](https://pages.github.com/)
 ###### Note
@@ -29,9 +29,8 @@ I'll be setting this up on my Windows OS, but if you need a guide for Linux/Mac,
 7. Navigate to [Hugo Themes](https://themes.gohugo.io/) and pick a theme to install for your blog.
 8. Select installation option for a specific theme, e.g. look here for [Terminal theme](https://themes.gohugo.io/themes/hugo-theme-terminal/). I used local installation to avoid any fuss when transferring between repos. 
 	`git clone https://github.com/panr/hugo-theme-terminal.git themes/terminal`
-9. Edit the config file called so that it matches the installed theme.
-10. Ad 9.) Terminal theme has a [config file](https://themes.gohugo.io/themes/hugo-theme-terminal/#how-to-configure) on its page which you can copy (leave out modules) and paste into `hugo.toml`
-11. Run Hugo server preview with `hugo serve`
+9. Edit the config file called so that it matches the installed theme; Terminal theme has a [config file](https://themes.gohugo.io/themes/hugo-theme-terminal/#how-to-configure) on its page which you can copy (leave out modules) and paste into `hugo.toml`.
+10. Run Hugo server preview with `hugo serve`
 	- Take a look at [//localhost:1313/](//localhost:1313/) > Ctrl+C to cancel website preview
 #### Syncing Obsidian to Hugo
 - posts folder will be syncing from `Obsidian Vault/Hugo Posts` into `/ILXNAH.github.io/content/posts`
@@ -106,20 +105,20 @@ print("Markdown files processed and images copied successfully.")
 - `git push -u origin main` to push from local to remote repo
 	(specified is: first, name of your remote repo `origin`, then branch name `main`)
 #### Deploying to GitHub Pages
-12. on repo website, go to Settings > Pages > Source: GitHub Actions
-13. in your local repo, add folder "`.github`"
-14. within there, create a folder called "`workflows`"
-15. within there, create a "`hugo.yaml`" file
-16. copy workflow code into `hugo.yaml` from [Hugo's official documentation](https://gohugo.io/hosting-and-deployment/hosting-on-github/)
-17. `git add .` > `git commit -m "github actions"` > `git push`
+11. on repo website, go to Settings > Pages > Source: GitHub Actions
+12. in your local repo, add folder "`.github`"
+13. within there, create a folder called "`workflows`"
+14. within there, create a "`hugo.yaml`" file
+15. copy workflow code into `hugo.yaml` from [Hugo's official documentation](https://gohugo.io/hosting-and-deployment/hosting-on-github/)
+16. `git add .` > `git commit -m "github actions"` > `git push`
 ##### Publishing Workflow
-18. `robocopy "C:\Users\ilona\Documents\obsidian\Hugo Posts" "C:\Users\ilona\Documents\ILXNAH.github.io\content\posts" /mir`
-19. `python images.py`
-20. `hugo`
-21. (to view - can be skipped) `hugo serve --noHTTPCache`
+17. `robocopy "C:\Users\ilona\Documents\obsidian\Hugo Posts" "C:\Users\ilona\Documents\ILXNAH.github.io\content\posts" /mir`
+18. `python images.py`
+19. `hugo`
+20. (to view - can be skipped) `hugo serve --noHTTPCache`
 	- use this flag to avoid site refresh being stuck due to cache (if you're editing in real-time)
 	- you can create alias: `hss='hugo serve --noHTTPCache'`
-22. `git add .` > `git commit -m "change"` > `git push`
+21. `git add .` > `git commit -m "change"` > `git push`
 #### Final automation script in PowerShell
 The below pasted `updateblog.ps1` script automates the publishing workflow in the above mentioned paragraph (apart from preview):
 ```powershell
