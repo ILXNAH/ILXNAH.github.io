@@ -33,7 +33,7 @@
 &lt;li&gt;Ship the code off/push site to &lt;a href=&#34;https://github.com/&#34;&gt;GitHub&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;I decided not to use Hostinger (like Chuck did) but was playing around with other ways of deployment on GitHub Pages (there are several different options and I&amp;rsquo;ll share the simplest one)&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h6 id=&#34;note&#34;&gt;Note:&lt;/h6&gt;
+&lt;h6 id=&#34;note&#34;&gt;Note&lt;/h6&gt;
 &lt;p&gt;I&amp;rsquo;ll be setting this up on my Wins PC, but if you need Linux/Mac guidance, Chuck got those differences covered in &lt;a href=&#34;https://blog.networkchuck.com/posts/my-insane-blog-pipeline/&#34;&gt;his&lt;/a&gt; documentation. For the sake of sanity, I&amp;rsquo;m keeping my email/username/paths within the commands, i.e. don&amp;rsquo;t forget to change them.&lt;/p&gt;</description>
       <content>&lt;p&gt;Following a &lt;a href=&#34;https://www.youtube.com/watch?v=dnE7c0ELEH8&#34;&gt;video from NetworkChuck&lt;/a&gt;, then freestyling it to GitHub Pages.&lt;/p&gt;
 &lt;blockquote&gt;
@@ -46,7 +46,7 @@
 &lt;li&gt;Ship the code off/push site to &lt;a href=&#34;https://github.com/&#34;&gt;GitHub&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;I decided not to use Hostinger (like Chuck did) but was playing around with other ways of deployment on GitHub Pages (there are several different options and I&amp;rsquo;ll share the simplest one)&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h6 id=&#34;note&#34;&gt;Note:&lt;/h6&gt;
+&lt;h6 id=&#34;note&#34;&gt;Note&lt;/h6&gt;
 &lt;p&gt;I&amp;rsquo;ll be setting this up on my Wins PC, but if you need Linux/Mac guidance, Chuck got those differences covered in &lt;a href=&#34;https://blog.networkchuck.com/posts/my-insane-blog-pipeline/&#34;&gt;his&lt;/a&gt; documentation. For the sake of sanity, I&amp;rsquo;m keeping my email/username/paths within the commands, i.e. don&amp;rsquo;t forget to change them.&lt;/p&gt;
 &lt;h4 id=&#34;initial-installation&#34;&gt;Initial Installation&lt;/h4&gt;
 &lt;ol&gt;

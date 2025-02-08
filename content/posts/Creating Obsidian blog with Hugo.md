@@ -16,7 +16,7 @@ Following a [video from NetworkChuck](https://www.youtube.com/watch?v=dnE7c0ELEH
 - Turn it into HTML code, aka "make it code" using [Hugo](https://themes.gohugo.io/): a tool to convert .md files into a website code
 - Ship the code off/push site to [GitHub](https://github.com/)
 - I decided not to use Hostinger (like Chuck did) but was playing around with other ways of deployment on GitHub Pages (there are several different options and I'll share the simplest one)
-###### Note: 
+###### Note
 I'll be setting this up on my Wins PC, but if you need Linux/Mac guidance, Chuck got those differences covered in [his](https://blog.networkchuck.com/posts/my-insane-blog-pipeline/) documentation. For the sake of sanity, I'm keeping my email/username/paths within the commands, i.e. don't forget to change them. 
 #### Initial Installation
 1. **Install everything**: 
