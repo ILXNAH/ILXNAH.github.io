@@ -6,7 +6,7 @@ tags:
   - hugo
   - networkchuck
 sticker: emoji//1f6e0-fe0f
-MoC: "[[posts]]"
+MoC: "[[Hugo Posts]]"
 aliases:
   - Creating Obsidian blog with Hugo
 title: Creating Obsidian blog with Hugo
@@ -23,7 +23,7 @@ Following a [video from NetworkChuck](https://www.youtube.com/watch?v=dnE7c0ELEH
 I'll be setting this up on my Wins PC, but if you need Linux/Mac guidance, Chuck got those differences covered in [his](https://blog.networkchuck.com/posts/my-insane-blog-pipeline/) documentation. For the sake of sanity, I'm keeping my email/username/paths within the commands, i.e. don't forget to change them. 
 1. **Install everything**: 
 	- [Obsidian](https://obsidian.md/download), [Terminal](https://apps.microsoft.com/detail/9n0dx20hk701?hl=en-US&gl=US)/PowerShell, [VS Code](https://code.visualstudio.com/download), [Golang](https://go.dev/dl/), [Python 3](https://www.python.org/downloads/), [Git](https://git-scm.com/downloads) and [Hugo](https://gohugo.io/installation/) (add the .exe into your program location, e.g. Program Files, and also into PATH)
-2.  Create a `posts` folder within your Obsidian Workspace for your blog articles
+2.  Create a `Hugo Posts` folder within your Obsidian Workspace for your blog articles
 3. Within this folder, start a new note (that will be your first blog post)
 4. Double-check correct installations via the `version` flagged commands:
   `go version`, `git --version`, `hugo version`, `python --version` etc.
@@ -38,10 +38,10 @@ I'll be setting this up on my Wins PC, but if you need Linux/Mac guidance, Chuck
 10. Next, run your Hugo server preview with `hugo serve`
 	- Take a look at [//localhost:1313/](//localhost:1313/) > Ctrl+C to cancel website preview
 ### Syncing Obsidian to Hugo
-- posts folder will be syncing from `Obsidian Vault/posts` into `/ILXNAH.github.io/content/posts`
+- posts folder will be syncing from `Obsidian Vault/Hugo Posts` into `/ILXNAH.github.io/content/posts`
 - `cd content` > `mkdir posts` (this folder will be synced with Obsidian source folder) with this command: 
 	```
-	robocopy "C:\Users\ilona\Documents\obsidian\posts" "C:\Users\ilona\Documents\ILXNAH.github.io\content\posts" /mir
+	robocopy "C:\Users\ilona\Documents\obsidian\Hugo Posts" "C:\Users\ilona\Documents\ILXNAH.github.io\content\posts" /mir
 	```
 - `hugo serve` to preview blog with imported posts > Ctrl+C to exit the preview
 ### Using Front Matter in Obsidian
@@ -117,7 +117,7 @@ print("Markdown files processed and images copied successfully.")
 5. copy workflow code into `hugo.yaml` from [Hugo's official documentation](https://gohugo.io/hosting-and-deployment/hosting-on-github/)
 6. `git add .` > `git commit -m "github actions"` > `git push`
 ##### Publishing Workflow
-1. `robocopy "C:\Users\ilona\Documents\obsidian\posts" "C:\Users\ilona\Documents\ILXNAH.github.io\content\posts" /mir`
+1. `robocopy "C:\Users\ilona\Documents\obsidian\Hugo Posts" "C:\Users\ilona\Documents\ILXNAH.github.io\content\posts" /mir`
 2. `python images.py`
 3. `hugo`
 4. (to view - can be skipped) `hugo serve --noHTTPCache`
@@ -128,7 +128,7 @@ print("Markdown files processed and images copied successfully.")
 The below pasted `updateblog.ps1` script automates the publishing workflow in the above mentioned paragraph (apart from preview):
 ```powershell
 # Set variables for Obsidian to Hugo copy
-$sourcePath = "C:\Users\ilona\Documents\obsidian\posts"
+$sourcePath = "C:\Users\ilona\Documents\obsidian\Hugo Posts"
 $destinationPath = "C:\Users\ilona\Documents\ILXNAH.github.io\content\posts"
 
 # Set Github repo 

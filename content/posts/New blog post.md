@@ -4,5 +4,5 @@ date:
 draft: true
 tags: 
 sticker: ""
-MoC: "[[posts]]"
+MoC: "[[Hugo Posts]]"
 ---

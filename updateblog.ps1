@@ -1,5 +1,5 @@
 # Set variables for Obsidian to Hugo copy
-$sourcePath = "C:\Users\ilona\Documents\obsidian\posts"
+$sourcePath = "C:\Users\ilona\Documents\obsidian\Hugo Posts"
 $destinationPath = "C:\Users\ilona\Documents\ILXNAH.github.io\content\posts"
 
 # Set Github repo 

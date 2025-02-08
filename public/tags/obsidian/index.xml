@@ -43,7 +43,7 @@
 &lt;li&gt;&lt;a href=&#34;https://obsidian.md/download&#34;&gt;Obsidian&lt;/a&gt;, &lt;a href=&#34;https://apps.microsoft.com/detail/9n0dx20hk701?hl=en-US&amp;amp;gl=US&#34;&gt;Terminal&lt;/a&gt;/PowerShell, &lt;a href=&#34;https://code.visualstudio.com/download&#34;&gt;VS Code&lt;/a&gt;, &lt;a href=&#34;https://go.dev/dl/&#34;&gt;Golang&lt;/a&gt;, &lt;a href=&#34;https://www.python.org/downloads/&#34;&gt;Python 3&lt;/a&gt;, &lt;a href=&#34;https://git-scm.com/downloads&#34;&gt;Git&lt;/a&gt; and &lt;a href=&#34;https://gohugo.io/installation/&#34;&gt;Hugo&lt;/a&gt; (add the .exe into your program location, e.g. Program Files, and also into PATH)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Create a &lt;code&gt;posts&lt;/code&gt; folder within your Obsidian Workspace for your blog articles&lt;/li&gt;
+&lt;li&gt;Create a &lt;code&gt;Hugo Posts&lt;/code&gt; folder within your Obsidian Workspace for your blog articles&lt;/li&gt;
 &lt;li&gt;Within this folder, start a new note (that will be your first blog post)&lt;/li&gt;
 &lt;li&gt;Double-check correct installations via the &lt;code&gt;version&lt;/code&gt; flagged commands:
 &lt;code&gt;go version&lt;/code&gt;, &lt;code&gt;git --version&lt;/code&gt;, &lt;code&gt;hugo version&lt;/code&gt;, &lt;code&gt;python --version&lt;/code&gt; etc.&lt;/li&gt;
@@ -66,9 +66,9 @@
 &lt;/ol&gt;
 &lt;h3 id=&#34;syncing-obsidian-to-hugo&#34;&gt;Syncing Obsidian to Hugo&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;posts folder will be syncing from &lt;code&gt;Obsidian Vault/posts&lt;/code&gt; into &lt;code&gt;/ILXNAH.github.io/content/posts&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;posts folder will be syncing from &lt;code&gt;Obsidian Vault/Hugo Posts&lt;/code&gt; into &lt;code&gt;/ILXNAH.github.io/content/posts&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;cd content&lt;/code&gt; &amp;gt; &lt;code&gt;mkdir posts&lt;/code&gt; (this folder will be synced with Obsidian source folder) with this command:
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;robocopy &amp;#34;C:\Users\ilona\Documents\obsidian\posts&amp;#34; &amp;#34;C:\Users\ilona\Documents\ILXNAH.github.io\content\posts&amp;#34; /mir
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;robocopy &amp;#34;C:\Users\ilona\Documents\obsidian\Hugo Posts&amp;#34; &amp;#34;C:\Users\ilona\Documents\ILXNAH.github.io\content\posts&amp;#34; /mir
 &lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;hugo serve&lt;/code&gt; to preview blog with imported posts &amp;gt; Ctrl+C to exit the preview&lt;/li&gt;
 &lt;/ul&gt;
@@ -163,7 +163,7 @@
 &lt;/ol&gt;
 &lt;h5 id=&#34;publishing-workflow&#34;&gt;Publishing Workflow&lt;/h5&gt;
 &lt;ol&gt;
-&lt;li&gt;&lt;code&gt;robocopy &amp;quot;C:\Users\ilona\Documents\obsidian\posts&amp;quot; &amp;quot;C:\Users\ilona\Documents\ILXNAH.github.io\content\posts&amp;quot; /mir&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;robocopy &amp;quot;C:\Users\ilona\Documents\obsidian\Hugo Posts&amp;quot; &amp;quot;C:\Users\ilona\Documents\ILXNAH.github.io\content\posts&amp;quot; /mir&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;python images.py&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;hugo&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;(to view - can be skipped) &lt;code&gt;hugo serve --noHTTPCache&lt;/code&gt;
@@ -177,7 +177,7 @@
 &lt;h4 id=&#34;final-workflow-automation-script-in-powershell&#34;&gt;Final workflow automation script in PowerShell&lt;/h4&gt;
 &lt;p&gt;The below pasted &lt;code&gt;updateblog.ps1&lt;/code&gt; script automates the publishing workflow in the above mentioned paragraph (apart from preview):&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Set variables for Obsidian to Hugo copy&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$sourcePath = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;C:\Users\ilona\Documents\obsidian\posts&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$sourcePath = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;C:\Users\ilona\Documents\obsidian\Hugo Posts&amp;#34;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$destinationPath = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;C:\Users\ilona\Documents\ILXNAH.github.io\content\posts&amp;#34;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Set Github repo &lt;/span&gt;

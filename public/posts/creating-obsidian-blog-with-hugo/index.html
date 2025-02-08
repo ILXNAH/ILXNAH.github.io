@@ -117,7 +117,7 @@ Battle Plan Using Obsidian.md for taking notes - simply &ldquo;type out the blog
 <body>
   
 
-  <div class="container">
+  <div class="container full">
 
     <header class="header">
   <div class="header__inner">
@@ -220,7 +220,7 @@ Battle Plan Using Obsidian.md for taking notes - simply &ldquo;type out the blog
 <li><a href="https://obsidian.md/download">Obsidian</a>, <a href="https://apps.microsoft.com/detail/9n0dx20hk701?hl=en-US&amp;gl=US">Terminal</a>/PowerShell, <a href="https://code.visualstudio.com/download">VS Code</a>, <a href="https://go.dev/dl/">Golang</a>, <a href="https://www.python.org/downloads/">Python 3</a>, <a href="https://git-scm.com/downloads">Git</a> and <a href="https://gohugo.io/installation/">Hugo</a> (add the .exe into your program location, e.g. Program Files, and also into PATH)</li>
 </ul>
 </li>
-<li>Create a <code>posts</code> folder within your Obsidian Workspace for your blog articles</li>
+<li>Create a <code>Hugo Posts</code> folder within your Obsidian Workspace for your blog articles</li>
 <li>Within this folder, start a new note (that will be your first blog post)</li>
 <li>Double-check correct installations via the <code>version</code> flagged commands:
 <code>go version</code>, <code>git --version</code>, <code>hugo version</code>, <code>python --version</code> etc.</li>
@@ -243,9 +243,9 @@ Battle Plan Using Obsidian.md for taking notes - simply &ldquo;type out the blog
 </ol>
 <h3 id="syncing-obsidian-to-hugo">Syncing Obsidian to Hugo<a href="#syncing-obsidian-to-hugo" class="hanchor" ariaLabel="Anchor">#</a> </h3>
 <ul>
-<li>posts folder will be syncing from <code>Obsidian Vault/posts</code> into <code>/ILXNAH.github.io/content/posts</code></li>
+<li>posts folder will be syncing from <code>Obsidian Vault/Hugo Posts</code> into <code>/ILXNAH.github.io/content/posts</code></li>
 <li><code>cd content</code> &gt; <code>mkdir posts</code> (this folder will be synced with Obsidian source folder) with this command:
-<pre tabindex="0"><code>robocopy &#34;C:\Users\ilona\Documents\obsidian\posts&#34; &#34;C:\Users\ilona\Documents\ILXNAH.github.io\content\posts&#34; /mir
+<pre tabindex="0"><code>robocopy &#34;C:\Users\ilona\Documents\obsidian\Hugo Posts&#34; &#34;C:\Users\ilona\Documents\ILXNAH.github.io\content\posts&#34; /mir
 </code></pre></li>
 <li><code>hugo serve</code> to preview blog with imported posts &gt; Ctrl+C to exit the preview</li>
 </ul>
@@ -340,7 +340,7 @@ Battle Plan Using Obsidian.md for taking notes - simply &ldquo;type out the blog
 </ol>
 <h5 id="publishing-workflow">Publishing Workflow<a href="#publishing-workflow" class="hanchor" ariaLabel="Anchor">#</a> </h5>
 <ol>
-<li><code>robocopy &quot;C:\Users\ilona\Documents\obsidian\posts&quot; &quot;C:\Users\ilona\Documents\ILXNAH.github.io\content\posts&quot; /mir</code></li>
+<li><code>robocopy &quot;C:\Users\ilona\Documents\obsidian\Hugo Posts&quot; &quot;C:\Users\ilona\Documents\ILXNAH.github.io\content\posts&quot; /mir</code></li>
 <li><code>python images.py</code></li>
 <li><code>hugo</code></li>
 <li>(to view - can be skipped) <code>hugo serve --noHTTPCache</code>
@@ -354,7 +354,7 @@ Battle Plan Using Obsidian.md for taking notes - simply &ldquo;type out the blog
 <h4 id="final-workflow-automation-script-in-powershell">Final workflow automation script in PowerShell<a href="#final-workflow-automation-script-in-powershell" class="hanchor" ariaLabel="Anchor">#</a> </h4>
 <p>The below pasted <code>updateblog.ps1</code> script automates the publishing workflow in the above mentioned paragraph (apart from preview):</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span><span style="color:#75715e"># Set variables for Obsidian to Hugo copy</span>
-</span></span><span style="display:flex;"><span>$sourcePath = <span style="color:#e6db74">&#34;C:\Users\ilona\Documents\obsidian\posts&#34;</span>
+</span></span><span style="display:flex;"><span>$sourcePath = <span style="color:#e6db74">&#34;C:\Users\ilona\Documents\obsidian\Hugo Posts&#34;</span>
 </span></span><span style="display:flex;"><span>$destinationPath = <span style="color:#e6db74">&#34;C:\Users\ilona\Documents\ILXNAH.github.io\content\posts&#34;</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e"># Set Github repo </span>
@@ -487,7 +487,7 @@ Battle Plan Using Obsidian.md for taking notes - simply &ldquo;type out the blog
     
     
     
-      <a href="/posts/posts/" class="button inline next">
+      <a href="/posts/hugo-posts/" class="button inline next">
         
       </a>
     
