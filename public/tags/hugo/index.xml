@@ -5,38 +5,40 @@
     <link>/tags/hugo/</link>
     <description>Recent content in Hugo on ILXNAH&#39;s den</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <lastBuildDate>Tue, 28 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language><atom:link href="/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Creating Obsidian blog with Hugo</title>
       <link>/posts/creating-obsidian-blog-with-hugo/</link>
-      <pubDate>Tue, 28 Jan 2025 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/creating-obsidian-blog-with-hugo/</guid>
       <description>&lt;p&gt;Following a &lt;a href=&#34;https://www.youtube.com/watch?v=dnE7c0ELEH8&#34;&gt;video from NetworkChuck&lt;/a&gt;, then freestyling it to GitHub Pages.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&amp;ldquo;We only know what we make.&amp;rdquo;&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h2 id=&#34;battle-plan&#34;&gt;Battle Plan&lt;/h2&gt;
+&lt;h5 id=&#34;battle-plan&#34;&gt;Battle Plan&lt;/h5&gt;
 &lt;ul&gt;
 &lt;li&gt;Using &lt;a href=&#34;https://obsidian.md/&#34;&gt;Obsidian.md&lt;/a&gt; for taking notes - simply &amp;ldquo;type out the blog&amp;rdquo;&lt;/li&gt;
 &lt;li&gt;Turn it into HTML code, aka &amp;ldquo;make it code&amp;rdquo; using &lt;a href=&#34;https://themes.gohugo.io/&#34;&gt;Hugo&lt;/a&gt;: a tool to convert .md files into a website code&lt;/li&gt;
 &lt;li&gt;Ship the code off/push site to &lt;a href=&#34;https://github.com/&#34;&gt;GitHub&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;I decided not to use Hostinger (like Chuck did) but was playing around with other ways of deployment on GitHub Pages (there are several different options and I&amp;rsquo;ll share the simplest one)&lt;/li&gt;
 &lt;/ul&gt;
+&lt;h6 id=&#34;note&#34;&gt;Note:&lt;/h6&gt;
 &lt;p&gt;I&amp;rsquo;ll be setting this up on my Wins PC, but if you need Linux/Mac guidance, Chuck got those differences covered in &lt;a href=&#34;https://blog.networkchuck.com/posts/my-insane-blog-pipeline/&#34;&gt;his&lt;/a&gt; documentation. For the sake of sanity, I&amp;rsquo;m keeping my email/username/paths within the commands, i.e. don&amp;rsquo;t forget to change them.&lt;/p&gt;</description>
       <content>&lt;p&gt;Following a &lt;a href=&#34;https://www.youtube.com/watch?v=dnE7c0ELEH8&#34;&gt;video from NetworkChuck&lt;/a&gt;, then freestyling it to GitHub Pages.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&amp;ldquo;We only know what we make.&amp;rdquo;&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h2 id=&#34;battle-plan&#34;&gt;Battle Plan&lt;/h2&gt;
+&lt;h5 id=&#34;battle-plan&#34;&gt;Battle Plan&lt;/h5&gt;
 &lt;ul&gt;
 &lt;li&gt;Using &lt;a href=&#34;https://obsidian.md/&#34;&gt;Obsidian.md&lt;/a&gt; for taking notes - simply &amp;ldquo;type out the blog&amp;rdquo;&lt;/li&gt;
 &lt;li&gt;Turn it into HTML code, aka &amp;ldquo;make it code&amp;rdquo; using &lt;a href=&#34;https://themes.gohugo.io/&#34;&gt;Hugo&lt;/a&gt;: a tool to convert .md files into a website code&lt;/li&gt;
 &lt;li&gt;Ship the code off/push site to &lt;a href=&#34;https://github.com/&#34;&gt;GitHub&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;I decided not to use Hostinger (like Chuck did) but was playing around with other ways of deployment on GitHub Pages (there are several different options and I&amp;rsquo;ll share the simplest one)&lt;/li&gt;
 &lt;/ul&gt;
+&lt;h6 id=&#34;note&#34;&gt;Note:&lt;/h6&gt;
 &lt;p&gt;I&amp;rsquo;ll be setting this up on my Wins PC, but if you need Linux/Mac guidance, Chuck got those differences covered in &lt;a href=&#34;https://blog.networkchuck.com/posts/my-insane-blog-pipeline/&#34;&gt;his&lt;/a&gt; documentation. For the sake of sanity, I&amp;rsquo;m keeping my email/username/paths within the commands, i.e. don&amp;rsquo;t forget to change them.&lt;/p&gt;
+&lt;h4 id=&#34;initial-installation&#34;&gt;Initial Installation&lt;/h4&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;strong&gt;Install everything&lt;/strong&gt;:
 &lt;ul&gt;
@@ -64,7 +66,7 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;h3 id=&#34;syncing-obsidian-to-hugo&#34;&gt;Syncing Obsidian to Hugo&lt;/h3&gt;
+&lt;h4 id=&#34;syncing-obsidian-to-hugo&#34;&gt;Syncing Obsidian to Hugo&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;posts folder will be syncing from &lt;code&gt;Obsidian Vault/Hugo Posts&lt;/code&gt; into &lt;code&gt;/ILXNAH.github.io/content/posts&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;cd content&lt;/code&gt; &amp;gt; &lt;code&gt;mkdir posts&lt;/code&gt; (this folder will be synced with Obsidian source folder) with this command:
@@ -72,7 +74,7 @@
 &lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;hugo serve&lt;/code&gt; to preview blog with imported posts &amp;gt; Ctrl+C to exit the preview&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;using-front-matter-in-obsidian&#34;&gt;Using Front Matter in Obsidian&lt;/h3&gt;
+&lt;h4 id=&#34;using-front-matter-in-obsidian&#34;&gt;Using Front Matter in Obsidian&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;set up metadata via Obsidian properties:
 &lt;ul&gt;
@@ -92,7 +94,7 @@
 &lt;li&gt;run robocopy again with added post properties in your source files&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;hugo serve&lt;/code&gt; to verify the metadata is showing &amp;gt; exit preview&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;fixing-image-attachments-using-a-python-script&#34;&gt;Fixing image attachments using a Python script&lt;/h3&gt;
+&lt;h4 id=&#34;fixing-image-attachments-using-a-python-script&#34;&gt;Fixing image attachments using a Python script&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;in your blog dir, &lt;code&gt;cd static&lt;/code&gt; &amp;gt; &lt;code&gt;mkdir images&lt;/code&gt; &amp;gt; &lt;code&gt;cd ..&lt;/code&gt; &amp;gt; &lt;code&gt;code images.py&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;insert code, make sure to edit all three paths, and save:&lt;/li&gt;
@@ -137,7 +139,7 @@
 &lt;li&gt;added image for testing purposes of the part of the script we just did:
 &lt;img src=&#34;/images/Pasted%20image%2020250131130510.png&#34; alt=&#34;Image Description&#34;&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;pushing-code-into-github&#34;&gt;Pushing code into GitHub&lt;/h3&gt;
+&lt;h4 id=&#34;pushing-code-into-github&#34;&gt;Pushing code into GitHub&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;create GitHub repo with name &lt;code&gt;ILXNAH.github.io&lt;/code&gt; and set visibility to public&lt;/li&gt;
 &lt;li&gt;you will need an SSH key, which you can generate with &lt;code&gt;ssh-keygen -t rsa -b 4096 -C &amp;quot;ILXNAH@tutanota.com&amp;quot;&lt;/code&gt; if you don&amp;rsquo;t have one yet&lt;/li&gt;
@@ -152,7 +154,7 @@
 &lt;li&gt;&lt;code&gt;git push -u origin main&lt;/code&gt; to push from local to remote repo
 (specified is: first, name of your remote repo &lt;code&gt;origin&lt;/code&gt;, then branch name &lt;code&gt;main&lt;/code&gt;)&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h6 id=&#34;deploy-on-github-profile-pages&#34;&gt;Deploy on GitHub profile Pages&lt;/h6&gt;
+&lt;h4 id=&#34;deploying-to-github-pages&#34;&gt;Deploying to GitHub Pages&lt;/h4&gt;
 &lt;ol&gt;
 &lt;li&gt;on repo website, go to Settings &amp;gt; Pages &amp;gt; Source: GitHub Actions&lt;/li&gt;
 &lt;li&gt;in your local repo, add folder &amp;ldquo;&lt;code&gt;.github&lt;/code&gt;&amp;rdquo;&lt;/li&gt;
@@ -174,7 +176,7 @@
 &lt;/li&gt;
 &lt;li&gt;&lt;code&gt;git add .&lt;/code&gt; &amp;gt; &lt;code&gt;git commit -m &amp;quot;change&amp;quot;&lt;/code&gt; &amp;gt; &lt;code&gt;git push&lt;/code&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h4 id=&#34;final-workflow-automation-script-in-powershell&#34;&gt;Final workflow automation script in PowerShell&lt;/h4&gt;
+&lt;h4 id=&#34;final-automation-script-in-powershell&#34;&gt;Final automation script in PowerShell&lt;/h4&gt;
 &lt;p&gt;The below pasted &lt;code&gt;updateblog.ps1&lt;/code&gt; script automates the publishing workflow in the above mentioned paragraph (apart from preview):&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Set variables for Obsidian to Hugo copy&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$sourcePath = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;C:\Users\ilona\Documents\obsidian\Hugo Posts&amp;#34;&lt;/span&gt;

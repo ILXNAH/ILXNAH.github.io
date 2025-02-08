@@ -1,29 +1,27 @@
 ---
-date: 2025-01-28
+title: Creating Obsidian blog with Hugo
 draft: false
+MoC: "[[Hugo Posts]]"
+Date Created: 2025-01-28 08:20:38
+Date Modified: 2025-02-08 19:30:29
 tags:
   - obsidian
   - hugo
   - networkchuck
-sticker: emoji//1f6e0-fe0f
-MoC: "[[Hugo Posts]]"
-aliases:
-  - Creating Obsidian blog with Hugo
-title: Creating Obsidian blog with Hugo
 ---
 Following a [video from NetworkChuck](https://www.youtube.com/watch?v=dnE7c0ELEH8), then freestyling it to GitHub Pages.
-
 >"We only know what we make."
-## Battle Plan
+##### Battle Plan
 - Using [Obsidian.md](https://obsidian.md/) for taking notes - simply "type out the blog"
 - Turn it into HTML code, aka "make it code" using [Hugo](https://themes.gohugo.io/): a tool to convert .md files into a website code
 - Ship the code off/push site to [GitHub](https://github.com/)
 - I decided not to use Hostinger (like Chuck did) but was playing around with other ways of deployment on GitHub Pages (there are several different options and I'll share the simplest one)
-
+###### Note: 
 I'll be setting this up on my Wins PC, but if you need Linux/Mac guidance, Chuck got those differences covered in [his](https://blog.networkchuck.com/posts/my-insane-blog-pipeline/) documentation. For the sake of sanity, I'm keeping my email/username/paths within the commands, i.e. don't forget to change them. 
+#### Initial Installation
 1. **Install everything**: 
 	- [Obsidian](https://obsidian.md/download), [Terminal](https://apps.microsoft.com/detail/9n0dx20hk701?hl=en-US&gl=US)/PowerShell, [VS Code](https://code.visualstudio.com/download), [Golang](https://go.dev/dl/), [Python 3](https://www.python.org/downloads/), [Git](https://git-scm.com/downloads) and [Hugo](https://gohugo.io/installation/) (add the .exe into your program location, e.g. Program Files, and also into PATH)
-2.  Create a `Hugo Posts` folder within your Obsidian Workspace for your blog articles
+2. Create a `Hugo Posts` folder within your Obsidian Workspace for your blog articles
 3. Within this folder, start a new note (that will be your first blog post)
 4. Double-check correct installations via the `version` flagged commands:
   `go version`, `git --version`, `hugo version`, `python --version` etc.
@@ -37,14 +35,14 @@ I'll be setting this up on my Wins PC, but if you need Linux/Mac guidance, Chuck
 	- Via CLI, you can open it with command `notepad hugo.toml` like Chuck, or `npp hugo.toml` like myself (that's another custom path), or use VS Code with `code hugo.toml`
 10. Next, run your Hugo server preview with `hugo serve`
 	- Take a look at [//localhost:1313/](//localhost:1313/) > Ctrl+C to cancel website preview
-### Syncing Obsidian to Hugo
+#### Syncing Obsidian to Hugo
 - posts folder will be syncing from `Obsidian Vault/Hugo Posts` into `/ILXNAH.github.io/content/posts`
 - `cd content` > `mkdir posts` (this folder will be synced with Obsidian source folder) with this command: 
 	```
 	robocopy "C:\Users\ilona\Documents\obsidian\Hugo Posts" "C:\Users\ilona\Documents\ILXNAH.github.io\content\posts" /mir
 	```
 - `hugo serve` to preview blog with imported posts > Ctrl+C to exit the preview
-### Using Front Matter in Obsidian
+#### Using Front Matter in Obsidian
 - set up metadata via Obsidian properties:
 	- you can use a variation of community plugins,
 		- I'm using [make.md](https://www.make.md/), Chuck is using [Templater](https://github.com/SilentVoid13/Templater)...
@@ -53,7 +51,7 @@ I'll be setting this up on my Wins PC, but if you need Linux/Mac guidance, Chuck
 	- ideally, create a template with desired properties for your blog posts
 - run robocopy again with added post properties in your source files
 - `hugo serve` to verify the metadata is showing > exit preview
-### Fixing image attachments using a Python script
+#### Fixing image attachments using a Python script
 - in your blog dir, `cd static` > `mkdir images` > `cd ..` > `code images.py`
 - insert code, make sure to edit all three paths, and save:
 ```python
@@ -96,7 +94,7 @@ print("Markdown files processed and images copied successfully.")
 ```
 - added image for testing purposes of the part of the script we just did:
 	![Image Description](/images/Pasted%20image%2020250131130510.png)
-### Pushing code into GitHub
+#### Pushing code into GitHub
 - create GitHub repo with name `ILXNAH.github.io` and set visibility to public
 - you will need an SSH key, which you can generate with `ssh-keygen -t rsa -b 4096 -C "ILXNAH@tutanota.com"` if you don't have one yet
 - this keypair (public and private key) will be created in dir `~/.ssh`
@@ -109,7 +107,7 @@ print("Markdown files processed and images copied successfully.")
 - `git commit -m "First commit"` to commit those changes (locally)
 - `git push -u origin main` to push from local to remote repo
 	(specified is: first, name of your remote repo `origin`, then branch name `main`)
-###### Deploy on GitHub profile Pages
+#### Deploying to GitHub Pages
 1. on repo website, go to Settings > Pages > Source: GitHub Actions
 2. in your local repo, add folder "`.github`"
 3. within there, create a folder called "`workflows`"
@@ -124,7 +122,7 @@ print("Markdown files processed and images copied successfully.")
 	- use this flag to avoid site refresh being stuck due to cache (if you're editing in real-time)
 	- you can create alias: `hss='hugo serve --noHTTPCache'`
 5. `git add .` > `git commit -m "change"` > `git push`
-#### Final workflow automation script in PowerShell
+#### Final automation script in PowerShell
 The below pasted `updateblog.ps1` script automates the publishing workflow in the above mentioned paragraph (apart from preview):
 ```powershell
 # Set variables for Obsidian to Hugo copy
