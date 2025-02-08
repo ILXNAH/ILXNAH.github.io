@@ -94,3 +94,35 @@ body {
     margin-bottom: 10px; /* Add space between the copyright and credit */
   }
 }
+
+/* Ensures that long text in the footer will break and wrap */
+.footer, .footer__inner, .footer .copyright, .footer-credit {
+  word-wrap: break-word;  /* Forces text to wrap */
+  word-break: break-word; /* Breaks long words if needed */
+}
+
+/* Flexbox styles to ensure footer adapts on smaller screens */
+.footer__inner {
+  display: flex;
+  flex-wrap: wrap;  /* Allow items to wrap when needed */
+  justify-content: space-between;  /* Distribute items evenly */
+}
+
+.footer .copyright,
+.footer-credit {
+  flex: 1 1 auto;  /* Allow elements to resize and wrap */
+}
+
+/* Mobile adjustments for stacking footer content */
+@media (max-width: 768px) {  /* Adjust this width as needed */
+  .footer__inner {
+    flex-direction: column;  /* Stack elements vertically */
+    align-items: center;     /* Center items on small screens */
+  }
+
+  .footer .copyright,
+  .footer-credit {
+    text-align: center;  /* Center text on mobile */
+    margin-bottom: 10px;  /* Add some spacing between sections */
+  }
+}
