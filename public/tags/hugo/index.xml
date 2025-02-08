@@ -52,7 +52,7 @@
 &lt;li&gt;Select installation option for a specific theme, e.g. look here for &lt;a href=&#34;https://themes.gohugo.io/themes/hugo-theme-terminal/&#34;&gt;Terminal theme&lt;/a&gt;. I used local installation to avoid any fuss when transferring between repos.
 &lt;code&gt;git clone https://github.com/panr/hugo-theme-terminal.git themes/terminal&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;Edit the config file called so that it matches the installed theme.&lt;/li&gt;
-&lt;li&gt;Ad 9.) Terminal theme has a &lt;a href=&#34;https://themes.gohugo.io/themes/hugo-theme-terminal/#how-to-configure&#34;&gt;config file&lt;/a&gt; on its page which you can copy (leave out modules part) and paste into your &lt;code&gt;hugo.toml&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Ad 9.) Terminal theme has a &lt;a href=&#34;https://themes.gohugo.io/themes/hugo-theme-terminal/#how-to-configure&#34;&gt;config file&lt;/a&gt; on its page which you can copy (leave out modules) and paste into &lt;code&gt;hugo.toml&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;Run Hugo server preview with &lt;code&gt;hugo serve&lt;/code&gt;
 &lt;ul&gt;
 &lt;li&gt;Take a look at &lt;a href=&#34;/&#34;&gt;//localhost:1313/&lt;/a&gt; &amp;gt; Ctrl+C to cancel website preview&lt;/li&gt;

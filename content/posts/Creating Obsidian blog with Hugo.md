@@ -30,7 +30,7 @@ I'll be setting this up on my Windows OS, but if you need a guide for Linux/Mac,
 8. Select installation option for a specific theme, e.g. look here for [Terminal theme](https://themes.gohugo.io/themes/hugo-theme-terminal/). I used local installation to avoid any fuss when transferring between repos. 
 	`git clone https://github.com/panr/hugo-theme-terminal.git themes/terminal`
 9. Edit the config file called so that it matches the installed theme.
-10. Ad 9.) Terminal theme has a [config file](https://themes.gohugo.io/themes/hugo-theme-terminal/#how-to-configure) on its page which you can copy (leave out modules part) and paste into your `hugo.toml`
+10. Ad 9.) Terminal theme has a [config file](https://themes.gohugo.io/themes/hugo-theme-terminal/#how-to-configure) on its page which you can copy (leave out modules) and paste into `hugo.toml`
 11. Run Hugo server preview with `hugo serve`
 	- Take a look at [//localhost:1313/](//localhost:1313/) > Ctrl+C to cancel website preview
 #### Syncing Obsidian to Hugo
