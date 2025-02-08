@@ -29,10 +29,9 @@ I'll be setting this up on my Wins PC, but if you need Linux/Mac guidance, Chuck
 7. Navigate to [Hugo Themes](https://themes.gohugo.io/) and pick a theme to install for your blog.
 8. Select installation option for a specific theme, e.g. look here for [Terminal theme](https://themes.gohugo.io/themes/hugo-theme-terminal/). I used local installation to avoid any fuss when transferring between repos. 
 	`git clone https://github.com/panr/hugo-theme-terminal.git themes/terminal`
-9. Edit the config file called `hugo.toml` - it needs to match the theme.
-- Terminal theme has a text file at the bottom of the page [which you can copy it from](https://themes.gohugo.io/themes/hugo-theme-terminal/#how-to-configure) (**leave out modules part at the bottom**) and paste into your `hugo.toml`
-- Via CLI, you can open it with command `notepad hugo.toml` like Chuck, or `npp hugo.toml` like myself (that's another custom path), or use VS Code with `code hugo.toml`
-10. Next, run your Hugo server preview with `hugo serve`
+9. Edit the config file called so that it matches the installed theme.
+10. Ad 9.) Terminal theme has a [config file](https://themes.gohugo.io/themes/hugo-theme-terminal/#how-to-configure) on its page which you can copy (leave out modules part) and paste into your `hugo.toml`
+11. Run Hugo server preview with `hugo serve`
 	- Take a look at [//localhost:1313/](//localhost:1313/) > Ctrl+C to cancel website preview
 #### Syncing Obsidian to Hugo
 - posts folder will be syncing from `Obsidian Vault/Hugo Posts` into `/ILXNAH.github.io/content/posts`
@@ -107,20 +106,20 @@ print("Markdown files processed and images copied successfully.")
 - `git push -u origin main` to push from local to remote repo
 	(specified is: first, name of your remote repo `origin`, then branch name `main`)
 #### Deploying to GitHub Pages
-11. on repo website, go to Settings > Pages > Source: GitHub Actions
-12. in your local repo, add folder "`.github`"
-13. within there, create a folder called "`workflows`"
-14. within there, create a "`hugo.yaml`" file
-15. copy workflow code into `hugo.yaml` from [Hugo's official documentation](https://gohugo.io/hosting-and-deployment/hosting-on-github/)
-16. `git add .` > `git commit -m "github actions"` > `git push`
+12. on repo website, go to Settings > Pages > Source: GitHub Actions
+13. in your local repo, add folder "`.github`"
+14. within there, create a folder called "`workflows`"
+15. within there, create a "`hugo.yaml`" file
+16. copy workflow code into `hugo.yaml` from [Hugo's official documentation](https://gohugo.io/hosting-and-deployment/hosting-on-github/)
+17. `git add .` > `git commit -m "github actions"` > `git push`
 ##### Publishing Workflow
-17. `robocopy "C:\Users\ilona\Documents\obsidian\Hugo Posts" "C:\Users\ilona\Documents\ILXNAH.github.io\content\posts" /mir`
-18. `python images.py`
-19. `hugo`
-20. (to view - can be skipped) `hugo serve --noHTTPCache`
+18. `robocopy "C:\Users\ilona\Documents\obsidian\Hugo Posts" "C:\Users\ilona\Documents\ILXNAH.github.io\content\posts" /mir`
+19. `python images.py`
+20. `hugo`
+21. (to view - can be skipped) `hugo serve --noHTTPCache`
 	- use this flag to avoid site refresh being stuck due to cache (if you're editing in real-time)
 	- you can create alias: `hss='hugo serve --noHTTPCache'`
-21. `git add .` > `git commit -m "change"` > `git push`
+22. `git add .` > `git commit -m "change"` > `git push`
 #### Final automation script in PowerShell
 The below pasted `updateblog.ps1` script automates the publishing workflow in the above mentioned paragraph (apart from preview):
 ```powershell
