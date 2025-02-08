@@ -71,7 +71,7 @@
 &lt;ul&gt;
 &lt;li&gt;set up metadata via Obsidian properties:
 &lt;ul&gt;
-&lt;li&gt;you can use many community plugins, e.g. &lt;a href=&#34;https://www.make.md/&#34;&gt;make.md&lt;/a&gt; or&lt;a href=&#34;https://github.com/SilentVoid13/Templater&#34;&gt;Templater&lt;/a&gt;,&lt;/li&gt;
+&lt;li&gt;you can use many community plugins, e.g. &lt;a href=&#34;https://www.make.md/&#34;&gt;make.md&lt;/a&gt; or &lt;a href=&#34;https://github.com/SilentVoid13/Templater&#34;&gt;Templater&lt;/a&gt;,&lt;/li&gt;
 &lt;li&gt;make sure the draft property is unchecked, so the post is displayed
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;hugo serve -D&lt;/code&gt; flagged command will include posts in draft mode&lt;/li&gt;
