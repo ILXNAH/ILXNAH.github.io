@@ -15,7 +15,7 @@ Following a [video from NetworkChuck](https://www.youtube.com/watch?v=dnE7c0ELEH
 - Using [Obsidian.md](https://obsidian.md/) for taking notes - simply "type out the blog"
 - Turn it into HTML code using [Hugo](https://themes.gohugo.io/): a tool to convert .md files into a website code
 - Ship the code off to [GitHub](https://github.com/)
-- Deploy for free via Pages
+- Deploy for free via [Pages](https://pages.github.com/)
 ###### Note
 I'll be setting this up on my Wins PC, but if you need Linux/Mac guidance, Chuck got those differences covered in [his](https://blog.networkchuck.com/posts/my-insane-blog-pipeline/) documentation. For the sake of sanity, I'm keeping my email/username/paths within the commands, i.e. don't forget to change them. 
 #### Initial Installation
