@@ -1,0 +1,17 @@
+{{- $date := .Date -}}
+
+{{- if .Params.date }}
+  {{- $date = .Params.date }}
+{{- else if .Params.lastmod }}
+  {{- $date = .Params.lastmod }}
+{{- end -}}
+
+{{- with .Params.dateFormat }}
+  {{- $date | time.Format . }}
+{{- else }}
+  {{- with .Site.Params.dateFormat }}
+    {{- $date | time.Format . }}
+  {{- else }}
+    {{- $date | time.Format "2006-01-02" }}
+  {{- end }}
+{{- end }}

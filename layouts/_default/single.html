@@ -4,12 +4,14 @@
     <a href="{{ .Permalink }}">{{ .Title | markdownify }}</a>
   </h1>
   <div class="post-meta">
-    {{ with .Params.DateCreated }}
-      <span class="post-date">Published: {{ . | time.Format "2006-01-02 15:04:05" }}</span>
-    {{ end }}
-    {{ with .Params.DateModified }}
-      <span class="post-lastmod">Updated: {{ . | time.Format "2006-01-02 15:04:05" }}</span>
-    {{ end }}
+    {{- if .Date -}}
+      <time class="post-date">
+        {{- partial "post-date" . -}}
+        {{- if and $.Site.Params.showLastUpdated .Lastmod -}}
+          &nbsp;{{- partial "post-lastmod" . -}}
+        {{- end -}}
+      </time>
+    {{- end -}}
     {{- with .Params.Author -}}
       <span class="post-author">{{ . }}</span>
     {{- end -}}
