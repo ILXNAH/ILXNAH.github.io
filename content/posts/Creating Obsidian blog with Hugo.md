@@ -12,8 +12,8 @@ tags:
 Following a [video from NetworkChuck](https://www.youtube.com/watch?v=dnE7c0ELEH8), then freestyling it to GitHub Pages.
 >"We only know what we make."
 ##### Battle Plan
-- Using [Obsidian.md](https://obsidian.md/) for taking notes - simply "type out the blog"
-- Turn it into HTML code using [Hugo](https://themes.gohugo.io/): a tool to convert .md files into a website code
+- Using [Obsidian.md](https://obsidian.md/) for taking notes
+- Turning it into HTML code using [Hugo](https://themes.gohugo.io/) (a tool to convert .md files into a website)
 - Ship the code off to [GitHub](https://github.com/)
 - Deploy for free via [Pages](https://pages.github.com/)
 ###### Note

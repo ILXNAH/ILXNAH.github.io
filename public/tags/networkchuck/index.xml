@@ -19,8 +19,8 @@
 &lt;/blockquote&gt;
 &lt;h5 id=&#34;battle-plan&#34;&gt;Battle Plan&lt;/h5&gt;
 &lt;ul&gt;
-&lt;li&gt;Using &lt;a href=&#34;https://obsidian.md/&#34;&gt;Obsidian.md&lt;/a&gt; for taking notes - simply &amp;ldquo;type out the blog&amp;rdquo;&lt;/li&gt;
-&lt;li&gt;Turn it into HTML code using &lt;a href=&#34;https://themes.gohugo.io/&#34;&gt;Hugo&lt;/a&gt;: a tool to convert .md files into a website code&lt;/li&gt;
+&lt;li&gt;Using &lt;a href=&#34;https://obsidian.md/&#34;&gt;Obsidian.md&lt;/a&gt; for taking notes&lt;/li&gt;
+&lt;li&gt;Turning it into HTML code using &lt;a href=&#34;https://themes.gohugo.io/&#34;&gt;Hugo&lt;/a&gt; (a tool to convert .md files into a website)&lt;/li&gt;
 &lt;li&gt;Ship the code off to &lt;a href=&#34;https://github.com/&#34;&gt;GitHub&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Deploy for free via &lt;a href=&#34;https://pages.github.com/&#34;&gt;Pages&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -32,8 +32,8 @@
 &lt;/blockquote&gt;
 &lt;h5 id=&#34;battle-plan&#34;&gt;Battle Plan&lt;/h5&gt;
 &lt;ul&gt;
-&lt;li&gt;Using &lt;a href=&#34;https://obsidian.md/&#34;&gt;Obsidian.md&lt;/a&gt; for taking notes - simply &amp;ldquo;type out the blog&amp;rdquo;&lt;/li&gt;
-&lt;li&gt;Turn it into HTML code using &lt;a href=&#34;https://themes.gohugo.io/&#34;&gt;Hugo&lt;/a&gt;: a tool to convert .md files into a website code&lt;/li&gt;
+&lt;li&gt;Using &lt;a href=&#34;https://obsidian.md/&#34;&gt;Obsidian.md&lt;/a&gt; for taking notes&lt;/li&gt;
+&lt;li&gt;Turning it into HTML code using &lt;a href=&#34;https://themes.gohugo.io/&#34;&gt;Hugo&lt;/a&gt; (a tool to convert .md files into a website)&lt;/li&gt;
 &lt;li&gt;Ship the code off to &lt;a href=&#34;https://github.com/&#34;&gt;GitHub&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Deploy for free via &lt;a href=&#34;https://pages.github.com/&#34;&gt;Pages&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
