@@ -5,11 +5,11 @@ MoC: "[[Hugo Posts]]"
 Date Created: 2025-01-28 08:20:38
 Date Modified: 2025-02-08 19:30:29
 tags:
-  - obsidian
-  - hugo
-  - networkchuck
   - PowerShell
   - Python
+  - NetworkChuck
+  - Hugo
+  - Obsidian
 ---
 Following a [video from NetworkChuck](https://www.youtube.com/watch?v=dnE7c0ELEH8), then freestyling it to GitHub Pages.
 >"We only know what we make."
