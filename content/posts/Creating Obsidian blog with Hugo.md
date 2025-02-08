@@ -42,8 +42,7 @@ My setup is on my Windows PC, but if you need a guide for Linux/Mac, Chuck got t
 - `hugo serve` to preview blog with imported posts > Ctrl+C to exit the preview
 #### Using Front Matter in Obsidian
 - set up metadata via Obsidian properties:
-	- you can use a variation of community plugins,
-		- I'm using [make.md](https://www.make.md/), Chuck is using [Templater](https://github.com/SilentVoid13/Templater)...
+	- you can use many community plugins, e.g. [make.md](https://www.make.md/) or[Templater](https://github.com/SilentVoid13/Templater),
 	- make sure the draft property is unchecked, so the post is displayed
 		- `hugo serve -D` flagged command will include posts in draft mode
 	- ideally, create a template with desired properties for your blog posts
