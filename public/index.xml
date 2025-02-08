@@ -29,9 +29,9 @@
 &lt;h5 id=&#34;battle-plan&#34;&gt;Battle Plan&lt;/h5&gt;
 &lt;ul&gt;
 &lt;li&gt;Using &lt;a href=&#34;https://obsidian.md/&#34;&gt;Obsidian.md&lt;/a&gt; for taking notes - simply &amp;ldquo;type out the blog&amp;rdquo;&lt;/li&gt;
-&lt;li&gt;Turn it into HTML code, aka &amp;ldquo;make it code&amp;rdquo; using &lt;a href=&#34;https://themes.gohugo.io/&#34;&gt;Hugo&lt;/a&gt;: a tool to convert .md files into a website code&lt;/li&gt;
-&lt;li&gt;Ship the code off/push site to &lt;a href=&#34;https://github.com/&#34;&gt;GitHub&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;I decided not to use Hostinger (like Chuck did) but was playing around with other ways of deployment on GitHub Pages (there are several different options and I&amp;rsquo;ll share the simplest one)&lt;/li&gt;
+&lt;li&gt;Turn it into HTML code using &lt;a href=&#34;https://themes.gohugo.io/&#34;&gt;Hugo&lt;/a&gt;: a tool to convert .md files into a website code&lt;/li&gt;
+&lt;li&gt;Ship the code off to &lt;a href=&#34;https://github.com/&#34;&gt;GitHub&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Deploy for free via Pages&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h6 id=&#34;note&#34;&gt;Note&lt;/h6&gt;
 &lt;p&gt;I&amp;rsquo;ll be setting this up on my Wins PC, but if you need Linux/Mac guidance, Chuck got those differences covered in &lt;a href=&#34;https://blog.networkchuck.com/posts/my-insane-blog-pipeline/&#34;&gt;his&lt;/a&gt; documentation. For the sake of sanity, I&amp;rsquo;m keeping my email/username/paths within the commands, i.e. don&amp;rsquo;t forget to change them.&lt;/p&gt;</description>
@@ -42,9 +42,9 @@
 &lt;h5 id=&#34;battle-plan&#34;&gt;Battle Plan&lt;/h5&gt;
 &lt;ul&gt;
 &lt;li&gt;Using &lt;a href=&#34;https://obsidian.md/&#34;&gt;Obsidian.md&lt;/a&gt; for taking notes - simply &amp;ldquo;type out the blog&amp;rdquo;&lt;/li&gt;
-&lt;li&gt;Turn it into HTML code, aka &amp;ldquo;make it code&amp;rdquo; using &lt;a href=&#34;https://themes.gohugo.io/&#34;&gt;Hugo&lt;/a&gt;: a tool to convert .md files into a website code&lt;/li&gt;
-&lt;li&gt;Ship the code off/push site to &lt;a href=&#34;https://github.com/&#34;&gt;GitHub&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;I decided not to use Hostinger (like Chuck did) but was playing around with other ways of deployment on GitHub Pages (there are several different options and I&amp;rsquo;ll share the simplest one)&lt;/li&gt;
+&lt;li&gt;Turn it into HTML code using &lt;a href=&#34;https://themes.gohugo.io/&#34;&gt;Hugo&lt;/a&gt;: a tool to convert .md files into a website code&lt;/li&gt;
+&lt;li&gt;Ship the code off to &lt;a href=&#34;https://github.com/&#34;&gt;GitHub&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Deploy for free via Pages&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h6 id=&#34;note&#34;&gt;Note&lt;/h6&gt;
 &lt;p&gt;I&amp;rsquo;ll be setting this up on my Wins PC, but if you need Linux/Mac guidance, Chuck got those differences covered in &lt;a href=&#34;https://blog.networkchuck.com/posts/my-insane-blog-pipeline/&#34;&gt;his&lt;/a&gt; documentation. For the sake of sanity, I&amp;rsquo;m keeping my email/username/paths within the commands, i.e. don&amp;rsquo;t forget to change them.&lt;/p&gt;
@@ -60,12 +60,13 @@
 &lt;li&gt;Navigate to &lt;a href=&#34;https://themes.gohugo.io/&#34;&gt;Hugo Themes&lt;/a&gt; and pick a theme to install for your blog.&lt;/li&gt;
 &lt;li&gt;Select installation option for a specific theme, e.g. look here for &lt;a href=&#34;https://themes.gohugo.io/themes/hugo-theme-terminal/&#34;&gt;Terminal theme&lt;/a&gt;. I used local installation to avoid any fuss when transferring between repos.
 &lt;code&gt;git clone https://github.com/panr/hugo-theme-terminal.git themes/terminal&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Edit the config file called &lt;code&gt;hugo.toml&lt;/code&gt; - it needs to match the theme.
+&lt;li&gt;Edit the config file called &lt;code&gt;hugo.toml&lt;/code&gt; - it needs to match the theme.&lt;/li&gt;
+&lt;/ol&gt;
 &lt;ul&gt;
 &lt;li&gt;Terminal theme has a text file at the bottom of the page &lt;a href=&#34;https://themes.gohugo.io/themes/hugo-theme-terminal/#how-to-configure&#34;&gt;which you can copy it from&lt;/a&gt; (&lt;strong&gt;leave out modules part at the bottom&lt;/strong&gt;) and paste into your &lt;code&gt;hugo.toml&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;Via CLI, you can open it with command &lt;code&gt;notepad hugo.toml&lt;/code&gt; like Chuck, or &lt;code&gt;npp hugo.toml&lt;/code&gt; like myself (that&amp;rsquo;s another custom path), or use VS Code with &lt;code&gt;code hugo.toml&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/li&gt;
+&lt;ol start=&#34;10&#34;&gt;
 &lt;li&gt;Next, run your Hugo server preview with &lt;code&gt;hugo serve&lt;/code&gt;
 &lt;ul&gt;
 &lt;li&gt;Take a look at &lt;a href=&#34;/&#34;&gt;//localhost:1313/&lt;/a&gt; &amp;gt; Ctrl+C to cancel website preview&lt;/li&gt;
@@ -161,7 +162,7 @@
 (specified is: first, name of your remote repo &lt;code&gt;origin&lt;/code&gt;, then branch name &lt;code&gt;main&lt;/code&gt;)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h4 id=&#34;deploying-to-github-pages&#34;&gt;Deploying to GitHub Pages&lt;/h4&gt;
-&lt;ol&gt;
+&lt;ol start=&#34;11&#34;&gt;
 &lt;li&gt;on repo website, go to Settings &amp;gt; Pages &amp;gt; Source: GitHub Actions&lt;/li&gt;
 &lt;li&gt;in your local repo, add folder &amp;ldquo;&lt;code&gt;.github&lt;/code&gt;&amp;rdquo;&lt;/li&gt;
 &lt;li&gt;within there, create a folder called &amp;ldquo;&lt;code&gt;workflows&lt;/code&gt;&amp;rdquo;&lt;/li&gt;
@@ -170,7 +171,7 @@
 &lt;li&gt;&lt;code&gt;git add .&lt;/code&gt; &amp;gt; &lt;code&gt;git commit -m &amp;quot;github actions&amp;quot;&lt;/code&gt; &amp;gt; &lt;code&gt;git push&lt;/code&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h5 id=&#34;publishing-workflow&#34;&gt;Publishing Workflow&lt;/h5&gt;
-&lt;ol&gt;
+&lt;ol start=&#34;17&#34;&gt;
 &lt;li&gt;&lt;code&gt;robocopy &amp;quot;C:\Users\ilona\Documents\obsidian\Hugo Posts&amp;quot; &amp;quot;C:\Users\ilona\Documents\ILXNAH.github.io\content\posts&amp;quot; /mir&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;python images.py&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;hugo&lt;/code&gt;&lt;/li&gt;
