@@ -14,7 +14,7 @@ Following a [video from NetworkChuck](https://www.youtube.com/watch?v=dnE7c0ELEH
 ##### Battle Plan
 - Use [Obsidian.md](https://obsidian.md/) for note-taking
 - Turn it into HTML code using [Hugo](https://themes.gohugo.io/) (a tool to convert .md files into a website)
-- Ship the code off to [GitHub](https://github.com/)
+- Ship the code off to your [GitHub](https://github.com/) profile repo
 - Be a rebel & deploy for free via [Pages](https://pages.github.com/) (instead of Hostinger)
 ###### Note
 My setup is on my Windows PC, but if you need a guide for Linux/Mac, Chuck got those differences covered in [his](https://blog.networkchuck.com/posts/my-insane-blog-pipeline/) documentation. For the sake of sanity, I'm keeping my email/username/paths within the commands, i.e. don't forget to change them. 
