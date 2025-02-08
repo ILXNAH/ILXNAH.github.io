@@ -65,7 +65,6 @@ body {
   background-color: none; /* Change as per your theme */
   text-align: center; /* Ensure text is centered */
 }
-
 .footer__inner {
   display: flex;
   flex-wrap: wrap; /* Allow content to wrap on small screens */
@@ -73,7 +72,6 @@ body {
   align-items: center;
   gap: 10px; /* Adjust space between elements */
 }
-
 .footer .copyright,
 .footer-credit {
   display: block; /* Ensures items stack vertically on smaller screens */
@@ -87,7 +85,6 @@ body {
     flex-direction: column; /* Stack items vertically on smaller screens */
     gap: 20px; /* Add more space between elements */
   }
-
   .footer .copyright,
   .footer-credit {
     display: block;
@@ -97,8 +94,11 @@ body {
 
 /* Ensures that long text in the footer will break and wrap */
 .footer, .footer__inner, .footer .copyright, .footer-credit {
-  word-wrap: break-word;  /* Forces text to wrap */
-  word-break: break-word; /* Breaks long words if needed */
+  margin: 0;
+  padding: 0;
+  display: block;  /* Change to block for proper wrapping */
+  word-wrap: break-word;  /* Allow long words to break */
+  word-break: break-word; /* Break long words if necessary */
 }
 
 /* Flexbox styles to ensure footer adapts on smaller screens */
@@ -107,22 +107,22 @@ body {
   flex-wrap: wrap;  /* Allow items to wrap when needed */
   justify-content: space-between;  /* Distribute items evenly */
 }
-
 .footer .copyright,
 .footer-credit {
   flex: 1 1 auto;  /* Allow elements to resize and wrap */
 }
 
 /* Mobile adjustments for stacking footer content */
-@media (max-width: 768px) {  /* Adjust this width as needed */
+@media (max-width: 768px) {
   .footer__inner {
-    flex-direction: column;  /* Stack elements vertically */
+    flex-direction: column; /* Stack elements vertically */
     align-items: center;     /* Center items on small screens */
+    gap: 10px; /* Add space between items */
   }
 
   .footer .copyright,
   .footer-credit {
-    text-align: center;  /* Center text on mobile */
-    margin-bottom: 10px;  /* Add some spacing between sections */
+    text-align: center; /* Center text on mobile */
+    margin-bottom: 10px; /* Add some spacing between sections */
   }
 }
