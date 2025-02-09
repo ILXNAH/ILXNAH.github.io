@@ -141,3 +141,10 @@ html, body {
   max-width: 100%;   /* Prevents elements from exceeding the screen width */
   overflow-x: hidden; /* Hides horizontal scrolling to avoid zooming issues */
 }
+blockquote {
+  padding-left: 20px;
+  border-left: 5px solid #ccc;
+  font-style: italic;
+  margin: 1em 0;
+  color: #666;
+}
