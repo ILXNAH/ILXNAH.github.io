@@ -19,7 +19,7 @@ Following a [video from NetworkChuck](https://www.youtube.com/watch?v=dnE7c0ELEH
 - Ship the code off to your [GitHub](https://github.com/) profile repo
 - Be a rebel & deploy for free via [Pages](https://pages.github.com/) (instead of Hostinger)
 ###### Note
-My setup is on my Windows PC, but if you need a guide for Linux/Mac, Chuck got those differences covered in [his](https://blog.networkchuck.com/posts/my-insane-blog-pipeline/) documentation. For the sake of sanity, I'm keeping my email/username/paths within the commands, i.e. don't forget to change them. 
+My setup is on Windows PC, but if you need a guide for Linux/Mac, Chuck got those differences covered in [his](https://blog.networkchuck.com/posts/my-insane-blog-pipeline/) documentation. For the sake of sanity, I'm keeping my email/username/paths within the commands, i.e. don't forget to change them. 
 #### Initial Installation
 1. Install everything: [Obsidian](https://obsidian.md/download), [Terminal](https://apps.microsoft.com/detail/9n0dx20hk701?hl=en-US&gl=US)/PowerShell, [VS Code](https://code.visualstudio.com/download), [Golang](https://go.dev/dl/), [Python 3](https://www.python.org/downloads/), [Git](https://git-scm.com/downloads) and [Hugo](https://gohugo.io/installation/)
 (add the .exe into your program location, e.g. Program Files, and also into PATH)
