@@ -121,7 +121,9 @@
   
   <style>
     body {
-      display: none;  
+      visibility: hidden;  
+      opacity: 0;  
+      transition: opacity 0.3s ease;  
     }
   </style>
 
@@ -305,7 +307,8 @@
   <script>
     document.addEventListener('DOMContentLoaded', function() {
       
-      document.body.style.display = 'block'; 
+      document.body.style.visibility = 'visible'; 
+      document.body.style.opacity = 1;
     });
   </script>
 

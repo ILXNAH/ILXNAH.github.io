@@ -6,23 +6,25 @@
   {{ end }}
   {{ partial "head.html" . }}
 
-  <!-- Ensures proper mobile scaling -->
+  <!-- Ensure proper mobile scaling -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- Apply the theme immediately on page load (in the <head>) -->
+  <!-- Immediately apply the theme via JavaScript and hide content before it's rendered -->
   <script>
     (function() {
-      // Check if a theme is saved in localStorage, otherwise default to 'default'
+      // Get the theme from localStorage or default to 'default'
       var currentTheme = localStorage.getItem('theme') || 'default';
-      // Set the theme for the document root
+      // Apply the theme immediately on page load
       document.documentElement.setAttribute('data-theme', currentTheme);
     })();
   </script>
 
-  <!-- Prevent content flash until theme is applied -->
+  <!-- Hide body content until theme is applied -->
   <style>
     body {
-      display: none; /* Hide the body content initially */
+      visibility: hidden; /* Hide the content to prevent flashing */
+      opacity: 0; /* Ensures content is fully hidden during the load */
+      transition: opacity 0.3s ease; /* Fade-in effect for smooth transition */
     }
   </style>
 
@@ -46,15 +48,16 @@
     {{ end }}
   </div>
 
-  <!-- Once the DOM content is fully loaded, reveal the body -->
+  <!-- Once the theme is set and the page is ready, show the body -->
   <script>
     document.addEventListener('DOMContentLoaded', function() {
-      // After the page is fully loaded and styled, make body visible
-      document.body.style.display = 'block'; 
+      // Once the DOM is ready, show the body content and apply smooth transition
+      document.body.style.visibility = 'visible'; 
+      document.body.style.opacity = 1;
     });
   </script>
 
-  <!-- Theme toggle button and JS -->
+  <!-- Include theme toggle button JS -->
   <script src="/js/theme-toggle.js" defer></script>
 </body>
 </html>
