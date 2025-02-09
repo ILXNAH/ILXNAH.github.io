@@ -13,7 +13,8 @@
       <pubDate>Tue, 28 Jan 2025 08:20:38 +0000</pubDate>
       
       <guid>/posts/creating-obsidian-blog-with-hugo/</guid>
-      <description>&lt;p&gt;Following a &lt;a href=&#34;https://www.youtube.com/watch?v=dnE7c0ELEH8&#34;&gt;video from NetworkChuck&lt;/a&gt;, then freestyling it to GitHub Pages.&lt;/p&gt;
+      <description>&lt;hr&gt;
+&lt;p&gt;Following a &lt;a href=&#34;https://www.youtube.com/watch?v=dnE7c0ELEH8&#34;&gt;video from NetworkChuck&lt;/a&gt;, then freestyling it to GitHub Pages.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&amp;ldquo;We only know what we make.&amp;rdquo;&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -26,7 +27,8 @@
 &lt;/ul&gt;
 &lt;h6 id=&#34;note&#34;&gt;Note&lt;/h6&gt;
 &lt;p&gt;My setup is on Windows PC, but if you need a guide for Linux/Mac, Chuck got those differences covered in &lt;a href=&#34;https://blog.networkchuck.com/posts/my-insane-blog-pipeline/&#34;&gt;his&lt;/a&gt; documentation. For the sake of sanity, I&amp;rsquo;m keeping my email/username/paths within the commands, i.e. don&amp;rsquo;t forget to change them.&lt;/p&gt;</description>
-      <content>&lt;p&gt;Following a &lt;a href=&#34;https://www.youtube.com/watch?v=dnE7c0ELEH8&#34;&gt;video from NetworkChuck&lt;/a&gt;, then freestyling it to GitHub Pages.&lt;/p&gt;
+      <content>&lt;hr&gt;
+&lt;p&gt;Following a &lt;a href=&#34;https://www.youtube.com/watch?v=dnE7c0ELEH8&#34;&gt;video from NetworkChuck&lt;/a&gt;, then freestyling it to GitHub Pages.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&amp;ldquo;We only know what we make.&amp;rdquo;&lt;/p&gt;
 &lt;/blockquote&gt;
