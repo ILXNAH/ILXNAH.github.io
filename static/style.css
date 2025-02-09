@@ -90,8 +90,7 @@ body {
   }
   .footer .copyright,
   .footer-credit {
-    display: block;
-    margin-bottom: 10px; /* Add space between the copyright and credit */
+    display: block; /* Change to block for proper wrapping */
   }
 }
 
