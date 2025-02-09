@@ -103,8 +103,10 @@ body {
 /* Flexbox styles to ensure footer adapts on smaller screens */
 .footer__inner {
   display: flex;
-  flex-wrap: wrap;  /* Allow items to wrap when needed */
-  justify-content: space-between;  /* Distribute items evenly */
+  flex-wrap: wrap;
+  justify-content: center; /* Center all footer items */
+  align-items: center;
+  text-align: center; /* Ensure text is centered */
 }
 .footer .copyright,
 .footer-credit {
