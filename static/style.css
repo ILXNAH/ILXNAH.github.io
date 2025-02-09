@@ -151,7 +151,6 @@ blockquote {
   color: #bdbdbd; /* Sets the color of the text to a lighter gray for readability */
   position: relative; /* Allows positioning pseudo-elements in relation to the blockquote */
 }
-
 /* Ensures no unwanted symbols like '>' appear before the blockquote */
 blockquote::before {
   content: ""; /* Removes any content or symbols (e.g., '>' from markdown) before the blockquote */
