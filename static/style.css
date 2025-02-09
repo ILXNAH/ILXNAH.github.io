@@ -145,10 +145,8 @@ html, body {
 /* Blockquote styling */
 blockquote {
   padding-left: 20px; /* Adds padding to the left to create an indentation for the quote */
-  border-left: 5px solid #ccc; /* Adds a left border to visually separate the quote */
   font-style: italic; /* Makes the quote italicized for emphasis */
   margin: 1em 0; /* Adds vertical margin around the quote for spacing */
-  color: #666; /* Sets the color of the text to a lighter gray for readability */
   position: relative; /* Allows positioning pseudo-elements in relation to the blockquote */
 }
 
