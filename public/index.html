@@ -239,18 +239,37 @@
           
             <hr>
 <p>Following a <a href="https://www.youtube.com/watch?v=dnE7c0ELEH8">video from NetworkChuck</a>, then freestyling it to GitHub Pages.</p>
-<blockquote>
-<p>&ldquo;We only know what we make.&rdquo;</p>
-</blockquote>
-<h5 id="battle-plan">Battle Plan</h5>
-<ul>
-<li>Use <a href="https://obsidian.md/">Obsidian.md</a> for note-taking</li>
-<li>Turn it into HTML code using <a href="https://themes.gohugo.io/">Hugo</a> (a tool to convert .md files into a website)</li>
-<li>Ship the code off to your <a href="https://github.com/">GitHub</a> profile repo</li>
-<li>Be a rebel &amp; deploy for free via <a href="https://pages.github.com/">Pages</a> (instead of Hostinger)</li>
-</ul>
-<h6 id="note">Note</h6>
-<p>My setup is on Windows PC, but if you need a guide for Linux/Mac, Chuck got those differences covered in <a href="https://blog.networkchuck.com/posts/my-insane-blog-pipeline/">his</a> documentation. For the sake of sanity, I&rsquo;m keeping my email/username/paths within the commands, i.e. don&rsquo;t forget to change them.</p>
+<!-- raw HTML omitted -->
+<h1 id="paths-using-raw-strings-to-handle-windows-backslashes-correctly">Paths (using raw strings to handle Windows backslashes correctly)</h1>
+<p>posts_dir = r&quot;C:\Users\ilona\Documents\ILXNAH.github.io\content\posts&quot;
+attachments_dir = r&quot;C:\Users\ilona\Documents\obsidian\Attachments&quot;
+static_images_dir = r&quot;C:\Users\ilona\Documents\ILXNAH.github.io\static\images&quot;</p>
+<h1 id="step-1-process-each-markdown-file-in-the-posts-directory">Step 1: Process each markdown file in the posts directory</h1>
+<p>for filename in os.listdir(posts_dir):
+if filename.endswith(&quot;.md&quot;):
+filepath = os.path.join(posts_dir, filename)</p>
+<pre><code>    with open(filepath, &quot;r&quot;, encoding=&quot;utf-8&quot;) as file:
+        content = file.read()
+
+    # Step 2: Find all image links in the format ![Image Description](/images/Pasted%20image%20...%20.png)
+    images = re.findall(r'\[\[([^]]*\.(?:png|jpg|jpeg))\]\]', content)
+
+    # Step 3: Replace image links and ensure URLs are correctly formatted
+    for image in images:
+        # Prepare the Markdown-compatible link with %20 replacing spaces
+        markdown_image = f&quot;![Image Description](/images/{image.replace(' ', '%20')})&quot;
+        content = content.replace(f&quot;[[{image}]]&quot;, markdown_image)
+
+        # Step 4: Copy the image to the Hugo static/images directory if it exists
+        image_source = os.path.join(attachments_dir, image)
+        if os.path.exists(image_source):
+            shutil.copy(image_source, static_images_dir)
+
+    # Step 5: Write the updated content back to the markdown file
+    with open(filepath, &quot;w&quot;, encoding=&quot;utf-8&quot;) as file:
+        file.write(content)
+</code></pre>
+<p>print(&ldquo;Markdown files processed and images copied successfully.&rdquo;)</p>
           
         </div>
 
