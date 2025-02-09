@@ -70,7 +70,6 @@ body {
   flex-wrap: wrap; /* Allow content to wrap on small screens */
   justify-content: center; /* Center align items */
   align-items: center;
-  gap: 10px; /* Adjust space between elements */
 }
 .footer__item {
   text-align: center;
@@ -86,7 +85,6 @@ body {
 @media screen and (max-width: 600px) {
   .footer__inner {
     flex-direction: column; /* Stack items vertically on smaller screens */
-    gap: 10px; /* Add more space between elements */
   }
   .footer .copyright,
   .footer-credit {
