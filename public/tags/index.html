@@ -107,16 +107,27 @@
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
   
+  <script>
+    
+    (function() {
+      var currentTheme = localStorage.getItem('theme') || 'default';
+      document.documentElement.setAttribute('data-theme', currentTheme);
+      
+      document.body.style.visibility = 'hidden';
+    })();
+  </script>
+
+  
+  <link rel="stylesheet" href="/style.css">
+
   
   <style>
     body {
       visibility: hidden;
     }
   </style>
-  
-  
-  <link rel="stylesheet" href="/style.css">
 </head>
 <body>
   
@@ -294,8 +305,7 @@
   
   <script>
     document.addEventListener('DOMContentLoaded', function() {
-      
-      document.body.style.visibility = 'visible';
+      document.body.style.visibility = 'visible'; 
     });
   </script>
 

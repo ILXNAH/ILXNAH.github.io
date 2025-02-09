@@ -8,16 +8,27 @@
   
   <!-- Ensures proper mobile scaling -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
+
+  <!-- Apply the initial theme immediately via inline script -->
+  <script>
+    // Ensure the theme is set as early as possible in the page load
+    (function() {
+      var currentTheme = localStorage.getItem('theme') || 'default';
+      document.documentElement.setAttribute('data-theme', currentTheme);
+      // Hide body until theme is set
+      document.body.style.visibility = 'hidden';
+    })();
+  </script>
+
+  <!-- Add the link to your CSS file here -->
+  <link rel="stylesheet" href="/style.css">
+
   <!-- Inline style to hide body content until the theme is applied -->
   <style>
     body {
       visibility: hidden;
     }
   </style>
-  
-  <!-- Add the link to your CSS file here -->
-  <link rel="stylesheet" href="/style.css">
 </head>
 <body>
   {{ $container := cond ($.Site.Params.FullWidthTheme | default false) "container full" (cond ($.Site.Params.CenterTheme | default false) "container center" "container") }}
@@ -36,11 +47,10 @@
     {{ end }}
   </div>
 
-  <!-- Add script to reveal the body after theme is applied -->
+  <!-- Add script to reveal the body after the page is ready -->
   <script>
     document.addEventListener('DOMContentLoaded', function() {
-      // After theme is applied, make the body content visible
-      document.body.style.visibility = 'visible';
+      document.body.style.visibility = 'visible'; // Reveal body content after theme is set
     });
   </script>
 
