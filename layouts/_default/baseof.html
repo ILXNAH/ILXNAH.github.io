@@ -9,25 +9,25 @@
   <!-- Ensures proper mobile scaling -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- Apply the initial theme immediately via inline script in <head> -->
+  <!-- Apply the theme immediately on page load (in the <head>) -->
   <script>
-    // Set the theme on initial load (before the page renders)
     (function() {
-      var currentTheme = localStorage.getItem('theme') || 'default';  // Default to 'default' if not set
+      // Check if a theme is saved in localStorage, otherwise default to 'default'
+      var currentTheme = localStorage.getItem('theme') || 'default';
+      // Set the theme for the document root
       document.documentElement.setAttribute('data-theme', currentTheme);
     })();
   </script>
 
-  <!-- Inline style to avoid flash; ensure theme is set before rendering -->
+  <!-- Prevent content flash until theme is applied -->
   <style>
-    html {
-      visibility: hidden; /* Hide the whole page content */
+    body {
+      display: none; /* Hide the body content initially */
     }
   </style>
 
   <!-- Link to your CSS file -->
   <link rel="stylesheet" href="/style.css">
-
 </head>
 <body>
   {{ $container := cond ($.Site.Params.FullWidthTheme | default false) "container full" (cond ($.Site.Params.CenterTheme | default false) "container center" "container") }}
@@ -46,11 +46,11 @@
     {{ end }}
   </div>
 
-  <!-- Add script to reveal the body content once it's ready -->
+  <!-- Once the DOM content is fully loaded, reveal the body -->
   <script>
     document.addEventListener('DOMContentLoaded', function() {
-      // Make body visible after theme is applied
-      document.documentElement.style.visibility = 'visible';
+      // After the page is fully loaded and styled, make body visible
+      document.body.style.display = 'block'; 
     });
   </script>
 

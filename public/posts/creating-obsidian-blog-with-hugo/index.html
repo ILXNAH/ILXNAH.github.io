@@ -116,23 +116,23 @@ Battle Plan Use Obsidian.md for note-taking Turn it into HTML code using Hugo (a
 
   
   <script>
-    
     (function() {
-      var currentTheme = localStorage.getItem('theme') || 'default';  
+      
+      var currentTheme = localStorage.getItem('theme') || 'default';
+      
       document.documentElement.setAttribute('data-theme', currentTheme);
     })();
   </script>
 
   
   <style>
-    html {
-      visibility: hidden;  
+    body {
+      display: none;  
     }
   </style>
 
   
   <link rel="stylesheet" href="/style.css">
-
 </head>
 <body>
   
@@ -565,7 +565,7 @@ Battle Plan Use Obsidian.md for note-taking Turn it into HTML code using Hugo (a
   <script>
     document.addEventListener('DOMContentLoaded', function() {
       
-      document.documentElement.style.visibility = 'visible';
+      document.body.style.display = 'block'; 
     });
   </script>
 

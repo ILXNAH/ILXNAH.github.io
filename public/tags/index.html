@@ -110,23 +110,23 @@
 
   
   <script>
-    
     (function() {
-      var currentTheme = localStorage.getItem('theme') || 'default';  
+      
+      var currentTheme = localStorage.getItem('theme') || 'default';
+      
       document.documentElement.setAttribute('data-theme', currentTheme);
     })();
   </script>
 
   
   <style>
-    html {
-      visibility: hidden;  
+    body {
+      display: none;  
     }
   </style>
 
   
   <link rel="stylesheet" href="/style.css">
-
 </head>
 <body>
   
@@ -305,7 +305,7 @@
   <script>
     document.addEventListener('DOMContentLoaded', function() {
       
-      document.documentElement.style.visibility = 'visible';
+      document.body.style.display = 'block'; 
     });
   </script>
 
