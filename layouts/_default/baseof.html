@@ -5,30 +5,29 @@
     <title>{{ if .IsHome }}{{ $.Site.Title }}{{ else }}{{ .Title }} :: {{ $.Site.Title }}{{ end }}</title>
   {{ end }}
   {{ partial "head.html" . }}
-  
+
   <!-- Ensures proper mobile scaling -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- Apply the initial theme immediately via inline script -->
+  <!-- Apply the initial theme immediately via inline script in <head> -->
   <script>
-    // Ensure the theme is set as early as possible in the page load
+    // Set the theme on initial load (before the page renders)
     (function() {
-      var currentTheme = localStorage.getItem('theme') || 'default';
+      var currentTheme = localStorage.getItem('theme') || 'default';  // Default to 'default' if not set
       document.documentElement.setAttribute('data-theme', currentTheme);
-      // Hide body until theme is set
-      document.body.style.visibility = 'hidden';
     })();
   </script>
 
-  <!-- Add the link to your CSS file here -->
-  <link rel="stylesheet" href="/style.css">
-
-  <!-- Inline style to hide body content until the theme is applied -->
+  <!-- Inline style to avoid flash; ensure theme is set before rendering -->
   <style>
-    body {
-      visibility: hidden;
+    html {
+      visibility: hidden; /* Hide the whole page content */
     }
   </style>
+
+  <!-- Link to your CSS file -->
+  <link rel="stylesheet" href="/style.css">
+
 </head>
 <body>
   {{ $container := cond ($.Site.Params.FullWidthTheme | default false) "container full" (cond ($.Site.Params.CenterTheme | default false) "container center" "container") }}
@@ -47,10 +46,11 @@
     {{ end }}
   </div>
 
-  <!-- Add script to reveal the body after the page is ready -->
+  <!-- Add script to reveal the body content once it's ready -->
   <script>
     document.addEventListener('DOMContentLoaded', function() {
-      document.body.style.visibility = 'visible'; // Reveal body content after theme is set
+      // Make body visible after theme is applied
+      document.documentElement.style.visibility = 'visible';
     });
   </script>
 
