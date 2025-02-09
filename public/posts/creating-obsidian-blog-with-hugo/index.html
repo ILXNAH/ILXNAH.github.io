@@ -257,11 +257,7 @@ Battle Plan Use Obsidian.md for note-taking Turn it into HTML code using Hugo (a
 <li>Select installation option for a specific theme, e.g. look here for <a href="https://themes.gohugo.io/themes/hugo-theme-terminal/">Terminal theme</a>. I used local installation to avoid any fuss when transferring between repos.
 <code>git clone https://github.com/panr/hugo-theme-terminal.git themes/terminal</code></li>
 <li>Edit the config file called so that it matches the installed theme; Terminal theme has a <a href="https://themes.gohugo.io/themes/hugo-theme-terminal/#how-to-configure">config file</a> on its page which you can copy (leave out modules) and paste into <code>hugo.toml</code>.</li>
-<li>Run Hugo server preview with <code>hugo serve</code>
-<ul>
-<li>Take a look at <a href="/">//localhost:1313/</a> &gt; Ctrl+C to cancel website preview</li>
-</ul>
-</li>
+<li>Run Hugo server preview with <code>hugo serve</code>: take a look at <a href="/">//localhost:1313/</a> &gt; Ctrl+C to cancel website preview</li>
 </ol>
 <h4 id="syncing-obsidian-to-hugo">Syncing Obsidian to Hugo<a href="#syncing-obsidian-to-hugo" class="hanchor" ariaLabel="Anchor">#</a> </h4>
 <ul>
@@ -348,7 +344,7 @@ Battle Plan Use Obsidian.md for note-taking Turn it into HTML code using Hugo (a
 (specified is: first, name of your remote repo <code>origin</code>, then branch name <code>main</code>)</li>
 </ul>
 <h4 id="deploying-to-github-pages">Deploying to GitHub Pages<a href="#deploying-to-github-pages" class="hanchor" ariaLabel="Anchor">#</a> </h4>
-<ol>
+<ol start="11">
 <li>on repo website, go to Settings &gt; Pages &gt; Source: GitHub Actions</li>
 <li>in your local repo, add folder &ldquo;<code>.github</code>&rdquo;</li>
 <li>within there, create a folder called &ldquo;<code>workflows</code>&rdquo;</li>
@@ -357,7 +353,7 @@ Battle Plan Use Obsidian.md for note-taking Turn it into HTML code using Hugo (a
 <li><code>git add .</code> &gt; <code>git commit -m &quot;github actions&quot;</code> &gt; <code>git push</code></li>
 </ol>
 <h5 id="publishing-workflow">Publishing Workflow<a href="#publishing-workflow" class="hanchor" ariaLabel="Anchor">#</a> </h5>
-<ol>
+<ol start="17">
 <li><code>robocopy &quot;C:\Users\ilona\Documents\obsidian\Hugo Posts&quot; &quot;C:\Users\ilona\Documents\ILXNAH.github.io\content\posts&quot; /mir</code></li>
 <li><code>python images.py</code></li>
 <li><code>hugo</code></li>
