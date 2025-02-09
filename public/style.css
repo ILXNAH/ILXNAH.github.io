@@ -126,3 +126,13 @@ body {
     margin-bottom: 10px; /* Add some spacing between sections */
   }
 }
+/* ========================================= */
+/* Global Styling for Page Scaling on Mobile */
+/* Ensures the site maintains proper width and prevents horizontal scrolling */
+/* ========================================= */
+
+html, body {
+  width: 100%;       /* Forces the page to always take up the full width */
+  max-width: 100%;   /* Prevents elements from exceeding the screen width */
+  overflow-x: hidden; /* Hides horizontal scrolling to avoid zooming issues */
+}
