@@ -1,3 +1,12 @@
+// Immediately set the theme before any content is rendered
+(function() {
+  // Get the current theme from localStorage or default to 'default'
+  let currentTheme = localStorage.getItem('theme') || 'default';
+
+  // Set the theme on page load, before the page is rendered
+  document.documentElement.setAttribute('data-theme', currentTheme);
+})();
+
 document.addEventListener('DOMContentLoaded', function() {
   // Log when the theme toggle script is loaded
   // console.log("Theme toggle script loaded");
@@ -6,16 +15,13 @@ document.addEventListener('DOMContentLoaded', function() {
   // Check if the theme toggle button is found
   // console.log('Button found:', themeToggleButton);
   
-  // Get the current theme from localStorage or default to 'default'
-  let currentTheme = localStorage.getItem('theme') || 'default';
-
-  // Set the theme on page load, before the page is rendered
-  document.documentElement.setAttribute('data-theme', currentTheme);
-
   // Toggle theme when button is clicked
   themeToggleButton.addEventListener('click', function() {
-    console.log('Button clicked!'); // Check if button click is firing
+    // console.log('Button clicked!'); // Check if button click is firing
 
+    // Get the current theme
+    let currentTheme = document.documentElement.getAttribute('data-theme');
+    
     // Cycle through the themes
     let newTheme;
     if (currentTheme === 'default') {
@@ -33,8 +39,5 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Apply the new theme
     document.documentElement.setAttribute('data-theme', newTheme);
-
-    // Update the currentTheme variable to the new theme
-    currentTheme = newTheme;
   });
 });
