@@ -58,6 +58,11 @@ body {
   background-color: darken(var(--accent), 10%);
 }
 
+/* Prevent initial flashing by hiding the body until the theme is applied */
+.no-flash {
+  visibility: hidden;
+}
+
 /* Footer styles */
 .footer {
   width: 100%;

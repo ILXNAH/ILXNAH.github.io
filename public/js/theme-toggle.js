@@ -5,21 +5,16 @@
 
   // Set the theme on page load, before the page is rendered
   document.documentElement.setAttribute('data-theme', currentTheme);
+
+  // Remove the "no-flash" class to show the page content after theme is set
+  document.body.classList.remove('no-flash');
 })();
 
 document.addEventListener('DOMContentLoaded', function() {
-  // Log when the theme toggle script is loaded
-  // console.log("Theme toggle script loaded");
-
   const themeToggleButton = document.getElementById('theme-toggle');
-  // Check if the theme toggle button is found
-  // console.log('Button found:', themeToggleButton);
   
   // Toggle theme when button is clicked
   themeToggleButton.addEventListener('click', function() {
-    // console.log('Button clicked!'); // Check if button click is firing
-
-    // Get the current theme
     let currentTheme = document.documentElement.getAttribute('data-theme');
     
     // Cycle through the themes
