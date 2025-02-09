@@ -108,20 +108,20 @@ print("Markdown files processed and images copied successfully.")
 - `git push -u origin main` to push from local to remote repo
 	(specified is: first, name of your remote repo `origin`, then branch name `main`)
 #### Deploying to GitHub Pages
-11. on repo website, go to Settings > Pages > Source: GitHub Actions
-12. in your local repo, add folder "`.github`"
-13. within there, create a folder called "`workflows`"
-14. within there, create a "`hugo.yaml`" file
-15. copy workflow code into `hugo.yaml` from [Hugo's official documentation](https://gohugo.io/hosting-and-deployment/hosting-on-github/)
-16. `git add .` > `git commit -m "github actions"` > `git push`
+1. on repo website, go to Settings > Pages > Source: GitHub Actions
+2. in your local repo, add folder "`.github`"
+3. within there, create a folder called "`workflows`"
+4. within there, create a "`hugo.yaml`" file
+5. copy workflow code into `hugo.yaml` from [Hugo's official documentation](https://gohugo.io/hosting-and-deployment/hosting-on-github/)
+6. `git add .` > `git commit -m "github actions"` > `git push`
 ##### Publishing Workflow
-17. `robocopy "C:\Users\ilona\Documents\obsidian\Hugo Posts" "C:\Users\ilona\Documents\ILXNAH.github.io\content\posts" /mir`
-18. `python images.py`
-19. `hugo`
-20. (to view - can be skipped) `hugo serve --noHTTPCache`
+1. `robocopy "C:\Users\ilona\Documents\obsidian\Hugo Posts" "C:\Users\ilona\Documents\ILXNAH.github.io\content\posts" /mir`
+2. `python images.py`
+3. `hugo`
+4. (to view - can be skipped) `hugo serve --noHTTPCache`
 	- use this flag to avoid site refresh being stuck due to cache (if you're editing in real-time)
 	- you can create alias: `hss='hugo serve --noHTTPCache'`
-21. `git add .` > `git commit -m "change"` > `git push`
+5. `git add .` > `git commit -m "change"` > `git push`
 #### Final automation script in PowerShell
 The below script automates the publishing workflow steps above (apart from preview):
 ```powershell
