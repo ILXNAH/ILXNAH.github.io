@@ -5,7 +5,10 @@
     <title>{{ if .IsHome }}{{ $.Site.Title }}{{ else }}{{ .Title }} :: {{ $.Site.Title }}{{ end }}</title>
   {{ end }}
   {{ partial "head.html" . }}
-
+  
+  <!-- Ensures proper mobile scaling -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
   <!-- Add the link to your CSS file here -->
   <link rel="stylesheet" href="/style.css">
 </head>
