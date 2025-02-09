@@ -118,7 +118,6 @@ body {
     align-items: center;     /* Center items on small screens */
     gap: 10px; /* Add space between items */
   }
-
   .footer .copyright,
   .footer-credit {
     text-align: center; /* Center text on mobile */
