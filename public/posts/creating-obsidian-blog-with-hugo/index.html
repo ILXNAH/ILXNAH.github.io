@@ -115,6 +115,13 @@ Battle Plan Use Obsidian.md for note-taking Turn it into HTML code using Hugo (a
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
   
+  <style>
+    body {
+      visibility: hidden;
+    }
+  </style>
+  
+  
   <link rel="stylesheet" href="/style.css">
 </head>
 <body>
@@ -544,7 +551,15 @@ Battle Plan Use Obsidian.md for note-taking Turn it into HTML code using Hugo (a
     
   </div>
 
-  <script src="/js/theme-toggle.js" defer></script>
+  
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      
+      document.body.style.visibility = 'visible';
+    });
+  </script>
 
+  
+  <script src="/js/theme-toggle.js" defer></script>
 </body>
 </html>

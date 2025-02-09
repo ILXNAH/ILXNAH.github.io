@@ -9,6 +9,13 @@
   <!-- Ensures proper mobile scaling -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
+  <!-- Inline style to hide body content until the theme is applied -->
+  <style>
+    body {
+      visibility: hidden;
+    }
+  </style>
+  
   <!-- Add the link to your CSS file here -->
   <link rel="stylesheet" href="/style.css">
 </head>
@@ -29,7 +36,15 @@
     {{ end }}
   </div>
 
-  <script src="/js/theme-toggle.js" defer></script>
+  <!-- Add script to reveal the body after theme is applied -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // After theme is applied, make the body content visible
+      document.body.style.visibility = 'visible';
+    });
+  </script>
 
+  <!-- Theme toggle button and JS -->
+  <script src="/js/theme-toggle.js" defer></script>
 </body>
 </html>

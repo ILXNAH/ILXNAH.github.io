@@ -1,23 +1,16 @@
-// Immediately set the theme before any content is rendered
-(function() {
-  // Get the current theme from localStorage or default to 'default'
+document.addEventListener('DOMContentLoaded', function() {
+  // Immediately set the theme before any content is rendered
   let currentTheme = localStorage.getItem('theme') || 'default';
-
-  // Set the theme on page load, before the page is rendered
+  
+  // Apply the theme as soon as possible (before the content is rendered)
   document.documentElement.setAttribute('data-theme', currentTheme);
 
-  // Remove the "no-flash" class to show the page content after theme is set
-  document.body.classList.remove('no-flash');
-})();
+  // Once the theme is applied, reveal the page content
+  document.body.style.visibility = 'visible';
 
-document.addEventListener('DOMContentLoaded', function() {
+  // Handle theme toggle on button click
   const themeToggleButton = document.getElementById('theme-toggle');
-  
-  // Toggle theme when button is clicked
   themeToggleButton.addEventListener('click', function() {
-    let currentTheme = document.documentElement.getAttribute('data-theme');
-    
-    // Cycle through the themes
     let newTheme;
     if (currentTheme === 'default') {
       newTheme = 'pink';
@@ -34,5 +27,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Apply the new theme
     document.documentElement.setAttribute('data-theme', newTheme);
+
+    // Update the currentTheme variable
+    currentTheme = newTheme;
   });
 });
