@@ -31,4 +31,4 @@ Below you will find lists of podcasts I listen to or follow, with links to Apple
 ### Lifestyle & Mental Health: 
 - [The Tim Ferriss Show](https://podcasts.apple.com/us/podcast/the-tim-ferriss-show/id863897795) #en
 - [Strachování: podcast o strachu](https://podcasts.apple.com/us/podcast/strachování/id1617571533) - Roman Förster, Hana Mezerová #cz
-- [Do You F\*cking Mind? Mindset Hacks for a Badass Life](https://podcasts.apple.com/ca/podcast/do-you-f-cking-mind/id1502954097) - Alexis Fernandez #en
+- [Do You F\*cking Mind? Mindset Hacks for a Badass Life](https://podcasts.apple.com/ca/podcast/do-you-f-cking-mind/id1502954097) - Alexis Fernandez #en 

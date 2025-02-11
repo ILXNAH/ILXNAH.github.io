@@ -23,12 +23,10 @@ Following a [video from NetworkChuck](https://www.youtube.com/watch?v=dnE7c0ELEH
 ###### Note
 My setup is on Windows PC, but if you need a guide for Linux/Mac, Chuck got those differences covered in [his](https://blog.networkchuck.com/posts/my-insane-blog-pipeline/) documentation. For the sake of sanity, I'm keeping my email/username/paths within the commands, i.e. don't forget to change them. 
 #### Initial Installation
-1. Install everything: [Obsidian](https://obsidian.md/download), [Terminal](https://apps.microsoft.com/detail/9n0dx20hk701?hl=en-US&gl=US)/PowerShell, [VS Code](https://code.visualstudio.com/download), [Golang](https://go.dev/dl/), [Python 3](https://www.python.org/downloads/), [Git](https://git-scm.com/downloads) and [Hugo](https://gohugo.io/installation/)
-(add the .exe into your program location, e.g. Program Files, and also into PATH)
+1. Install everything: [Obsidian](https://obsidian.md/download), [Terminal](https://apps.microsoft.com/detail/9n0dx20hk701?hl=en-US&gl=US)/PowerShell, [VS Code](https://code.visualstudio.com/download), [Golang](https://go.dev/dl/), [Python 3](https://www.python.org/downloads/), [Git](https://git-scm.com/downloads) and [Hugo](https://gohugo.io/installation/) (add the .exe into your program location, e.g. Program Files, and also into PATH)
 2. Create a `Hugo Posts` folder within your Obsidian Workspace for your blog articles
 3. Within this folder, start a new note (that will be your first blog post)
-4. Double-check correct installations via the `version` flagged commands:
-  `go version`, `git --version`, `hugo version`, `python --version` etc.
+4. Double-check correct installations via the `version` flagged commands: `go version`, `git --version`, `hugo version`, `python --version` etc.
 5. Navigate to your desired directory for storing blog files on your machine, e.g.: `cd C:\Users\ilona\Documents\`
 6. Create a new folder for Hugo blog and set up git: `hugo new site ILXNAH.github.io` > `cd .\ILXNAH.github.io` > `git init` > `git config --global user.name "ILXNAH"` > `git config --global user.email "ILXNAH@tutanota.com"`
 7. Navigate to [Hugo Themes](https://themes.gohugo.io/) and pick a theme to install for your blog.
