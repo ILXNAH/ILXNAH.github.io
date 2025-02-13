@@ -3,7 +3,7 @@ title: Podcasts I like to listen to (or didn't get to it yet)
 draft: false
 MoC: "[[Hugo Posts]]"
 Date Created: 2025-01-27 00:38:07
-Date Modified: 2025-02-13 16:33:21
+Date Modified: 2025-02-13 16:35:22
 tags:
   - podcast
 ---
@@ -11,7 +11,7 @@ tags:
 ---
 Below you will find lists of podcasts I listen to or have discovered (with links to 🍏 Podcasts).
 # Coding:
-- [The Women Who Code Podcast](https://podcasts.apple.com/us/podcast/the-women-who-code-podcast/id1141694878) by Women Who Code
+- [The Women Who Code Podcast](https://podcasts.apple.com/us/podcast/the-women-who-code-podcast/id1141694878) by [Women Who Code](https://www.womenwhocode.com/)
 - [Hidden Figures of Python Podcast](https://podcasts.apple.com/us/podcast/hidden-figures-of-python-podcast/id1720808525) by PyPodcats
 # Cybersecurity (Czech):
 - [Cyber Rangers Podcast](https://podcasts.apple.com/us/podcast/cyber-rangers-podcast/id1513746938)
