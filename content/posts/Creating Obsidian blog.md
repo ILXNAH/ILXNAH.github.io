@@ -3,7 +3,7 @@ title: Creating Obsidian blog with Hugo
 draft: false
 MoC: "[[Hugo Posts]]"
 Date Created: 2025-01-28 08:20:38
-Date Modified: 2025-02-13 16:47:48
+Date Modified: 2025-02-13 17:01:40
 tags:
   - PowerShell
   - Python
