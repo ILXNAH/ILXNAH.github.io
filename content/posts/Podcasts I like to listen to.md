@@ -10,7 +10,7 @@ tags:
 
 ---
 Below you will find lists of podcasts I listen to or have discovered (with links to 🍏 Podcasts).
-## Coding:
+### Coding:
 - [The Women Who Code Podcast](https://podcasts.apple.com/us/podcast/the-women-who-code-podcast/id1141694878) by [Women Who Code](https://www.womenwhocode.com/)
 - [Hidden Figures of Python Podcast](https://podcasts.apple.com/us/podcast/hidden-figures-of-python-podcast/id1720808525) by PyPodcats
 # Cybersecurity (Czech):
