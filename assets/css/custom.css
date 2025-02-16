@@ -1,34 +1,34 @@
 :root {
-/* Default: Heliotrope */
+/* Heliotrope */
 [data-theme="heliotrope"]
   --background: #25062A;
   --foreground: #F7E9F9;
-  --accent: #E575F8; 
-  --accent-darker: #AA54BA; 
+  --accent: #E575F8;
+  --accent-darker: #AA54BA;
 }
 
 /* Viking */
 [data-theme="viking"] {
   --background: #0E1923;
   --foreground: #D6E8EE;
-  --accent: #5ACCF0; 
-  --accent-darker: #459AB6; 
+  --accent: #5ACCF0;
+  --accent-darker: #459AB6;
 }
 
-/* Soft Red */
+/* Red */
 [data-theme="red"] {
-  --background: #2b1a1a;
+  --background: #2B1A1A;
   --foreground: #FFE1E1;
-  --accent: #E25859; /* Soft red */
-  --accent-darker: #8E2B2B; /* Darker red */
+  --accent: #E25859;
+  --accent-darker: #8E2B2B;
 }
 
 /* Matrix */
 [data-theme="matrix"] {
   --background: #000000;
   --foreground: #DEFFEA;
-  --accent: #4EEE85; /* Light blue */
-  --accent-darker: #3AB665; /* Darker blue */
+  --accent: #4EEE85;
+  --accent-darker: #3AB665;
 }
 
 /* Apply variables */
