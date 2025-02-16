@@ -4,7 +4,7 @@
   --background: #25062A;
   --foreground: #F7E9F9;
   --accent: #E575F8;
-  --accent-darker: #AA54BA;
+  --accent-darker: #7F3E8A;
 }
 
 /* Viking */
@@ -12,15 +12,15 @@
   --background: #0E1923;
   --foreground: #D6E8EE;
   --accent: #5ACCF0;
-  --accent-darker: #459AB6;
+  --accent-darker: #265C6C;
 }
 
 /* Red */
 [data-theme="red"] {
   --background: #2B1A1A;
   --foreground: #FFE1E1;
-  --accent: #E25859;
-  --accent-darker: #8E2B2B;
+  --accent: #FC5C5E;
+  --accent-darker: #7A2525;
 }
 
 /* Matrix */
@@ -28,7 +28,7 @@
   --background: #000000;
   --foreground: #DEFFEA;
   --accent: #4EEE85;
-  --accent-darker: #3AB665;
+  --accent-darker: #1E6838;
 }
 
 /* Apply variables */
@@ -166,6 +166,7 @@ blockquote::before {
   max-height: 100px; /* or another height for the collapsed state */
   overflow: hidden;
   transition: max-height 0.3s ease;
+  border: 2px solid var(--accent-darker);
 }
 
 .code-block.expanded {
@@ -179,7 +180,7 @@ blockquote::before {
   background-color: none;
   padding: 5px 10px;
   cursor: pointer;
-  border: 2px solid var(--accent-darker); /* Use var() to apply the custom property */
+  border: 2px solid var(--accent-darker);
   border-radius: 5px;
 }
 
