@@ -161,14 +161,13 @@ blockquote::before {
   content: ""; /* Removes any content or symbols (e.g., '>' from markdown) before the blockquote */
 }
 
-/* Add CSS for Limiting Code Block Height */
+/* Add Limited Code Block Height */
 .code-block {
   max-height: 100px; /* or another height for the collapsed state */
   overflow: hidden;
   transition: max-height 0.3s ease;
   border: 2px solid var(--accent-darker);
 }
-
 .code-block.expanded {
   max-height: none;
 }
@@ -183,8 +182,7 @@ blockquote::before {
   position: absolute;
   top: 10px; /* Adjust the vertical position */
   right: 10px; /* Adjust the horizontal position */
-  background-color: #f0f0f0;  /* Light background for visibility */
-  color: #333; /* Set text color for contrast */
+  background-color: none;  /* Light background for visibility */
   padding: 5px 10px;
   cursor: pointer;
   border: 2px solid var(--accent-darker);
@@ -192,12 +190,6 @@ blockquote::before {
   z-index: 10; /* Ensure button is on top */
   font-size: 14px; /* Adjust font size if needed */
   visibility: visible; /* Ensure visibility */
-}
-
-/* Hover effect */
-.copy-code-btn:hover {
-  background-color: #e0e0e0;
-  color: #000; /* Adjust text color on hover for better contrast */
 }
 
 /* Ensure the expand button has its own space */
