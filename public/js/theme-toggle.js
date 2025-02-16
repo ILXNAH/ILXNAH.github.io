@@ -12,14 +12,14 @@ document.addEventListener('DOMContentLoaded', function() {
   const themeToggleButton = document.getElementById('theme-toggle');
   themeToggleButton.addEventListener('click', function() {
     let newTheme;
-    if (currentTheme === 'default') {
-      newTheme = 'pink';
-    } else if (currentTheme === 'pink') {
+    if (currentTheme === 'heliotrope') {
+      newTheme = 'viking';
+    } else if (currentTheme === 'viking') {
       newTheme = 'red';
     } else if (currentTheme === 'red') {
-      newTheme = 'blue';
+      newTheme = 'matrix';
     } else {
-      newTheme = 'default';
+      newTheme = 'heliotrope';
     }
 
     // Save the new theme to localStorage

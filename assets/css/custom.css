@@ -1,29 +1,34 @@
-/* Default Green */
 :root {
-  --background: #ffffff;
-  --foreground: #1a1a1a;
-  --accent: #eec35e; /* Default green */
+/* Default: Heliotrope */
+[data-theme="heliotrope"]
+  --background: #25062A;
+  --foreground: #F7E9F9;
+  --accent: #E575F8; 
+  --accent-darker: #AA54BA; 
 }
 
-/* Soft Pink */
-[data-theme="pink"] {
-  --background: #1a170f;
-  --foreground: #eceae5;
-  --accent: #ff79c6; /* Soft pink */
+/* Viking */
+[data-theme="viking"] {
+  --background: #0E1923;
+  --foreground: #D6E8EE;
+  --accent: #5ACCF0; 
+  --accent-darker: #459AB6; 
 }
 
 /* Soft Red */
 [data-theme="red"] {
   --background: #2b1a1a;
-  --foreground: #ffffff;
-  --accent: #E24A4A; /* Soft red */
+  --foreground: #FFE1E1;
+  --accent: #E25859; /* Soft red */
+  --accent-darker: #8E2B2B; /* Darker red */
 }
 
-/* Light Blue */
-[data-theme="blue"] {
-  --background: #1a2b3c;
-  --foreground: #ffffff;
-  --accent: #4A90E2; /* Light blue */
+/* Matrix */
+[data-theme="matrix"] {
+  --background: #000000;
+  --foreground: #DEFFEA;
+  --accent: #4EEE85; /* Light blue */
+  --accent-darker: #3AB665; /* Darker blue */
 }
 
 /* Apply variables */
@@ -154,4 +159,47 @@ blockquote {
 /* Ensures no unwanted symbols like '>' appear before the blockquote */
 blockquote::before {
   content: ""; /* Removes any content or symbols (e.g., '>' from markdown) before the blockquote */
+}
+
+/* Add CSS for Limiting Code Block Height */
+.code-block {
+  max-height: 100px; /* or another height for the collapsed state */
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.code-block.expanded {
+  max-height: none;
+}
+
+.expand-code {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background-color: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border: 2px solid var(--accent-darker); /* Use var() to apply the custom property */
+  border-radius: 5px;
+}
+
+/* Add "Copy All Code" butoon into Code Block */
+.code-container {
+  position: relative;
+}
+
+.copy-code-btn {
+  position: absolute;
+  top: 10px; /* Adjust to fit your design */
+  right: 10px; /* Adjust to fit your design */
+  background-color: #f0f0f0;
+  padding: 5px 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  z-index: 10;
+}
+
+.copy-code-btn:hover {
+  background-color: #e0e0e0;
 }
