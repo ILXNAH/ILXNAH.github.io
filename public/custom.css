@@ -173,6 +173,34 @@ blockquote::before {
   max-height: none;
 }
 
+/* Add "Copy All Code" button into Code Block */
+.code-container {
+  position: relative;
+}
+
+/* Adjusted positioning for the copy button */
+.copy-code-btn {
+  position: absolute;
+  top: 10px; /* Adjust the vertical position */
+  right: 10px; /* Adjust the horizontal position */
+  background-color: #f0f0f0;  /* Light background for visibility */
+  color: #333; /* Set text color for contrast */
+  padding: 5px 10px;
+  cursor: pointer;
+  border: 2px solid var(--accent-darker);
+  border-radius: 5px;
+  z-index: 10; /* Ensure button is on top */
+  font-size: 14px; /* Adjust font size if needed */
+  visibility: visible; /* Ensure visibility */
+}
+
+/* Hover effect */
+.copy-code-btn:hover {
+  background-color: #e0e0e0;
+  color: #000; /* Adjust text color on hover for better contrast */
+}
+
+/* Ensure the expand button has its own space */
 .expand-code {
   position: absolute;
   bottom: 10px;
@@ -182,25 +210,4 @@ blockquote::before {
   cursor: pointer;
   border: 2px solid var(--accent-darker);
   border-radius: 5px;
-}
-
-/* Add "Copy All Code" butoon into Code Block */
-.code-container {
-  position: relative;
-}
-
-.copy-code-btn {
-  position: absolute;
-  top: 10px; /* Adjust to fit your design */
-  right: 10px; /* Adjust to fit your design */
-  background-color: #f0f0f0;
-  padding: 5px 10px;
-  cursor: pointer;
-  border: none;
-  border-radius: 5px;
-  z-index: 10;
-}
-
-.copy-code-btn:hover {
-  background-color: #e0e0e0;
 }

@@ -19,10 +19,8 @@
   <link rel="stylesheet" href="{{ $styles.Permalink }}">
 {{ end }}
 
-<!-- Custom CSS to override theme properties (/assets/css/custom.css) -->
-{{ with resources.Get "css/custom.css" | minify | fingerprint }}
-  <link rel="stylesheet" href="{{ .Permalink }}">
-{{ end }}
+<!-- Custom CSS to override theme properties (/static/style.css) -->
+<link rel="stylesheet" href="/style.css">
 
 <!-- Icons -->
 <link rel="icon" href="{{ "icons/taco.png" | absURL }}">

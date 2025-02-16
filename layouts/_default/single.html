@@ -41,7 +41,7 @@
   <div class="post-content">
     {{- with .Content -}}
       <div>
-		{{ . | replaceRE "(<pre><code.+>)(.+)(</code></pre>)" `
+		{{ . | replaceRE "(<pre><code[^>]*>)(.*)(</code></pre>)" `
 		  <div class="code-container">
 			<pre class="code-block">${2}</pre>
 			<button class="expand-code">Show More</button>
