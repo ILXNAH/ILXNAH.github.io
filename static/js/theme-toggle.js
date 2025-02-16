@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
   // Immediately set the theme before any content is rendered
-  let currentTheme = localStorage.getItem('theme') || 'default';
+  let currentTheme = localStorage.getItem('theme') || 'heliotrope';
   
   // Apply the theme as soon as possible (before the content is rendered)
   document.documentElement.setAttribute('data-theme', currentTheme);
