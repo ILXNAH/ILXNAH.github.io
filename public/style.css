@@ -163,7 +163,7 @@ blockquote::before {
 
 /* Add Limited Code Block Height */
 .code-block {
-  max-height: 100px; /* or another height for the collapsed state */
+  max-height: 100px;
   overflow: hidden;
   transition: max-height 0.3s ease;
   border: 2px solid var(--accent-darker);
@@ -172,27 +172,7 @@ blockquote::before {
   max-height: none;
 }
 
-/* Add "Copy All Code" button into Code Block */
-.code-container {
-  position: relative;
-}
-
-/* Adjusted positioning for the copy button */
-.copy-code-btn {
-  position: absolute;
-  top: 10px; /* Adjust the vertical position */
-  right: 10px; /* Adjust the horizontal position */
-  background-color: none;  /* Light background for visibility */
-  padding: 5px 10px;
-  cursor: pointer;
-  border: 2px solid var(--accent-darker);
-  border-radius: 5px;
-  z-index: 10; /* Ensure button is on top */
-  font-size: 14px; /* Adjust font size if needed */
-  visibility: visible; /* Ensure visibility */
-}
-
-/* Ensure the expand button has its own space */
+/* Add expand code button */
 .expand-code {
   position: absolute;
   bottom: 10px;
@@ -203,3 +183,24 @@ blockquote::before {
   border: 2px solid var(--accent-darker);
   border-radius: 5px;
 }
+.expand-code {
+  display: none; /* Hidden by default */
+}
+
+/* Add "Copy All Code" button into Code Block */
+.code-container {
+  position: relative;
+}
+
+/* Adjusted positioning for the copy button */
+.copy-code {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border: 2px solid var(--accent-darker);
+  border-radius: 5px;
+}
+

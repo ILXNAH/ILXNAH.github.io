@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const codeBlocks = document.querySelectorAll('.code-container');
   codeBlocks.forEach(function(container) {
     const button = document.createElement('button');
-    button.classList.add('copy-code-btn');
+    button.classList.add('copy-code');
     button.innerText = 'Copy Code';
     container.appendChild(button);
 
