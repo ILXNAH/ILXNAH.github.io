@@ -204,3 +204,10 @@ blockquote::before {
   border-radius: 20px;
 }
 
+/* Style for images inside articles */
+.post-content img {
+  border: 2px solid var(--accent-darker); /* Adjust width and color */
+  max-width: 100%; /* Ensures responsiveness */
+  display: block; /* Prevents inline spacing issues */
+  margin: 10px; /* Centers the image and adds spacing */
+}
