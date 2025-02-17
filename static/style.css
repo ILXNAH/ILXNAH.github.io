@@ -187,7 +187,11 @@ blockquote::before {
   border-radius: 20px;
   z-index: 9999;  /* Ensure button is on top */
 }
-
+/* Hover effect for expand code button */
+.expand-code:hover {
+  background-color: #CDCBCA;
+  color: var(--accent-darker);
+}
 /* Ensure that the button is hidden by default */
 .expand-code {
   display: none;
@@ -206,7 +210,11 @@ blockquote::before {
   border-radius: 20px;
   z-index: 9999;  /* Ensure button is on top */
 }
-
+/* Hover effect for copy code button */
+.copy-code:hover {
+  background-color: #CDCBCA;
+  color: var(--accent-darker);
+}
 /* Ensure code block can scroll horizontally and stays within bounds */
 .code-block {
   max-height: 100px;
