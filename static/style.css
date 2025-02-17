@@ -165,6 +165,7 @@ blockquote::before {
 .code-block {
   max-height: 100px;
   overflow-x: auto;  /* Enable horizontal scrolling */
+  overflow-y: hidden; /* Disable vertical scrolling */
   transition: max-height 0.3s ease;
   border: 2px solid var(--accent-darker);
   position: relative; /* Ensure proper positioning context for buttons */
@@ -222,7 +223,6 @@ blockquote::before {
   position: relative;
   overflow: hidden;  /* Hide overflow to prevent content spilling out */
 }
-
 
 /* For mobile devices, adjust positioning for smaller screen */
 @media (max-width: 768px) {
