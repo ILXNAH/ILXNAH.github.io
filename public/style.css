@@ -167,6 +167,7 @@ blockquote::before {
   overflow: hidden;
   transition: max-height 0.3s ease;
   border: 2px solid var(--accent-darker);
+  position: relative; /* Ensure proper positioning context for buttons */
 }
 
 /* When the code block is expanded, remove the height restriction */
@@ -229,13 +230,26 @@ blockquote::before {
   overflow: hidden;  /* Hide overflow to prevent content spilling out */
 }
 
+
 /* For mobile devices, adjust positioning for smaller screen */
 @media (max-width: 768px) {
   .expand-code, .copy-code {
-    bottom: 5px;
+    bottom: 5px; /* Ensure buttons are still positioned near the bottom */
     right: 5px;
     padding: 5px;
     font-size: 12px; /* Adjust font size for smaller screens */
+    z-index: 10000; /* Ensure buttons stay above code */
+  }
+
+  .code-container {
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* Ensure that buttons don't stretch and are correctly placed */
+  .expand-code, .copy-code {
+    width: auto;  /* Prevent buttons from stretching */
+    display: block;  /* Ensure buttons appear on top */
   }
 }
 
