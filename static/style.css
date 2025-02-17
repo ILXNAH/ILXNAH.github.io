@@ -177,13 +177,16 @@ blockquote::before {
   position: absolute;
   bottom: 10px;
   right: 10px;
-  background-color: #f0f0f0;  /* Light gray background (solid color) */
+  background-color: #D8D9D8;  /* Light gray background (solid color) */
   color: var(--accent-darker);
   padding: 1px 5px;
   cursor: pointer;
   border: 2px solid var(--accent-darker);
   border-radius: 20px;
   z-index: 9999;  /* Ensure button is on top */
+}
+.expand-code {
+  display: none; /* Hidden by default */
 }
 
 /* Add "Copy All Code" button into Code Block */
@@ -196,7 +199,7 @@ blockquote::before {
   position: absolute;
   top: 10px;
   right: 10px;
-  background-color: #f0f0f0;  /* Same solid background color */
+  background-color: #D8D9D8;  /* Same solid background color */
   color: var(--accent-darker);
   padding: 1px 5px;
   cursor: pointer;
