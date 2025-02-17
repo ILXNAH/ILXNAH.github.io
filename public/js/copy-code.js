@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
   codeBlocks.forEach(function(container) {
     const button = document.createElement('button');
     button.classList.add('copy-code');
-    button.innerText = 'Copy Code';
+    button.innerText = 'Copy';
     container.appendChild(button);
 
     // Add click event to copy the code
@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
       // Optional: show some feedback (e.g., "Copied!" message)
       button.innerText = 'Copied!';
       setTimeout(() => {
-        button.innerText = 'Copy Code';
+        button.innerText = 'Copy';
       }, 2000);
     });
   });

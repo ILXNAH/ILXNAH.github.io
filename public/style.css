@@ -168,6 +168,8 @@ blockquote::before {
   transition: max-height 0.3s ease;
   border: 2px solid var(--accent-darker);
 }
+
+/* When the code block is expanded, remove the height restriction */
 .code-block.expanded {
   max-height: none;
 }
@@ -177,7 +179,7 @@ blockquote::before {
   position: absolute;
   bottom: 10px;
   right: 10px;
-  background-color: #D4D5D5;  /* Light gray background (solid color) */
+  background-color: #CDCBCA;
   color: var(--accent-darker);
   padding: 1px 5px;
   cursor: pointer;
@@ -185,27 +187,48 @@ blockquote::before {
   border-radius: 20px;
   z-index: 9999;  /* Ensure button is on top */
 }
+
+/* Ensure that the button is hidden by default */
 .expand-code {
-  display: none; /* Hidden by default */
+  display: none;
 }
 
-/* Add "Copy All Code" button into Code Block */
-.code-container {
-  position: relative;
-}
-
-/* Add "Copy All Code" button into Code Block */
+/* Add "Copy All Code" button */
 .copy-code {
   position: absolute;
   top: 10px;
   right: 10px;
-  background-color: #D4D5D5;  /* Same solid background color */
+  background-color: #CDCBCA;
   color: var(--accent-darker);
   padding: 1px 5px;
   cursor: pointer;
   border: 2px solid var(--accent-darker);
   border-radius: 20px;
   z-index: 9999;  /* Ensure button is on top */
+}
+
+/* Ensure code block can scroll horizontally and stays within bounds */
+.code-block {
+  max-height: 100px;
+  overflow-x: auto;  /* Enable horizontal scrolling */
+  transition: max-height 0.3s ease;
+  border: 2px solid var(--accent-darker);
+}
+
+/* Ensure .code-container doesn't cause layout issues */
+.code-container {
+  position: relative;
+  overflow: hidden;  /* Hide overflow to prevent content spilling out */
+}
+
+/* For mobile devices, adjust positioning for smaller screen */
+@media (max-width: 768px) {
+  .expand-code, .copy-code {
+    bottom: 5px;
+    right: 5px;
+    padding: 5px;
+    font-size: 12px; /* Adjust font size for smaller screens */
+  }
 }
 
 /* Style for images inside articles */
