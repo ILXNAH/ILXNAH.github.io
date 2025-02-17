@@ -234,7 +234,6 @@ blockquote::before {
 /* For mobile devices, adjust positioning for smaller screen */
 @media (max-width: 768px) {
   .expand-code, .copy-code {
-    bottom: 5px; /* Ensure buttons are still positioned near the bottom */
     right: 5px;
     padding: 5px;
     font-size: 12px; /* Adjust font size for smaller screens */
