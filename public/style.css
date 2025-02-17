@@ -177,7 +177,7 @@ blockquote::before {
   position: absolute;
   bottom: 10px;
   right: 10px;
-  background-color: #D8D9D8;  /* Light gray background (solid color) */
+  background-color: #D4D5D5;  /* Light gray background (solid color) */
   color: var(--accent-darker);
   padding: 1px 5px;
   cursor: pointer;
@@ -199,7 +199,7 @@ blockquote::before {
   position: absolute;
   top: 10px;
   right: 10px;
-  background-color: #D8D9D8;  /* Same solid background color */
+  background-color: #D4D5D5;  /* Same solid background color */
   color: var(--accent-darker);
   padding: 1px 5px;
   cursor: pointer;
