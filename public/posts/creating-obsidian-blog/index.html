@@ -582,23 +582,41 @@ Write-Host &#34;All done! Site synced, processed, committed, built, and deployed
   }
 
    
+  .footer {
+    display: flex;
+    justify-content: center;  
+    align-items: center;  
+    text-align: center;
+    width: 100%;
+  }
+
+  .footer__inner {
+    display: flex;
+    flex-wrap: wrap;  
+    align-items: center;  
+    justify-content: center;  
+    gap: 15px;  
+  }
+
+   
   .footer .copyright span,
   .footer-credit span {
-    margin-right: 5px;  
+    margin-right: 5px;
     padding: 0;
+    white-space: nowrap;  
   }
 
    
   .footer-credit {
-    margin-left: 5px;   
+    margin-left: 5px;
   }
 
    
   .footer__social {
-    margin-left: 15px;  
     display: flex;
     gap: 12px;
     align-items: center;
+    justify-content: center;  
   }
 
   .footer__social a {

@@ -49,24 +49,42 @@
     padding: 0;
   }
 
-  /* Ensure all text is kept on one line without large spaces between them */
-  .footer .copyright span,
-  .footer-credit span {
-    margin-right: 5px; /* Tighten space between text */
-    padding: 0;
+  /* Center the entire footer while keeping elements inline */
+  .footer {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Align items vertically */
+    text-align: center;
+    width: 100%;
   }
 
-  /* Make sure attribution to icon has no line breaks or extra space */
+  .footer__inner {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    align-items: center; /* Align all items in the middle */
+    justify-content: center; /* Keep everything centered */
+    gap: 15px; /* Space between elements */
+  }
+
+  /* Ensure text stays inline and properly spaced */
+  .footer .copyright span,
+  .footer-credit span {
+    margin-right: 5px;
+    padding: 0;
+    white-space: nowrap; /* Prevent line breaks */
+  }
+
+  /* Space between credit and social links */
   .footer-credit {
-    margin-left: 5px;  /* Minimal space between sections */
+    margin-left: 5px;
   }
 
   /* Social icons styling */
   .footer__social {
-    margin-left: 15px; /* Space between credits and social links */
     display: flex;
     gap: 12px;
     align-items: center;
+    justify-content: center; /* Center icons */
   }
 
   .footer__social a {
