@@ -46,9 +46,15 @@ function createStars(numStars) {
 // Create fewer stars initially (50 instead of 1000)
 createStars(30);
 
-// Optionally add more stars at intervals
+// Function to check if the screen size is mobile
+function isMobile() {
+  return window.innerWidth <= 768; // Adjust this value based on your preference for mobile size
+}
+
+// Optionally add more stars at intervals, adjusting the number based on screen size
 setInterval(() => {
-  createStars(1.5); // Add 5 stars at a time
+  const numStars = isMobile() ? 0.75 : 1.5; // Generate fewer stars on mobile
+  createStars(numStars); // Add fewer stars at a time
 }, 3000); // Adjust interval as needed
 
 // Continuously recycle stars when they leave the viewport
