@@ -15,9 +15,11 @@ function createStar() {
   const star = document.createElement('div');
   star.classList.add('star');
   
-  // Smaller stars
-  star.style.width = random(0.6, 1) + 'px';  // Smaller stars
-  star.style.height = random(0.6, 1) + 'px'; // Smaller stars
+  // Adjust star size based on screen size
+  const minSize = isMobile() ? 0.8 : 0.6; // Slightly bigger stars on mobile
+  const maxSize = isMobile() ? 1.3 : 1;   // Slightly bigger stars on mobile
+  star.style.width = random(minSize, maxSize) + 'px';
+  star.style.height = random(minSize, maxSize) + 'px';
   
   // Position stars randomly across the full height and width of the page
   star.style.top = random(0, document.documentElement.scrollHeight) + 'px';
