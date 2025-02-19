@@ -55,7 +55,7 @@ function isMobile() {
 
 // Optionally add more stars at intervals, adjusting the number based on screen size
 setInterval(() => {
-  const numStars = isMobile() ? 1 : 1.5; // Generate fewer stars on mobile
+  const numStars = isMobile() ? 0.8 : 1.2; // Generate fewer stars on mobile
   createStars(numStars); // Add fewer stars at a time
 }, 3000); // Adjust interval as needed
 
