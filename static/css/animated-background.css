@@ -3,8 +3,10 @@
   position: absolute;
   background-color: #fff;
   border-radius: 50%;
-  opacity: 0.5;  /* Set a more subtle initial opacity */
-  animation: twinkle 3s infinite ease-in-out, sparkle 3s infinite ease-in-out; /* Slower, smoother animations */
+  animation: twinkle 2s infinite ease-in-out;
+  opacity: 0.8;
+  will-change: transform, opacity;
+  box-shadow: 0 0 2px 1px rgba(255, 255, 255, 0.7); /* Smaller glow */
 }
 
 /* Smooth Twinkle Effect */
