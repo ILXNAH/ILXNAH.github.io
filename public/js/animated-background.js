@@ -16,8 +16,8 @@ function createStar() {
   star.classList.add('star');
   
   // Smaller stars
-  star.style.width = random(0.8, 2) + 'px';  // Smaller stars
-  star.style.height = random(0.8, 2) + 'px'; // Smaller stars
+  star.style.width = random(0.6, 1) + 'px';  // Smaller stars
+  star.style.height = random(0.6, 1) + 'px'; // Smaller stars
   
   // Position stars randomly across the full height and width of the page
   star.style.top = random(0, document.documentElement.scrollHeight) + 'px';
@@ -44,11 +44,11 @@ function createStars(numStars) {
 }
 
 // Create fewer stars initially (50 instead of 1000)
-createStars(50);
+createStars(30);
 
 // Optionally add more stars at intervals
 setInterval(() => {
-  createStars(5); // Add 5 stars at a time
+  createStars(1.5); // Add 5 stars at a time
 }, 3000); // Adjust interval as needed
 
 // Continuously recycle stars when they leave the viewport
