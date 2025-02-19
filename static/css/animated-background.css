@@ -1,71 +1,37 @@
-/* General Star Styles */
+/* Animate the stars with a smoother sparkle effect */
 .star {
   position: absolute;
-  background-color: rgba(255, 255, 255, 0.7); /* Slight glow, softer white */
+  background-color: #fff;
   border-radius: 50%;
-  opacity: 0.8;
-  animation: twinkle 2s infinite alternate; /* Slow twinkling */
-  box-shadow: 0 0 8px rgba(255, 255, 255, 0.4); /* Added glow effect */
+  opacity: 0.5;  /* Set a more subtle initial opacity */
+  animation: twinkle 3s infinite ease-in-out, sparkle 3s infinite ease-in-out; /* Slower, smoother animations */
 }
 
-/* Modify the twinkle animation for a more cosmic effect */
+/* Smooth Twinkle Effect */
 @keyframes twinkle {
   0% {
-    opacity: 0.8;
-    transform: scale(1.5);
+    opacity: 0.2;
+    transform: scale(0.8);
   }
   50% {
-    opacity: 0.4; /* Less contrast */
-    transform: scale(2);
+    opacity: 0.6;
+    transform: scale(1);
   }
   100% {
-    opacity: 0.8;
-    transform: scale(1.5);
+    opacity: 0.2;
+    transform: scale(0.8);
   }
 }
 
-/* Star Size Adjustment */
-.star {
-  width: calc(random(1, 4) + 'px');  /* Smaller and more varied */
-  height: calc(random(1, 4) + 'px'); /* More variety in star sizes */
-  animation-duration: calc(1.5s + random(0, 2) + 's'); /* Vary animation duration for some stars */
-  animation-delay: calc(random(0, 5) + 's'); /* Delay animation for random start times */
-}
-
-/* Galaxy effect: background colors and varying sizes */
-.starfield {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-  z-index: -1;
-}
-
-/* Add more color variation for stars */
-.star:nth-child(odd) {
-  background-color: rgba(173, 216, 230, 0.7); /* Light blue-ish stars */
-}
-
-.star:nth-child(even) {
-  background-color: rgba(255, 182, 193, 0.6); /* Light pinkish stars */
-}
-
-.star:nth-child(3n) {
-  background-color: rgba(255, 255, 255, 0.8); /* Bright white stars for variety */
-}
-
-/* Create subtle movement (parallax) for a more dynamic effect */
-@keyframes starFieldMove {
+/* Smooth Sparkle Effect */
+@keyframes sparkle {
   0% {
-    transform: translateY(0);
+    box-shadow: 0 0 5px 2px rgba(255, 255, 255, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 8px 4px rgba(255, 255, 255, 0.5);
   }
   100% {
-    transform: translateY(100px);
+    box-shadow: 0 0 5px 2px rgba(255, 255, 255, 0.3);
   }
-}
-
-.starfield {
-  animation: starFieldMove 20s linear infinite;
 }
