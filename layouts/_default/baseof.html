@@ -30,6 +30,12 @@
 
   <!-- Link to your CSS file -->
   <link rel="stylesheet" href="/style.css">
+
+  <!-- Add your animated background CSS -->
+  <link rel="stylesheet" href="/css/animated-background.css">
+  
+  <!-- Add your animated background JavaScript -->
+  <script src="/js/animated-background.js" defer></script>
 </head>
 <body>
   {{ $container := cond ($.Site.Params.FullWidthTheme | default false) "container full" (cond ($.Site.Params.CenterTheme | default false) "container center" "container") }}
