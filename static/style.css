@@ -250,3 +250,11 @@ blockquote::before {
   display: block; /* Prevents inline spacing issues */
   margin: 10px; /* Centers the image and adds spacing */
 }
+
+}
+.logo-text {
+  font-size: 5vw !important; /* Scale text dynamically */
+  white-space: nowrap !important; /* Prevent breaking */
+  overflow: hidden !important; /* Hide excess */
+  max-width: 100vw !important; /* Keep within viewport */
+}
