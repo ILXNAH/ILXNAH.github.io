@@ -74,9 +74,9 @@ paginate = 5
 
     [languages.en.params]
       subtitle = "Mostly about tech"
-      owner = ""
+      owner = "Ilona Loučková"
       keywords = ""
-      copyright = ""
+      copyright = "Ilona Loučková"
       menuMore = "Show more"
       readMore = "Read more"
       readOtherPosts = "Read other posts"
@@ -88,7 +88,7 @@ paginate = 5
       words = "words"
 
       [languages.en.params.logo]
-        logoText = "Hello World!"
+        logoText = "Hello World! Anyone can hack it. 😉💞"
         logoHomeLink = "/"
 
       [languages.en.menu]
