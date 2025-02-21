@@ -84,53 +84,60 @@ body {
   visibility: hidden;
 }
 
+/* Footer styles */
 .footer {
   width: 100%;
-  background-color: none; /* Change background color as needed */
+  background-color: none; /* Adjust as needed */
   padding: 20px 0; /* Adjust padding for spacing */
-  text-align: center;
 }
 
 .footer__inner {
   display: flex;
-  justify-content: center; /* Centers the whole content block */
-  align-items: center;
-  flex-wrap: wrap; /* Allow content to wrap when necessary */
-}
-
-.footer__content {
-  display: flex;
-  justify-content: center; /* Center everything */
-  flex-wrap: wrap; /* Allow wrapping if there's no space */
-  align-items: center;
-  gap: 15px; /* Space between items */
-  text-align: center;
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Vertically center items */
+  gap: 10px; /* Adjust space between items */
+  flex-wrap: nowrap; /* Prevent wrapping */
 }
 
 .footer__item {
-  display: inline-block; /* Ensure items stay in a single row */
-  margin-right: 15px; /* Optional: Space between items */
-  white-space: nowrap; /* Prevent wrapping of individual elements */
+  margin: 0;
+  padding: 0; /* Ensure no padding or margins affect layout */
+  text-align: center;
+}
+
+.footer__social {
+  display: flex;
+  align-items: center;
+  gap: 12px; /* Gap between social icons */
 }
 
 .footer__social a {
   font-size: 20px;
   color: #fff;
-  margin-right: 15px; /* Optional: Space between social icons */
   transition: color 0.3s ease-in-out;
 }
 
 .footer__social a:hover {
-  color: #1DB954; /* Adjust hover color for social icons */
+  color: #1DB954; /* Adjust hover color */
 }
 
-/* Mobile adjustments for stacking footer content */
+/* Adjust spacing for each footer element */
+.footer__item {
+  margin: 0 10px; /* Add margin to avoid items touching */
+}
+
+.footer .copyright,
+.footer .footer-theme,
+.footer .footer-credit {
+  flex-grow: 0; /* Prevent from growing */
+  flex-shrink: 0; /* Prevent from shrinking */
+}
+
+/* Mobile adjustments */
 @media (max-width: 768px) {
   .footer__inner {
-    flex-direction: column; /* Stack everything vertically on small screens */
-  }
-  .footer__item {
-    margin-bottom: 10px; /* Add space between items on mobile */
+    flex-direction: column; /* Stack elements vertically on small screens */
+    gap: 10px; /* Space between stacked items */
   }
 }
 
