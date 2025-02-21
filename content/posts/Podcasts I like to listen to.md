@@ -9,7 +9,7 @@ tags:
 ---
 
 ---
-Below you will find lists of podcasts I listen to or have discovered (with links to 🍏 Podcasts).
+Below you will find lists of podcasts I listen to or have discovered (with links to mostly 🍏 Podcasts).
 ### Coding:
 - [The Women Who Code Podcast](https://podcasts.apple.com/us/podcast/the-women-who-code-podcast/id1141694878) by [Women Who Code](https://www.womenwhocode.com/)
 - [Hidden Figures of Python Podcast](https://podcasts.apple.com/us/podcast/hidden-figures-of-python-podcast/id1720808525) by PyPodcats
@@ -35,3 +35,4 @@ Below you will find lists of podcasts I listen to or have discovered (with links
 - [Czechitas Podcast](https://ceskepodcasty.cz/podcast/czechitas-podcast)
 ### Czech ones - other:
 - [Strachování: podcast o strachu](https://podcasts.apple.com/us/podcast/strachování/id1617571533) by Roman Förster & Hana Mezerová
+- [Terapie sdílením PODCAST](https://open.spotify.com/show/1E0r49Kc9iTHaeFosuFGcp) by Ester Geislerová & Honza Vojtko
