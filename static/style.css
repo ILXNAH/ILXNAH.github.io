@@ -6,6 +6,7 @@
   --accent: #E575F8;
   --accent-darker: #7F3E8A;
 }
+
 /* Viking */
 [data-theme="viking"] {
   --background: #0E1923;
@@ -13,6 +14,7 @@
   --accent: #5ACCF0;
   --accent-darker: #265C6C;
 }
+
 /* Red */
 [data-theme="red"] {
   --background: #2B1A1A;
@@ -20,6 +22,7 @@
   --accent: #FC5C5E;
   --accent-darker: #7A2525;
 }
+
 /* Matrix */
 [data-theme="matrix"] {
   --background: #000000;
@@ -38,6 +41,7 @@ body {
   overflow-y: auto; /* Ensure vertical scrolling is allowed */
   margin: 0; /* Remove any default margin */
 }
+
 /* Ensure the starfield covers the entire page, even while scrolling */
 .starfield {
   position: fixed; /* Fixed position to stay behind content */
@@ -63,12 +67,14 @@ body {
   border-radius: 5px;
   z-index: 1000;
 }
+
 #theme-toggle img {
   width: 50px; /* Adjust size as needed */
   height: 50px;
   border: none;
   outline: none;
 }
+
 #theme-toggle:hover {
   background-color: darken(var(--accent), 10%);
 }
@@ -78,68 +84,53 @@ body {
   visibility: hidden;
 }
 
-/* Footer styles */
 .footer {
   width: 100%;
-  background-color: none; /* Change as per your theme */
-  text-align: center; /* Ensure text is centered */
-}
-.footer__inner {
-  display: flex;
-  flex-wrap: wrap; /* Allow content to wrap on small screens */
-  justify-content: center; /* Center align items */
-  align-items: center;
-}
-.footer__item {
+  background-color: none; /* Change background color as needed */
+  padding: 20px 0; /* Adjust padding for spacing */
   text-align: center;
 }
-.footer .copyright,
-.footer-credit {
-  display: block; /* Ensures items stack vertically on smaller screens */
-  text-align: center; /* Keep text centered */
-  word-wrap: break-word; /* Ensure long words break properly */
-}
-/* Optional: Add space for small screens between elements */
-@media screen and (max-width: 600px) {
-  .footer__inner {
-    flex-direction: column; /* Stack items vertically on smaller screens */
-  }
-  .footer .copyright,
-  .footer-credit {
-    display: block; /* Change to block for proper wrapping */
-  }
-}
-/* Ensures that long text in the footer will break and wrap */
-.footer, .footer__inner, .footer .copyright, .footer-credit {
-  margin: 0;
-  padding: 0;
-  display: block;  /* Change to block for proper wrapping */
-  word-wrap: break-word;  /* Allow long words to break */
-  word-break: break-word; /* Break long words if necessary */
-}
-/* Flexbox styles to ensure footer adapts on smaller screens */
+
 .footer__inner {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center; /* Center all footer items */
+  justify-content: center; /* Centers the whole content block */
   align-items: center;
-  text-align: center; /* Ensure text is centered */
+  flex-wrap: wrap; /* Allow content to wrap when necessary */
 }
-.footer .copyright,
-.footer-credit {
-  flex: 1 1 auto;  /* Allow elements to resize and wrap */
+
+.footer__content {
+  display: flex;
+  justify-content: center; /* Center everything */
+  flex-wrap: wrap; /* Allow wrapping if there's no space */
+  align-items: center;
+  gap: 15px; /* Space between items */
+  text-align: center;
 }
+
+.footer__item {
+  display: inline-block; /* Ensure items stay in a single row */
+  margin-right: 15px; /* Optional: Space between items */
+  white-space: nowrap; /* Prevent wrapping of individual elements */
+}
+
+.footer__social a {
+  font-size: 20px;
+  color: #fff;
+  margin-right: 15px; /* Optional: Space between social icons */
+  transition: color 0.3s ease-in-out;
+}
+
+.footer__social a:hover {
+  color: #1DB954; /* Adjust hover color for social icons */
+}
+
 /* Mobile adjustments for stacking footer content */
 @media (max-width: 768px) {
   .footer__inner {
-    flex-direction: column; /* Stack elements vertically */
-    align-items: center;     /* Center items on small screens */
-    gap: 10px; /* Add space between items */
+    flex-direction: column; /* Stack everything vertically on small screens */
   }
-  .footer .copyright,
-  .footer-credit {
-    text-align: center; /* Center text on mobile */
-    margin-bottom: 10px; /* Add some spacing between sections */
+  .footer__item {
+    margin-bottom: 10px; /* Add space between items on mobile */
   }
 }
 
@@ -162,6 +153,7 @@ blockquote {
   color: #bdbdbd; /* Sets the color of the text to a lighter gray for readability */
   position: relative; /* Allows positioning pseudo-elements in relation to the blockquote */
 }
+
 /* Ensures no unwanted symbols like '>' appear before the blockquote */
 blockquote::before {
   content: ""; /* Removes any content or symbols (e.g., '>' from markdown) before the blockquote */
@@ -176,10 +168,12 @@ blockquote::before {
   border: 2px solid var(--accent-darker);
   position: relative; /* Ensure proper positioning context for buttons */
 }
+
 /* When the code block is expanded, remove the height restriction */
 .code-block.expanded {
   max-height: none;
 }
+
 /* Add expand code button */
 .expand-code {
   position: absolute;
@@ -193,15 +187,18 @@ blockquote::before {
   border-radius: 20px;
   z-index: 9999;  /* Ensure button is on top */
 }
+
 /* Hover effect for expand code button */
 .expand-code:hover {
   background-color: #CDCBCA;
   color: var(--accent-darker);
 }
+
 /* Ensure that the button is hidden by default */
 .expand-code {
   display: none;
 }
+
 /* Add "Copy All Code" button */
 .copy-code {
   position: absolute;
@@ -215,16 +212,19 @@ blockquote::before {
   border-radius: 20px;
   z-index: 9999;  /* Ensure button is on top */
 }
+
 /* Hover effect for copy code button */
 .copy-code:hover {
   background-color: #CDCBCA;
   color: var(--accent-darker);
 }
+
 /* Ensure .code-container doesn't cause layout issues */
 .code-container {
   position: relative;
   overflow: hidden;  /* Hide overflow to prevent content spilling out */
 }
+
 /* For mobile devices, adjust positioning for smaller screen */
 @media (max-width: 768px) {
   .expand-code, .copy-code {
@@ -233,16 +233,19 @@ blockquote::before {
     font-size: 12px; /* Adjust font size for smaller screens */
     z-index: 10000; /* Ensure buttons stay above code */
   }
+  
   .code-container {
     position: relative;
     overflow: hidden;
   }
-  /* Ensure that buttons don't stretch and are correctly placed */
+  
+/* Ensure that buttons don't stretch and are correctly placed */
   .expand-code, .copy-code {
     width: auto;  /* Prevent buttons from stretching */
     display: block;  /* Ensure buttons appear on top */
   }
 }
+
 /* Style for images inside articles */
 .post-content img {
   border: 2px solid var(--accent-darker); /* Adjust width and color */
