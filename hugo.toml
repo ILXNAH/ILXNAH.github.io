@@ -88,7 +88,7 @@ paginate = 5
       words = "words"
 
       [languages.en.params.logo]
-        logoText = "Hello World! Anyone can hack it.💞"
+        logoText = "Hello World! Any1 can hack it.💞"
         logoHomeLink = "/"
 
       [languages.en.menu]

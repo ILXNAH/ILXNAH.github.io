@@ -95,7 +95,7 @@ body {
   display: flex;
   justify-content: center; /* Center items horizontally */
   align-items: center; /* Vertically center items */
-  gap: 10px; /* Adjust space between items */
+  gap: 10px; /* Space between items */
   flex-wrap: nowrap; /* Prevent wrapping */
 }
 
@@ -109,6 +109,7 @@ body {
   display: flex;
   align-items: center;
   gap: 12px; /* Gap between social icons */
+  flex-wrap: nowrap; /* Prevent icons from wrapping */
 }
 
 .footer__social a {
