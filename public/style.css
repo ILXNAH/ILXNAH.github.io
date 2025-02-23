@@ -84,32 +84,25 @@ body {
   visibility: hidden;
 }
 
-/* Footer styles */
+/* Footer Styles */
 .footer {
   width: 100%;
-  background-color: none; /* Adjust as needed */
-  padding: 20px 0; /* Adjust padding for spacing */
+  background-color: none;
+  padding: 20px 0;
 }
 
 .footer__inner {
   display: flex;
-  justify-content: center; /* Center items horizontally */
-  align-items: center; /* Vertically center items */
-  gap: 10px; /* Space between items */
-  flex-wrap: nowrap; /* Prevent wrapping */
-}
-
-.footer__item {
-  margin: 0;
-  padding: 0; /* Ensure no padding or margins affect layout */
-  text-align: center;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: nowrap;
 }
 
 .footer__social {
   display: flex;
   align-items: center;
-  gap: 12px; /* Gap between social icons */
-  flex-wrap: nowrap; /* Prevent icons from wrapping */
+  gap: 12px;
 }
 
 .footer__social a {
@@ -119,26 +112,14 @@ body {
 }
 
 .footer__social a:hover {
-  color: #1DB954; /* Adjust hover color */
+  color: #1DB954;
 }
 
-/* Adjust spacing for each footer element */
-.footer__item {
-  margin: 0 10px; /* Add margin to avoid items touching */
-}
-
-.footer .copyright,
-.footer .footer-theme,
-.footer .footer-credit {
-  flex-grow: 0; /* Prevent from growing */
-  flex-shrink: 0; /* Prevent from shrinking */
-}
-
-/* Mobile adjustments */
+/* Mobile Styles */
 @media (max-width: 768px) {
   .footer__inner {
-    flex-direction: column; /* Stack elements vertically on small screens */
-    gap: 10px; /* Space between stacked items */
+    flex-direction: column;
+    gap: 10px;
   }
 }
 
