@@ -1,4 +1,4 @@
-console.log("✅ animated-background.js loaded");
+// console.log("✅ animated-background.js loaded");
 
 // Create starfield container
 const starfield = document.createElement('div');
