@@ -86,23 +86,41 @@ body {
 
 /* Footer Styles */
 .footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
-  background-color: none;
   padding: 20px 0;
 }
 
 .footer__inner {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  flex-wrap: wrap;
   gap: 10px;
-  flex-wrap: nowrap;
+  text-align: center;
+}
+
+/* Ensures all footer items (text & icons) are evenly spaced and centered */
+.footer__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex: 1; /* Allows even spacing */
+  min-width: 150px;
+  white-space: normal; /* Allows text wrapping */
 }
 
 .footer__social {
   display: flex;
+  justify-content: center;
   align-items: center;
-  gap: 12px;
+  gap: 8px;
+  flex: 1; /* Keeps social icons evenly spaced */
 }
 
 .footer__social a {
@@ -120,6 +138,20 @@ body {
   .footer__inner {
     flex-direction: column;
     gap: 10px;
+  }
+
+  .footer__content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer__item {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .footer__social {
+    justify-content: center;
   }
 }
 
