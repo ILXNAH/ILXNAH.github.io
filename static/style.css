@@ -173,6 +173,10 @@ body {
   padding: 0;
   position: relative;
   top: -2px;
+  /* Prevent shrinking on resize */
+  flex-shrink: 0; 
+  min-width: 24px;
+  min-height: 20px;
 }
 
 .footer__social a:hover .csfd-icon {
