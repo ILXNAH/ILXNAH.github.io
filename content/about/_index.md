@@ -1,4 +1,4 @@
-🔥 Remain respectful 🔥
+🕊️ Remain peaceful 🕊️  
 
 💖 Unconditionally loving 💖
 
