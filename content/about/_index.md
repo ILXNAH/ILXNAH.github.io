@@ -12,7 +12,7 @@
 
 & check your motherfxckin' self
 
-before you check a motherfxcker with grace 😌
+be4 you check a motherfxcker with grace 😌
 
 ---
 
