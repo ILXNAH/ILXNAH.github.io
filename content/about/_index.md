@@ -6,7 +6,7 @@
 
 🔥 Remain respectful 🔥
 
-🚫 Unless disrespected 🚫
+🖕 Unless disrespected 🖕
 
 👑 Then check w/ the Most Hi ✨
 
