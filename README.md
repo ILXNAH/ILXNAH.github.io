@@ -2,8 +2,8 @@
 
 [![Hugo](https://img.shields.io/badge/Built%20with-Hugo-blue)](https://gohugo.io/)
 [![Deployed on GitHub Pages](https://img.shields.io/badge/Deployed%20on-GitHub%20Pages-brightgreen)](https://pages.github.com/)
-[![License: MIT](https://img.shields.io/badge/Code%20License-MIT-blue)](LICENSE-MIT)
-[![License: CC BY-NC-ND 4.0](https://img.shields.io/badge/Content%20License-CC%20BY--NC--ND%204.0-lightgrey)](LICENSE-CC)
+[![License: MIT](https://img.shields.io/badge/Code%20License-MIT-blue)](CODE_LICENSING_TERMS.txt)
+[![License: CC BY-NC-ND 4.0](https://img.shields.io/badge/Content%20License-CC%20BY--NC--ND%204.0-lightgrey)](CONTENT_LICENSING_TERMS.txt)
 
 A personal blog built with **Hugo** and the **Terminal** theme, deployed via **GitHub Pages**.  
 The content is written and managed in **Obsidian.md**, with automated synchronization to Hugo using custom PowerShell scripts.
