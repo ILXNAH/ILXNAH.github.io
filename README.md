@@ -2,7 +2,8 @@
 
 [![Hugo](https://img.shields.io/badge/Built%20with-Hugo-blue)](https://gohugo.io/)
 [![Deployed on GitHub Pages](https://img.shields.io/badge/Deployed%20on-GitHub%20Pages-brightgreen)](https://pages.github.com/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![License: MIT](https://img.shields.io/badge/Code%20License-MIT-blue)](LICENSE-MIT)
+[![License: CC BY-NC-ND 4.0](https://img.shields.io/badge/Content%20License-CC%20BY--NC--ND%204.0-lightgrey)](LICENSE-CC)
 
 Personal blog built with **Hugo** and the **Terminal** theme, deployed via **GitHub Pages**.  
 Content is written and managed in **Obsidian.md**, with automated synchronization to Hugo using custom scripts.
@@ -34,3 +35,10 @@ Content is written and managed in **Obsidian.md**, with automated synchronizatio
 - No usege of front-end libraries (like Bootstrap or jQuery) — minimal and dependency-free.
 - Use of [FontAwesome](https://fontawesome.com/) for icons.
 - Clean and lightweight code, focused on performance and simplicity.
+
+## 📄 License
+
+- Source code, scripts, and configuration files in this repository are licensed under the [MIT License](LICENSE-MIT).
+- Written content, blog posts, articles, and personal files (such as certificates) are licensed under the [Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License](LICENSE-CC).
+
+Please refer to each license file for more information.
