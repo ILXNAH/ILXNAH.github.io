@@ -1,6 +1,7 @@
 # ILXNAH's Blog
 
 [![Hugo](https://img.shields.io/badge/Built%20with-Hugo-blue)](https://gohugo.io/)
+[![Theme: Terminal](https://img.shields.io/badge/Theme-Terminal-darkblue)](https://github.com/panr/hugo-theme-terminal)
 [![Deployed on GitHub Pages](https://img.shields.io/badge/Deployed%20on-GitHub%20Pages-brightgreen)](https://pages.github.com/)
 [![License: MIT](https://img.shields.io/badge/Code%20License-MIT-blue)](CODE_LICENSING_TERMS.txt)
 [![License: CC BY-NC-ND 4.0](https://img.shields.io/badge/Content%20License-CC%20BY--NC--ND%204.0-lightgrey)](CONTENT_LICENSING_TERMS.txt)
