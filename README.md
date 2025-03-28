@@ -1,10 +1,10 @@
 # ILXNAH's Blog
-[![Hugo](https://img.shields.io/badge/Built%20with-Hugo-blue)](https://gohugo.io/)
-![Build Status](https://img.shields.io/github/actions/workflow/status/ILXNAH/ILXNAH.github.io/hugo.yaml?branch=main)
-[![Theme: Terminal](https://img.shields.io/badge/Theme-Terminal-darkblue)](https://github.com/panr/hugo-theme-terminal)
-[![Deployed on GitHub Pages](https://img.shields.io/badge/Deployed%20on-GitHub%20Pages-brightgreen)](https://pages.github.com/)
-[![License: MIT](https://img.shields.io/badge/Code%20License-MIT-blue)](CODE_LICENSING_TERMS.txt)
-[![License: CC BY-NC-ND 4.0](https://img.shields.io/badge/Content%20License-CC%20BY--NC--ND%204.0-lightgrey)](CONTENT_LICENSING_TERMS.txt)
+[![Built with Hugo](https://img.shields.io/badge/Built%20with-Hugo-ff4088)](https://gohugo.io/)
+![Build Status](https://img.shields.io/github/actions/workflow/status/ILXNAH/ILXNAH.github.io/hugo.yaml?branch=main&label=Build&color=blueviolet)
+[![Theme: Terminal](https://img.shields.io/badge/Theme-Terminal-444444)](https://github.com/panr/hugo-theme-terminal)
+[![Deployed on GitHub Pages](https://img.shields.io/badge/Deployed%20on-GitHub%20Pages-0a8f08)](https://pages.github.com/)
+[![Code License: MIT](https://img.shields.io/badge/Code%20License-MIT-0066cc)](CODE_LICENSING_TERMS.txt)
+[![Content License: CC BY-NC-ND 4.0](https://img.shields.io/badge/Content%20License-CC%20BY--NC--ND%204.0-999999)](CONTENT_LICENSING_TERMS.txt)
 
 A personal blog built with **Hugo** and the **Terminal** theme, deployed via **GitHub Pages**.  
 The content is written and managed in **Obsidian.md**, with automated synchronization to Hugo using custom PowerShell scripts.
