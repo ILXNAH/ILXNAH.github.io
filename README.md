@@ -40,8 +40,8 @@ The content is written and managed in **Obsidian.md**, with automated synchroniz
 
 This repository uses a dual-license model:
 
-- **Source code, scripts, and configuration files** are licensed under the MIT License. See [CODE_LICENSE.txt](CODE_LICENSE.txt).
-- **Written content, blog posts, articles, and personal files (such as certificates)** are licensed under the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License. See [CONTENT_LICENSE.txt](CONTENT_LICENSE.txt).
+- **Source code, scripts, and configuration files** are licensed under the MIT License. See [CODE_LICENSING_TERMS.txt](CODE_LICENSING_TERMS.txt).
+- **Written content, blog posts, articles, and personal files (such as certificates)** are licensed under the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License. See [CONTENT_LICENSING_TERMS.txt](CONTENT_LICENSING_TERMS.txt).
 
 Please refer to each license file for more information.
 
