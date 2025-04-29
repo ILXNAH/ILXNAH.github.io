@@ -41,6 +41,10 @@ body {
   margin: 0; /* Remove any default margin */
 }
 
+/* ================================ */
+/* ✨ STARFIELD ANIMATION STYLES ✨ */
+/* ================================ */
+
 /* Ensure the starfield covers the entire page, even while scrolling */
 .starfield {
   position: fixed; /* Fixed position to stay behind content */
@@ -51,6 +55,29 @@ body {
   pointer-events: none; /* Allow interaction with the page content */
   z-index: -1; /* Keep the stars in the background */
 }
+
+.star {
+  position: absolute;
+  background: white;
+  border-radius: 50%;
+  opacity: 0;
+  animation-name: twinkle;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+  will-change: opacity, transform;
+  box-shadow: 0 0 3px white; /* soft glow */
+}
+
+@keyframes twinkle {
+  0%, 10% { opacity: 0; }
+  50% { opacity: 1; }
+  90%, 100% { opacity: 0; }
+}
+
+/* ================================*/
+/* 🌙   THEME TOGGLE BUTTON     🌙 */
+/* ================================*/
 
 /* Style the theme toggle button */
 #theme-toggle {
@@ -77,6 +104,10 @@ body {
 #theme-toggle:hover {
   background-color: darken(var(--accent), 10%);
 }
+
+/* ================================ */
+/*              ETC                 */ 
+/* ================================ */
 
 /* Prevent initial flashing by hiding the body until the theme is applied */
 .no-flash {
