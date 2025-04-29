@@ -1,6 +1,5 @@
-:root {
 /* Heliotrope */
-[data-theme="heliotrope"]
+[data-theme="heliotrope"] {
   --background: #25062A;
   --foreground: #F7E9F9;
   --accent: #E575F8;
@@ -303,7 +302,6 @@ blockquote::before {
   margin: 10px; /* Centers the image and adds spacing */
 }
 
-}
 .logo-text {
   font-size: 5vw !important; /* Scale text dynamically */
   white-space: nowrap !important; /* Prevent breaking */
