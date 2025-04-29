@@ -33,7 +33,7 @@ function createStar() {
   star.style.left = `${random(0, window.innerWidth)}px`;
 
   // Random sparkle duration
-  star.style.animationDuration = `${random(1.5, 5)}s`;
+  star.style.animationDuration = `${random(3, 7)}s`;
   star.style.animationDelay = `${random(0, 5)}s`;
 
   starfield.appendChild(star);
