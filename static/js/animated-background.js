@@ -15,12 +15,11 @@ function isMobile() {
   return window.innerWidth <= 768;
 }
 
-// Create a star element
+// Create a single star
 function createStar() {
   const star = document.createElement('div');
   star.classList.add('star');
 
-  // Adjust star size based on device
   const minSize = isMobile() ? 0.8 : 0.6;
   const maxSize = isMobile() ? 1.3 : 1;
   const size = random(minSize, maxSize);
@@ -28,52 +27,50 @@ function createStar() {
   star.style.width = `${size}px`;
   star.style.height = `${size}px`;
 
-  // Random position across page
   star.style.top = `${random(0, document.documentElement.scrollHeight)}px`;
   star.style.left = `${random(0, window.innerWidth)}px`;
 
-  // Random sparkle duration
-  star.style.animationDuration = `${random(3, 7)}s`;
+  // Slower twinkle speed
+  star.style.animationDuration = `${random(3, 8)}s`;
   star.style.animationDelay = `${random(0, 5)}s`;
 
   starfield.appendChild(star);
 
-  // Recycle star on animationiteration
   star.addEventListener('animationiteration', () => {
     star.style.top = `${random(0, document.documentElement.scrollHeight)}px`;
     star.style.left = `${random(0, window.innerWidth)}px`;
   });
 
-  // Remove star when animation ends and star is faded
   star.addEventListener('animationend', () => {
     const opacity = parseFloat(getComputedStyle(star).opacity);
     if (opacity < 0.05) {
-      star.remove(); // Remove faded star
+      star.remove();
     } else {
-      // Optionally reposition again (not strictly needed)
       star.style.top = `${random(0, document.documentElement.scrollHeight)}px`;
       star.style.left = `${random(0, window.innerWidth)}px`;
     }
   });
 }
 
-// Create multiple stars
-function createStars(count) {
+// Create initial batch
+function createInitialStars(count) {
   for (let i = 0; i < count; i++) {
     createStar();
   }
 }
 
-// Initial stars
-createStars(30);
+// Random star creation with random timing
+function startRandomStarCreation() {
+  const delay = random(500, 2500); // Random between 0.5s and 2.5s
 
-// Add more stars over time
-setInterval(() => {
-  const numStars = isMobile() ? 1 : 2; // Always integer
-  createStars(numStars);
-}, 3000);
+  setTimeout(() => {
+    const starsToCreate = Math.random() < 0.7 ? 1 : 2; // Mostly 1 star, rarely 2
+    createInitialStars(starsToCreate);
+    startRandomStarCreation(); // Recurse!
+  }, delay);
+}
 
-// Optional: continuously recycle stars if they go offscreen (advanced optimization)
+// Optional recycling if needed
 function recycleStars() {
   setInterval(() => {
     const stars = document.querySelectorAll('.star');
@@ -87,5 +84,7 @@ function recycleStars() {
   }, 100);
 }
 
-// Start recycling
-recycleStars();
+// --- Start everything ---
+createInitialStars(30); // Initial load
+startRandomStarCreation(); // Ongoing random spawns
+recycleStars(); // Keep recycling
