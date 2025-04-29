@@ -31,7 +31,7 @@ function createStar() {
   star.style.left = `${random(0, window.innerWidth)}px`;
 
   // Slower twinkle speed
-  star.style.animationDuration = `${random(3, 8)}s`;
+  star.style.animationDuration = `${random(6, 12)}s`;
   star.style.animationDelay = `${random(0, 5)}s`;
 
   starfield.appendChild(star);
@@ -61,7 +61,7 @@ function createInitialStars(count) {
 
 // Random star creation with random timing
 function startRandomStarCreation() {
-  const delay = random(500, 2500); // Random between 0.5s and 2.5s
+  const delay = random(1000, 4000); // Random between 0.5s and 2.5s
 
   setTimeout(() => {
     const starsToCreate = Math.random() < 0.7 ? 1 : 2; // Mostly 1 star, rarely 2
