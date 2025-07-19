@@ -209,6 +209,24 @@ body {
   min-height: 20px;
 }
 
+.gravatar-icon {
+  width: 10px;
+  height: 18px;
+  filter: brightness(0) invert(1);
+  transition: transform 0.2s ease-in-out, filter 0.3s ease-in-out;
+  display: inline-block;
+  vertical-align: middle;
+  border: none;
+  outline: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  top: -2px;
+  flex-shrink: 0;
+  min-width: 20px;
+  min-height: 16px;
+}
+
 .footer__social a:hover .csfd-icon {
   filter: brightness(0) invert(44%) sepia(72%) saturate(461%) hue-rotate(88deg) brightness(96%) contrast(88%);
 }
